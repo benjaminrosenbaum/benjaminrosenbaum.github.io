@@ -1,0 +1,264 @@
+
+		<html>		
+			<head>
+		  		<title>Benjamin Rosenbaum: Groovy</title>
+		  		<link rel="stylesheet" href="../styles-site.css" type="text/css" />
+		<!--
+		<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="https://www.benjaminrosenbaum.com/blog/archives/2006_01.html#000328">
+<dc:title>Groovy</dc:title>
+<dc:description>The problem with a blogging hiatus - if you&apos;re me, anyway - is that you feel like you need to...</dc:description>
+<dc:creator>benrosen</dc:creator>
+<dc:date>2006-01-04T13:22:34+01:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-sa/1.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-sa/1.0/">
+<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+<requires rdf:resource="http://web.resource.org/cc/Notice" />
+<requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+</License>
+</rdf:RDF>
+		-->
+			</head>
+			<body>
+				
+		<div width="100%"><table width="100%">
+		       <tr>
+		          <td width="50%" class="left">
+		             <a href='000325.html'>&lt;&lt; Previous Entry</a>
+		          </td>
+		        
+		          <td width="50%" class="right">
+		             <a href='000329.html'>Next Entry &gt;&gt;</a>
+		          </td>
+		       </tr>
+		       </table>
+		    </div>
+	
+
+				
+
+<table BORDER="0" CELLSPACING="8" cellpadding="3" WIDTH="100%" >
+  <tr>
+    <td><img SRC="../images/journal.gif" height="368" width="152">
+    </td>
+    <td>
+      <table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 WIDTH="100%">
+        <tr>
+           <td width="100%">
+<center><b><font face="Copperplate Gothic Bold"><font size=+1>Journal Entry </font></font></b></center>
+          </td>
+       </tr>
+     </table>
+     
+
+<p><b><font face="Copperplate Gothic Light">
+<a href="../archives/2006_01.html#000328">
+   Wednesday, January  4, 2006 
+</a>
+</font></b>
+
+
+<a name="000328"></a>
+<p><b><font face="Copperplate Gothic Light">
+  <font size=-1>
+  Groovy 
+  </font>
+</font></b>
+
+<p>The problem with a blogging hiatus -- if you're me, anyway -- is that you feel like you need to write something momentous upon your return. Or at least one of the things that's been piling up in your mind as something you should blog about: the Appalachian cabin we spent Christmas weekend in, the acquisition of Let's-Pretend, caring about tools, the problem of power, the rules of politeness. All long posts.</p>
+
+<p>So, to break that mental loop:</p>
+
+<p>Happy New Year, everyone!</p>
+
+<p>And now some programming geekery:</p>
+
+<p>I like some things about the J2EE infrastructure, more or less, and I like the tools for Java (<a href="http://www.eclipse.org">Eclipse</a>, <a href="http://ant.apache.org">ant</a>) -- but I wish I could program in something more <a href="http://www.paulgraham.com/avg.html">Lisp</a>-like.</p>
+
+<p>So <a href="http://groovy.codehaus.org/Closures">Groovy</a> looks groovy. </p>
+
+<a name="more"></a>
+
+
+<span class="posted">Posted by benrosen at January  4, 2006 01:22 PM
+
+| <a href="../">Up to blog</a>
+<br /></span>
+
+</div>
+
+
+<div class="comments-head"><a name="comments"></a>Comments</div>
+
+<div class="comments-body">
+<p>The only thing I really regret about not getting a formal CS education is that nobody ever made me learn a functional language. (It goes without saying that I'm too lazy to learn one in my spare time.) I read stuff like items 6 and 7 in the "Closure semantics" section (the bound variables bit) and my brain just locks up.</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>David Moles</a> at January  4, 2006 06:43 PM</span>
+</div>
+<div class="comments-body">
+<p>But that's the really *cool* stuff!</p>
+
+<p>It just means:</p>
+
+<p>public Closure getTripleMultiplier(int factor) {<br />
+  int t = 3;<br />
+  return { a -> a * factor * t; }<br />
+}</p>
+
+<p>by9 = getTripleMultiplier(3);</p>
+
+<p>assert( 18 == by9(2) );</p>
+
+<p>That's sort of pseudocode, but you get the idea. The closure knows about the variables' state at the time that it was defined.</p>
+
+<p>Oddly, Javascript 1.2 is actually very close to a functional language, and has closures too. So maybe you do know a functional language, you just don't know that you know one.</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 10:15 AM</span>
+</div>
+<div class="comments-body">
+<p>Another way to put this is --</p>
+
+<p>in Java, I miss operations that perl has that take a block of code -- like sort, grep, map. I don't want to have to define a new interface and then implement it with a callback to do the filter or mapping -- I just want to pass in the damn block of code.</p>
+
+<p>In Perl, it's great to have sort, grep, and map -- but that's it. You can't create *another* function that works the way they do (not without a bunch more syntactical superstructure workaround, just as kludgy as the above workaround in Java).</p>
+
+<p>In Lisp, I could just make functions like that to my heart's content.</p>
+
+<p>I don't know Python or Groovy yet, but it looks like they might be more Lisp-like.</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 10:19 AM</span>
+</div>
+<div class="comments-body">
+<p>And yet another way to put this (just to further bewilder and bore most of the people who read this blog, which heretofore has not been a programming geekery blog; sorry about that) is that most of the Design Patterns in the Design Patterns book are actually symptoms of a mid-level language. </p>
+
+<p>My gut feeling is that the utility of programming languages is trimodal.</p>
+
+<p>On one end you have programs that are best done in Visual Basic or some other what they used to call 4GLs -- or else in scripting languages used as scripting languages. Programs that are, in one sense at least, not hard, and which need to be flat: the logic is straightforward, and the team you have doesn't want to traverse an inheritance heirarchy to figure out what's going on. Maybe you have a large, inexperienced team, or maybe you're going to use the program a few times and throw it away. So you don't care about refactoring much.</p>
+
+<p>The second mode is programs that need to be long-lived, flexible, and robust, and have a lot of business/domain logic which is sort of arbitrary -- there's a limit to how elegantly it can be compressed down, because it was made up by business folks and there aren't any set of simple, coherent underlying principles you can reduce it to. So the real problem is organizing this large set of arbitrary, somewhat incoherent, changing rules and behaviors. I have a feeling that this is what object oriented languages are good at: they provide an infrastructure for you to organize all the logic.</p>
+
+<p>The third mode is where you have programs that are hard in a good way: where you have a hard problem, but the difficulty is a feature of nature, not of a mass of sort-of-contradictory requirements. Something like, say, the core algorithms of indexing the web like Google does, I imagine would fall in this category. Or maybe not? I'm thinking of cases where it'd be a win not to have a large number of somewhat skilled programmers, but rather 1-3 extremely gifted programmers. In this mode, I'd imagine that you want a very concise, powerful, elegant high-level language  (and then you want to profile it and rewrite the bottlenecks in C). </p>
+
+<p>In that sense of truly high-level language, for that kind of problem, you can look at the <a href="http://en.wikipedia.org/wiki/Gang_of_Four_(software)">Gang of Four Design Patterns</a> as "language smells" analgous to Fowler's <a href="http://en.wikipedia.org/wiki/Code_smell">Code smells</a>. If a language forces you to create a Visitor heirarchy rather than just passing in a block of code, it's a mid-level language, along the axis I'm describing.</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 10:34 AM</span>
+</div>
+<div class="comments-body">
+<p>Oooh, "Let's Pretend" is momentous!  I LOVE that series!  I think my favorite story is "How the sea became salt."  Do you have that one? </p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Ethan</a> at January  5, 2006 01:04 PM</span>
+</div>
+<div class="comments-body">
+<p>What? What?</p>
+
+<p>I meant really let's pretend, like when you play let's pretend.</p>
+
+<p>But the series sounds great. Books? Amazon has nothing.</p>
+
+<p>I find only <a href="http://www.sacred-texts.com/neu/hoe/hoe2-25.htm">this</a>...</p>
+
+<p>I always wondered about that...</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 01:11 PM</span>
+</div>
+<div class="comments-body">
+<p><i>The closure knows about the variables' state <b>at the time that it was defined</b>.</i> </p>
+
+<p>(Emphasis added.) Okay, <i>now</i> I get it. It's analogous to how you have to declare things final if you want to reference them in an anonymous inner class. (Though with closures I suppose you could fiddle with the variable =after= you declare the closure... or maybe even in the closure itself... though I'm not sure what the expected semantics of the latter would be w.r.t. the enclosing code....)</p>
+
+<p>Though the fact that it now doesn't seem nearly as magical makes me think there's probably still something I'm missing. :) </p>
+
+<p>Interesting point about patterns. I'll have to think about that. (But I've certainly spent enough time wrestling with out-of-control visitor architectures to find the idea appealing...)</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>David Moles</a> at January  5, 2006 01:38 PM</span>
+</div>
+<div class="comments-body">
+<p>Er, before <i>declare things final</i> insert <i>in Java</i>.</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>David Moles</a> at January  5, 2006 01:38 PM</span>
+</div>
+<div class="comments-body">
+<p>For a sense of why this is useful, look at their example of GVector.apply, and the section on currying.</p>
+
+<p>Think about how much time you spend traversing data structures and writing loops that interrogate them and do stuff to them. Visitor pattern and its ilk are clunky ways defined outside the language to turn such loops inside out by saying "first define how to apply some actions across this complex data structure. now I'll write those actions." If you can write apply() as you can in Groovy, you have that in a very svelte format, basically defined into the language. </p>
+
+<p>Another way to look at this: encapsulation, inheritance, and polymorphism are things you can do in C as design patterns. You could imagine a Design Patterns For C book that talked about how to implement your own vtables and (perhaps runtime) access control. In C++/Java/etc., you get those particular design patterns built into the language.</p>
+
+<p>With perl's map/grep/sort, you sort of have Visitor pattern -- or at least the most common subcases -- built into that language in the same way.</p>
+
+<p>With a truly high level language (which it's my impression lisp is, for instance, though my lisp skills are not what my C++ and Java skills are), you can rewrite the language, so you can write new design patterns into it in the same way.</p>
+
+<p>Currying gives you another axis to refactor on, and a very flexible one. You can take a very general purpose function with lots of parameters and then curry it by fixing some of its parameters (which might themselves be closures).<br />
+Instead of an inheritance tree, or (because everyone knows inheritance gets rigid) other workarounds like heirarchies of Decorators and Adapters, you can pass something into a function and alter its functionality on the fly. "Old code calling new code" at a finer granularity.</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 01:56 PM</span>
+</div>
+<div class="comments-body">
+<p>That is in fact the story I particularly like...  Let's Pretend is an old radio show of fairy tales.   I was just bonking myself on the head for not thinking of getting it for Aviva & Noah before someone else did!  A set of 51 shows is on its way (tell them its a late b-day present): </p>
+
+<p>"Heel-looo, Pretenders! Helllloooo, Uncle Bill!"</p>
+
+<p>Let's Pretend was the major life work of Nila Mack, a Kansas woman who had been an actress on Broadway and in vaudeville. Mack felt the best way to tell a children's story was to let the children tell it: to develope a company of versitile juvenile talent who could play a variety of changing roles week after week. Child actors played parts of characters their own ages to 80 year old people. Mac "trained and directed two generations of child actors" before passing away in 1953. She was lauded as "the fairy god-mother of radio."</p>
+
+<p>SOURCE: The Encyclopedia of Old Time Radio, John Dunning</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Ethan</a> at January  5, 2006 01:57 PM</span>
+</div>
+<div class="comments-body">
+<p>Crazy - I just went over to read about closures, and it hurt my brain, but in a good way. Seems like a closure lets you define a variable as a method, then treat that variable like a class method, yes? Is there anything else fundamental I should understand about closures?</p>
+
+<p>peace<br />
+Matt, dung-beetle of coders</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>matthulan</a> at January  5, 2006 04:00 PM</span>
+</div>
+<div class="comments-body">
+<p>Well, it lets you stick a method into a variable, and pass it around -- like function pointers in C++. That's one thing. But it also does two other things: it remembers the whole state of the local frame (local variables, etc) at the time of its definition, and it lets you bind its parameters at different times - that's called currying.</p>
+
+<p>So say you have a closure that takes three arguments. You can just bind the first one, making a new closure, then pass that closure around somewhere else, and later set the other two arguments and call the function (as many times as you like, with different arguments for the latter two functions).</p>
+
+<p>Consider that you can pass closures into closures as arguments, and that saving the state of all the local variables (which may be objects) means closures, like objects, have state as well as behavior... and you can see that this is an insanely generic and powerful mechanism. The object-oriented paradigm the four of us are more used to is a way of selecting a particular, limited subset of this power, for sanity's sake.</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 04:07 PM</span>
+</div>
+<div class="comments-body">
+<p>David, I think the closure has a copy of the stack, so if you write to the local variables that doesn't get propagated to the local variables in the context outside the closure (typically they are gone anyway).</p>
+
+<p><br />
+</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 04:10 PM</span>
+</div>
+<div class="comments-body">
+<p>"Let's Pretend" was MY favorite radio program when I was a child!  In fact, the radio program I was ON, as a child actress, was the Cleveland version, a product of Station WERE, called "WERE Pretending"!  I want to hear what Ethan sent when I can, OK?</p>
+
+<p>Love, Grandma</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Karen Rosenbau;m</a> at January 11, 2006 08:40 PM</span>
+</div>
+<div class="comments-body">
+<p>*I* want to hear you as a child actress! Was the show recorded?</p>
+<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January 12, 2006 09:23 AM</span>
+</div>
+
+
+
+
+				      </td>
+				    </tr>
+				  </table>
+				</center>
+				
+		<div width="100%"><table width="100%">
+		       <tr>
+		          <td width="50%" class="left">
+		             <a href='000325.html'>&lt;&lt; Previous Entry</a>
+		          </td>
+		        <td><center><a href="../index.html">To Index</a></center></td>
+		          <td width="50%" class="right">
+		             <a href='000329.html'>Next Entry &gt;&gt;</a>
+		          </td>
+		       </tr>
+		       </table>
+		    </div>
+	
+
+
+				<div align=right  style="padding-top: 20px">
+					<a href="/"><img SRC="../images/br.gif" height=22 width=29></a>
+				</div>
+			</body>
+		</html>
+				

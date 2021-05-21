@@ -1,0 +1,382 @@
+	body {
+		margin:0px 0px 20px 0px;
+		background:#FFF;		
+		}
+	A 			{ color: #003366; text-decoration: underline; }
+	A:link		{ color: #003366; text-decoration: underline; }
+	A:visited	{ color: #003366; text-decoration: underline; }
+	A:active	{ color: #999999;  }
+	A:hover		{ color: #999999;  }
+
+	h1, h2, h3 {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#banner {
+		font-face:"Copperplate Gothic Bold"
+                                font-family:palatino,  georgia, verdana, arial, sans-serif;
+		color:#333;		
+		font-weight:normal;	
+  		padding:15px;
+                border-top:4px double #666;
+		}
+
+	#banner a,
+        #banner a:link,
+        #banner a:visited,
+        #banner a:active,
+        #banner a:hover {
+		font-family: palatino,  georgia, verdana, arial, sans-serif;
+		font-size: xx-large;
+		color: #333;
+		text-decoration: none;
+		}
+
+	.description {
+		font-family:palatino,  georgia, times new roman, serif;
+		color:#333;
+		font-size:small;
+  		text-transform:none;	
+		}
+				
+	#content {
+		position:absolute;
+		background:#FFF;
+		margin-right:20px;
+		margin-left:225px;
+		margin-bottom:20px;
+		border:1px solid #FFF;
+		width: 70%;
+		}
+
+	#container {
+		background:#FFF;
+		border:1px solid #FFF;		
+		}
+
+	#links {	
+		padding:15px;				
+		border:1px solid #FFF;
+		width:200px;			
+		}
+		
+	.blog {
+  		padding:15px;
+		background:#FFF; 
+		}
+
+	.blogbody {
+		font-family:palatino, georgia, verdana, arial, sans-serif;
+		color:#333;
+		font-size:small;
+		font-weight:normal;
+  		background:#FFF;
+  		line-height:200%;
+		}
+
+	.blogbody a,
+	.blogbody a:link,
+	.blogbody a:visited,
+	.blogbody a:active,
+	.blogbody a:hover {
+		font-weight: normal;
+		text-decoration: underline;
+	}
+
+	.title	{
+		font-family: palatino, georgia, times new roman, serif;
+		font-size: medium;
+		color: #666;
+		}			
+
+	#menu {
+  		margin-bottom:15px;
+		background:#FFF;
+		text-align:center;
+		}		
+
+	.date	{ 
+		font-family:palatino, georgia, times new roman, serif; 
+		font-size: large; 
+		color: #333; 
+		border-bottom:1px solid #999;
+		margin-bottom:10px;
+		font-weight:bold;
+		}			
+		
+	.posted	{ 
+		font-family:verdana, arial, sans-serif; 
+		font-size: x-small; 
+		color: #000000; 
+		margin-bottom:25px;
+		}
+		
+		
+	.calendar {
+		font-family:verdana, arial, sans-serif;
+		color:#666;
+		font-size:x-small;
+		font-weight:normal;
+  		background:#FFF;
+  		line-height:140%;
+  		padding:2px;
+                text-align:left;
+		}
+	
+	.calendarhead {	
+		font-family:palatino, georgia, times new roman, serif;
+		color:#666600;
+		font-size:small;
+		font-weight:normal;
+  		padding:2px;
+		letter-spacing: .3em;
+  		background:#FFF;
+  		text-transform:uppercase;
+		text-align:left;			
+		}	
+	
+	.side {
+		font-family:verdana, arial, sans-serif;
+		color:#333;
+		font-size:x-small;
+		font-weight:normal;
+  		background:#FFF;
+  		line-height:140%;
+  		padding:2px;				
+		}	
+		
+	.sidetitle {
+		font-family:palatino, georgia, times new roman, serif;
+		color:#666600;
+		font-size:small;
+		font-weight:normal;
+  		padding:2px;
+  		margin-top:30px;
+		letter-spacing: .3em;
+  		background:#FFF;
+  		text-transform:uppercase;		
+		}		
+	
+	.syndicate {
+		font-family:verdana, arial, sans-serif;
+		font-size:xx-small;		
+  		line-height:140%;
+  		padding:2px;
+  		margin-top:15px;
+  		background:#FFF;  		
+ 		}	
+		
+	.powered {
+		font-family:palatino, georgia, times new roman, serif;
+		color:#666;
+		font-size:6pt;		
+		line-height:140%;
+		text-transform:uppercase; 
+		padding:2px;
+		margin-top:50px;
+		letter-spacing: .2em;					
+  		background:#FFF;		
+		}	
+		
+	
+	.comments-body {
+		font-family:palatino, georgia, verdana, arial, sans-serif;
+		color:#666;
+		font-size:small;
+		font-weight:normal;
+  		background:#FFF;
+  		line-height:140%;
+ 		padding-bottom:10px;
+  		padding-top:10px;		
+ 		border-bottom:1px dotted #999; 					
+		}		
+
+	.comments-post {
+		font-family:verdana, arial, sans-serif;
+		color:#666;
+		font-size:x-small;
+		font-weight:normal;
+  		background:#FFF;		
+		}	
+			
+	
+	.trackback-url {
+		font-family:palatino, georgia, verdana, arial, sans-serif;
+		color:#666;
+		font-size:small;
+		font-weight:normal;
+  		background:#FFF;
+  		line-height:140%;
+ 		padding:5px;		
+ 		border:1px dotted #999; 					
+		}
+
+
+	.trackback-body {
+		font-family:palatino, georgia, verdana, arial, sans-serif;
+		color:#666;
+		font-size:small;
+		font-weight:normal;
+  		background:#FFF;
+  		line-height:140%;
+ 		padding-bottom:10px;
+  		padding-top:10px;		
+ 		border-bottom:1px dotted #999; 					
+		}		
+
+	.trackback-post {
+		font-family:verdana, arial, sans-serif;
+		color:#666;
+		font-size:x-small;
+		font-weight:normal;
+  		background:#FFF;		
+		}	
+
+		
+	.comments-head	{ 
+		font-family:palatino, georgia, verdana, arial, sans-serif; 
+		font-size:small; 
+		color: #666; 
+		border-bottom:1px solid #999;
+		margin-top:20px;
+		font-weight:bold;
+  		background:#FFF;		
+		}		
+
+	#banner-commentspop {
+		font-family:palatino, georgia, verdana, arial, sans-serif;
+		color:#FFF;
+		font-size:large;
+		font-weight:bold;
+		border-left:1px solid #FFF;	
+		border-right:1px solid #FFF;  		
+		border-top:1px solid #FFF;  		
+  		background:#003366;
+  		padding-left:15px;
+  		padding-right:15px;
+  		padding-top:5px;
+  		padding-bottom:5px;  		  		  			 
+		}
+
+/** entry **/
+.entry {
+   width: 80%;
+ }
+
+
+
+/** refrigerator magnets **/
+  .magnets { position: relative;}
+  
+  .magnets span {
+     padding: 2px 2px 2px 2px;
+     margin: 2px 2px 2px 2px;
+     border: ridge 2px black;
+     font-weight: bold;
+     font-size: large;
+     font-family; Courier, Serif;
+     float: left;
+     display: block;
+  }
+  
+  .magnets .push {
+     margin: 5px 2px 2px 1px;
+  } 
+  
+  .magnets .pull {
+     margin: 0px 1px 5px 3px;
+  }
+    
+  .magnets br {
+    clear: both;
+  }
+  
+/*** comparison table **/
+table.comparison {
+  border: solid 2px black;
+}
+
+table.comparison tr th {
+  font-weight: bold;
+  padding: 2px;
+  border: solid 1px gray;
+}
+
+table.comparison tr th a {
+  font-weight: bold;
+}
+
+
+table.comparison tr td.category{
+  background-color: rgb(248,248,248);
+  width: 130px;
+}
+
+table.comparison tr td {
+  border: solid 1px gray;
+  padding: 2px;
+}
+
+.announce {
+  border: solid 1px black;
+  margin: 10px;
+  padding: 5px;
+  width: 40%;
+  text-align:center;
+}
+
+.schedule 
+{
+  padding: 20px 0px 0px 8px;
+  overflow: auto;
+}
+.schedule div {
+  float: left;
+  padding: 5px;  
+}
+
+.schedule .date { 
+  clear: left; 
+  font-weight: bold; 
+  padding: 15px 0px 0px 20px; 
+  /*width: 20%;*/
+}
+.schedule .time { clear: left; }
+.schedule .where { font-weight: bold; font-style: italic; width: 250px; }
+.schedule .title { clear: both; text-decoration: underline;  }
+.schedule .what { clear: both; padding-left: 20px; width: 50% }
+.schedule .who { clear: left; font-style: italic; width: 600px;  }
+
+.time { font-weight: bold; }
+
+.bookNavigation {
+     width: 80px;
+     vertical-align: center;
+  }
+
+.bookText {
+  margin: 5px;
+  padding: 4px;
+  border: solid 1px #EEEEEE;
+  height: 150px;
+  width: 630px;
+}
+
+.covert {
+  font-family: "Hoefler Text","Century Schoolbook", Baskerville, "Century Schoolbook L", Century, "Palatino Linotype", Serif;
+  padding: 8px;
+  border: solid 1px gray;
+}
+
+.right {
+  text-align: end;
+  margin-right: 1em;
+}
+
+.left {
+  text-align: start;
+  margin-left: 1em;
+}
+
+

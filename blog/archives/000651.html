@@ -1,0 +1,201 @@
+
+		<html>		
+			<head>
+		  		<title>Benjamin Rosenbaum: Grompy Poop</title>
+		  		<link rel="stylesheet" href="../styles-site.css" type="text/css" />
+		<!--
+		<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="https://www.benjaminrosenbaum.com/blog/archives/2008_08.html#000651">
+<dc:title>Grompy Poop</dc:title>
+<dc:description> It is with great pleasure that I present the second book in a continuing series by my daughter Aviva....</dc:description>
+<dc:creator>benrosen</dc:creator>
+<dc:date>2008-08-20T20:00:07+01:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-sa/1.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-sa/1.0/">
+<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+<requires rdf:resource="http://web.resource.org/cc/Notice" />
+<requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+</License>
+</rdf:RDF>
+		-->
+			</head>
+			<body>
+				
+		<div width="100%"><table width="100%">
+		       <tr>
+		          <td width="50%" class="left">
+		             <a href='000650.html'>&lt;&lt; Previous Entry</a>
+		          </td>
+		        
+		          <td width="50%" class="right">
+		             <a href='000654.html'>Next Entry &gt;&gt;</a>
+		          </td>
+		       </tr>
+		       </table>
+		    </div>
+	
+
+				
+
+<table BORDER="0" CELLSPACING="8" cellpadding="3" WIDTH="100%" >
+  <tr>
+    <td><img SRC="../images/journal.gif" height="368" width="152">
+    </td>
+    <td>
+      <table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 WIDTH="100%">
+        <tr>
+           <td width="100%">
+<center><b><font face="Copperplate Gothic Bold"><font size=+1>Journal Entry </font></font></b></center>
+          </td>
+       </tr>
+     </table>
+     
+
+<p><b><font face="Copperplate Gothic Light">
+<a href="../archives/2008_08.html#000651">
+   Wednesday, August 20, 2008 
+</a>
+</font></b>
+
+
+<a name="000651"></a>
+<p><b><font face="Copperplate Gothic Light">
+  <font size=-1>
+  Grompy Poop 
+  </font>
+</font></b>
+
+<p>
+It is with great pleasure that I present the second book in <a href="http://www.benjaminrosenbaum.com/cgi-bin/works/ArthurMeetsAviva.pl">a continuing series </a>by my daughter Aviva. 
+</p>
+
+<p>(You will note that there was an interval -- of about six months -- between the composition of the first half and the last half.)</p>
+
+<p>And now, without further ado...</p>
+
+<table>
+<tr>
+<td class='bookNavigation'>
+   <a onclick="gpSetPic(-1)">
+      <img src="../images/works/aviva/gp/page_left.jpg" />
+   </a>
+</td>
+<td>
+   <img src='/blog/images/works/aviva/gp/needJS.jpg' id='gpBook' />
+</td>
+<td class='bookNavigation'>
+   <a  onclick="gpSetPic(1)">
+      <img src="../images/works/aviva/gp/page_right.jpg" />
+   </a>
+</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td ><div class='bookText' id='gpText'></div></td>
+  <td>&nbsp;</td>
+</tr>
+</table>
+
+<script>
+  var gpIndex = 1;
+  var gpMax = 12;
+  var text = [ 
+    "<center><b>GROMPY POOP</b><br/><br/>by Aviva Rosenbaum</center>",
+    "<p>My name is Sara.</p><p>My mother is angry! :-( I call her Grompy Poop!",
+    "<p>The next morning, when she woke up, she had poop on her head.</p><p>That day, at the toy store, I did not get any toys. :-(</p>", 
+  "<p>And my brothers got some!.</p><p> I was mad!</p>", 
+  '<p>I said "No fair! That&quot;s mean!"</p><p>My mother called me Grompy Poop! :-(</p>',  
+  "<p>I prayed this would never happen again.</p><p>But my mother still loves me!</p>",  
+  "<p>The next morning, my mother was nice again.</p><p>When my friend Sally came over to play, we tried to figure out what was wrong with her.</p>",  
+  '<p>"Now she&quot;s cooking poop stew," said Sally. "Nonsense," I said, "she&quot;s a witch."</p><p>We decided that we are going to trick her. And she&quot;ll fall down and break a leg and we&quot;ll just ignore her.</p>',  
+  '<p>Just then it was time for Sally to go home. "See you in a month," I said. "Bye."</p><p>Sally came home and opened the door. On the table was a lot of stuff, but no one was there. &lt;:-(</p>', 
+  "<p>At the corner there was a note. <blockquote>Dear Sally, I'm at the store. You are very naughty! Tomorrow was the day with Sara. Girls! Love, Dad.</blockquote></p><p>She went to the store. There was her father!</p>",  
+  '<p>There was Sara! "Can we have a sleepover?" they ask.</p><p>"Sure!"</p><p>At the car ride home, Sally was nervous. "It&quot;s my first time," she said.</p><p>"Don&quot;t worry," Sara said.</p>',  
+  '<p>When they got home, Sally felt much better.</p><p>When they went to bed, Sally asked: "What about GROMPY POOP?"</p><p>"Whatever," Sara said.</p>' 
+  ];
+
+  function $(id) { return document.getElementById(id); }
+  function gpSetPic(incr) {
+    gpIndex += incr;
+    if (gpIndex > gpMax) gpIndex = 1;
+    if (gpIndex < 1) gpIndex = gpMax;
+    $('gpBook').src = "../images/works/aviva/gp/GrompyPoop"
+        + (gpIndex < 10 ? '0' : '') + gpIndex + '.jpg';
+    $('gpText').innerHTML = text[gpIndex-1];
+  }
+  gpSetPic(0);
+</script>
+
+<br/>
+
+<a name="more"></a>
+
+
+<span class="posted">Posted by benrosen at August 20, 2008 08:00 PM
+
+| <a href="../">Up to blog</a>
+<br /></span>
+
+</div>
+
+
+<div class="comments-head"><a name="comments"></a>Comments</div>
+
+<div class="comments-body">
+<p>Aviva's book is so carefully done. I love the twists and turns in the plot, and the wonderful, vivid illustrations. I can tell she put a lot of work and thought into it. I think Aviva did a particularly excellent job describing what "mad" feels like in her carefully-done purple word: MAD on page 6. It looks very mad.</p>
+
+<p>What I particularly like was the attention to detail in tying in Grompy Poop at the very end again.</p>
+<span class="comments-post">Posted by: <a name='anchor-492417'>haddayr</a> at August 20, 2008 09:22 PM</span>
+</div>
+<div class="comments-body">
+<p>Aviva, I really enjoyed reading your book. The drawings are imaginative and colorful, and the story is very engaging. I hope you'll make another?</p>
+<span class="comments-post">Posted by: <a name='anchor-492417'>Holly</a> at August 21, 2008 07:09 PM</span>
+</div>
+<div class="comments-body">
+<p>Ben, that's brilliant!  I particularly like that she's always showing, never telling.  It's vivid and engaging and mysterious and very funny.  Some adult writers I've met could learn a LOT from Aviva. :)</p>
+
+<p>(It's also sort of existential.  I mean, what about grompy poop, in the larger scheme of things?  "Whatever."  Positively Sartrean--if one can be positively Sartrean.)</p>
+<span class="comments-post">Posted by: <a href="mailto&#58;tgoss&#64;bu&#46;edu">Theodora Goss</a> at August 22, 2008 06:50 AM</span>
+</div>
+<div class="comments-body">
+<p>Jeremiah says:</p>
+
+<p>I liked both the title and when they call each other GROMPY POOP.</p>
+<span class="comments-post">Posted by: <a name='anchor-492417'>Karen</a> at August 23, 2008 06:27 PM</span>
+</div>
+
+
+
+
+				      </td>
+				    </tr>
+				  </table>
+				</center>
+				
+		<div width="100%"><table width="100%">
+		       <tr>
+		          <td width="50%" class="left">
+		             <a href='000650.html'>&lt;&lt; Previous Entry</a>
+		          </td>
+		        <td><center><a href="../index.html">To Index</a></center></td>
+		          <td width="50%" class="right">
+		             <a href='000654.html'>Next Entry &gt;&gt;</a>
+		          </td>
+		       </tr>
+		       </table>
+		    </div>
+	
+
+
+				<div align=right  style="padding-top: 20px">
+					<a href="/"><img SRC="../images/br.gif" height=22 width=29></a>
+				</div>
+			</body>
+		</html>
+				

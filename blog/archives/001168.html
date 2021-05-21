@@ -1,0 +1,155 @@
+
+		<html>		
+			<head>
+		  		<title>Benjamin Rosenbaum: Bits of writing geekery...</title>
+		  		<link rel="stylesheet" href="../styles-site.css" type="text/css" />
+		<!--
+		<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="https://www.benjaminrosenbaum.com/blog/archives/2017_09.html#001168">
+<dc:title>Bits of writing geekery...</dc:title>
+<dc:description>Among my favorite forms of cat-vacuuming: novel-text-munging perl scripts!</dc:description>
+<dc:creator>benrosen</dc:creator>
+<dc:date>2017-09-06T00:51:43+01:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-sa/1.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-sa/1.0/">
+<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+<requires rdf:resource="http://web.resource.org/cc/Notice" />
+<requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+</License>
+</rdf:RDF>
+		-->
+			</head>
+			<body>
+				
+		<div width="100%"><table width="100%">
+		       <tr>
+		          <td width="50%" class="left">
+		             <a href='001167.html'>&lt;&lt; Previous Entry</a>
+		          </td>
+		        
+		          <td width="50%" class="right">
+		             <a href='001169.html'>Next Entry &gt;&gt;</a>
+		          </td>
+		       </tr>
+		       </table>
+		    </div>
+	
+
+				
+
+<table BORDER="0" CELLSPACING="8" cellpadding="3" WIDTH="100%" >
+  <tr>
+    <td><img SRC="../images/journal.gif" height="368" width="152">
+    </td>
+    <td>
+      <table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 WIDTH="100%">
+        <tr>
+           <td width="100%">
+<center><b><font face="Copperplate Gothic Bold"><font size=+1>Journal Entry </font></font></b></center>
+          </td>
+       </tr>
+     </table>
+     
+
+<p><b><font face="Copperplate Gothic Light">
+<a href="../archives/2017_09.html#001168">
+   Wednesday, September  6, 2017 
+</a>
+</font></b>
+
+
+<a name="001168"></a>
+<p><b><font face="Copperplate Gothic Light">
+  <font size=-1>
+  Bits of writing geekery... 
+  </font>
+</font></b>
+
+<p>I was rooting around old drafts of <i>The Unraveling</i> today (which is still making the rounds; I am sprucing it up a bit further because reasons), and happened upon a lovely bit of <a ref="http://www.scalzi.com/whatever/003651.html">cat-vacuuming</a>: a Perl script to pull out, and highlight, every instance of a time-word in the text. I guess I was realizing that the various references to mealtimes and mornings and afternoons didn't add up, and wondering over how many actual days the principal action of the novel took place. And once you have a hundred-thousand-word blob of text, it's harder than you might think to answer such continuity questions for yourself. This probably took twenty minutes to write and, I vaguely recall, actually proved pretty useful. Here it is in all its hairy, undocumented, unrefactored glory, radiating shameless geekitude.
+</p>
+<blockquote>
+<pre>
+#!/usr/bin/perl
+
+my @words = ("kitchen", "dining", "breakfast", "lunch", "dinner", "supper", "morning", "afternoon", "evening");
+
+system ("echo > word.usages");
+
+foreach my $w (@words) {
+    my $cmd = "grep -ni '$w' >> word.usages";
+    print "about to do: $cmd \n";
+	system($cmd);
+    print "processed $w\n";
+}
+
+open (IN, '< word.usages') or die 'could not open word.usages';
+open OUT, '> word.usages.out';
+
+while (<IN>) {
+	#todo do this with uppercasing, etc
+	s/morning/\*\*MORNING\*\*/g;
+    s/afternoon/\*\*AFTERNOON\*\*/g;
+    s/evening/\*\*EVENING\*\*/g;
+    s/breakfast/\*\*BREAKFAST\*\*/g;
+    s/lunch/\*\*LUNCH\*\*/g;
+    s/dinner/\*\*DINNER\*\*/g;
+    s/supper/\*\*SUPPER\*\*/g;
+    print OUT;
+    print ">";
+}
+close IN;
+close OUT;
+
+system "sort -n word.usages.out | uniq > times-of-day.report"
+</pre>
+</blockquote>
+
+<a name="more"></a>
+
+
+<span class="posted">Posted by benrosen at September  6, 2017 12:51 AM
+
+| <a href="../">Up to blog</a>
+<br /></span>
+
+</div>
+
+
+<div class="comments-head"><a name="comments"></a>Comments</div>
+
+
+
+
+
+				      </td>
+				    </tr>
+				  </table>
+				</center>
+				
+		<div width="100%"><table width="100%">
+		       <tr>
+		          <td width="50%" class="left">
+		             <a href='001167.html'>&lt;&lt; Previous Entry</a>
+		          </td>
+		        <td><center><a href="../index.html">To Index</a></center></td>
+		          <td width="50%" class="right">
+		             <a href='001169.html'>Next Entry &gt;&gt;</a>
+		          </td>
+		       </tr>
+		       </table>
+		    </div>
+	
+
+
+				<div align=right  style="padding-top: 20px">
+					<a href="/"><img SRC="../images/br.gif" height=22 width=29></a>
+				</div>
+			</body>
+		</html>
+				

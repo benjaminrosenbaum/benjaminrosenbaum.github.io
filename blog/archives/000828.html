@@ -1,0 +1,172 @@
+
+		<html>		
+			<head>
+		  		<title>Benjamin Rosenbaum: Boxy</title>
+		  		<link rel="stylesheet" href="../styles-site.css" type="text/css" />
+		<!--
+		<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="https://www.benjaminrosenbaum.com/blog/archives/2010_09.html#000828">
+<dc:title>Boxy</dc:title>
+<dc:description>Did I already post this? I don&apos;t believe I did. It&apos;s a little piece of stochastic abstract frame-based HTML web...</dc:description>
+<dc:creator>benrosen</dc:creator>
+<dc:date>2010-09-28T16:07:03+01:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-sa/1.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-sa/1.0/">
+<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+<requires rdf:resource="http://web.resource.org/cc/Notice" />
+<requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+</License>
+</rdf:RDF>
+		-->
+			</head>
+			<body>
+				
+		<div width="100%"><table width="100%">
+		       <tr>
+		          <td width="50%" class="left">
+		             <a href='000841.html'>&lt;&lt; Previous Entry</a>
+		          </td>
+		        
+		          <td width="50%" class="right">
+		             <a href='000846.html'>Next Entry &gt;&gt;</a>
+		          </td>
+		       </tr>
+		       </table>
+		    </div>
+	
+
+				
+
+<table BORDER="0" CELLSPACING="8" cellpadding="3" WIDTH="100%" >
+  <tr>
+    <td><img SRC="../images/journal.gif" height="368" width="152">
+    </td>
+    <td>
+      <table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 WIDTH="100%">
+        <tr>
+           <td width="100%">
+<center><b><font face="Copperplate Gothic Bold"><font size=+1>Journal Entry </font></font></b></center>
+          </td>
+       </tr>
+     </table>
+     
+
+<p><b><font face="Copperplate Gothic Light">
+<a href="../archives/2010_09.html#000828">
+   Tuesday, September 28, 2010 
+</a>
+</font></b>
+
+
+<a name="000828"></a>
+<p><b><font face="Copperplate Gothic Light">
+  <font size=-1>
+  Boxy 
+  </font>
+</font></b>
+
+<p>Did I already post this? I don't believe I did. It's a little piece of stochastic abstract frame-based HTML web art I made:</p>
+
+<center><p><a href="http://benjaminrosenbaum.com/misc/boxy.php">Boxy</a></p></center>
+
+<p>You can hit reload a bunch of times and get different pastel-Mondrian patterns, and you can drag to resize them, too.</p>
+
+<p>What I like about this isn't so much the actual output, as the simplicity of the design -- you can see the very short, oddly recursive program code after the cut.</p>
+
+<a name="more"></a>
+<pre>
+&lt;html>
+&lt;?php 
+  $chance = $_GET["chance"];
+   
+  if (rand(0,99) &lt; $chance) {
+    	$red = rand(0,255);
+	$green = rand(0,255);
+	$blue = rand(0,255);
+	$rgb = "rgb(".$red.",".$green.",".$blue.")";	
+
+?>
+  &lt;head>
+	&lt;style> body { background-color: &lt;?php echo($rgb); ?>; } &lt;/style>
+  &lt;/head>
+  &lt;body>&lt;/body>
+&lt;?php 
+  } else {
+    $what = (rand(0,99) &lt; 50) ? "rows" : "cols";
+	$url = $_SERVER[SCRIPT_URL]."?chance=".($chance + 8);
+ ?>
+   &lt;frameset &lt;?php echo($what); ?>="50%,50%">
+	  &lt;frame scrolling="no" src="&lt;?php echo($url) ?>&a=&lt;?php echo(rand()); ?>" />
+	  &lt;frame scrolling="no" src="&lt;?php echo($url) ?>&b=&lt;?php echo(rand()); ?>" />
+   &lt;/frameset>
+&lt;?php 
+  }
+?>    
+&lt;/html>   
+</pre>  
+
+<span class="posted">Posted by benrosen at September 28, 2010 04:07 PM
+
+| <a href="../">Up to blog</a>
+<br /></span>
+
+</div>
+
+
+<div class="comments-head"><a name="comments"></a>Comments</div>
+
+<div class="comments-body">
+<p>Cool!</p>
+
+<p>But when I dragged to resize, I got an error message that was partially covered by the design, so I couldn't read it.</p>
+
+<p>-Mom</p>
+<span class="comments-post">Posted by: <a name='anchor-7313391'>Karen Rosenbaum</a> at September 29, 2010 12:33 AM</span>
+</div>
+<div class="comments-body">
+<p>Next step?   Write it in this language:<br />
+http://www.dangermouse.net/esoteric/piet/samples.html</p>
+<span class="comments-post">Posted by: jamesG at September 29, 2010 05:30 AM</span>
+</div>
+<div class="comments-body">
+<p>jamesG: that is one cool language!</p>
+
+<p>Mom: how odd, I never got an error resizing. If you get it again, you could right-click on a character, choose "select all" (or press ctrl-A) and then copy, and send it to me... </p>
+<span class="comments-post">Posted by: <a name='anchor-7313391'>Benjamin Rosenbaum</a> at September 29, 2010 07:20 AM</span>
+</div>
+
+
+
+
+				      </td>
+				    </tr>
+				  </table>
+				</center>
+				
+		<div width="100%"><table width="100%">
+		       <tr>
+		          <td width="50%" class="left">
+		             <a href='000841.html'>&lt;&lt; Previous Entry</a>
+		          </td>
+		        <td><center><a href="../index.html">To Index</a></center></td>
+		          <td width="50%" class="right">
+		             <a href='000846.html'>Next Entry &gt;&gt;</a>
+		          </td>
+		       </tr>
+		       </table>
+		    </div>
+	
+
+
+				<div align=right  style="padding-top: 20px">
+					<a href="/"><img SRC="../images/br.gif" height=22 width=29></a>
+				</div>
+			</body>
+		</html>
+				
