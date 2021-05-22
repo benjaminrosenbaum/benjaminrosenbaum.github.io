@@ -98,7 +98,7 @@
 
 <div class="comments-body">
 <p>The only thing I really regret about not getting a formal CS education is that nobody ever made me learn a functional language. (It goes without saying that I'm too lazy to learn one in my spare time.) I read stuff like items 6 and 7 in the "Closure semantics" section (the bound variables bit) and my brain just locks up.</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>David Moles</a> at January  4, 2006 06:43 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>David Moles</a> at January  4, 2006 06:43 PM</span>
 </div>
 <div class="comments-body">
 <p>But that's the really *cool* stuff!</p>
@@ -117,7 +117,7 @@
 <p>That's sort of pseudocode, but you get the idea. The closure knows about the variables' state at the time that it was defined.</p>
 
 <p>Oddly, Javascript 1.2 is actually very close to a functional language, and has closures too. So maybe you do know a functional language, you just don't know that you know one.</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 10:15 AM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Benjamin Rosenbaum</a> at January  5, 2006 10:15 AM</span>
 </div>
 <div class="comments-body">
 <p>Another way to put this is --</p>
@@ -129,7 +129,7 @@
 <p>In Lisp, I could just make functions like that to my heart's content.</p>
 
 <p>I don't know Python or Groovy yet, but it looks like they might be more Lisp-like.</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 10:19 AM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Benjamin Rosenbaum</a> at January  5, 2006 10:19 AM</span>
 </div>
 <div class="comments-body">
 <p>And yet another way to put this (just to further bewilder and bore most of the people who read this blog, which heretofore has not been a programming geekery blog; sorry about that) is that most of the Design Patterns in the Design Patterns book are actually symptoms of a mid-level language. </p>
@@ -143,11 +143,11 @@
 <p>The third mode is where you have programs that are hard in a good way: where you have a hard problem, but the difficulty is a feature of nature, not of a mass of sort-of-contradictory requirements. Something like, say, the core algorithms of indexing the web like Google does, I imagine would fall in this category. Or maybe not? I'm thinking of cases where it'd be a win not to have a large number of somewhat skilled programmers, but rather 1-3 extremely gifted programmers. In this mode, I'd imagine that you want a very concise, powerful, elegant high-level language  (and then you want to profile it and rewrite the bottlenecks in C). </p>
 
 <p>In that sense of truly high-level language, for that kind of problem, you can look at the <a href="http://en.wikipedia.org/wiki/Gang_of_Four_(software)">Gang of Four Design Patterns</a> as "language smells" analgous to Fowler's <a href="http://en.wikipedia.org/wiki/Code_smell">Code smells</a>. If a language forces you to create a Visitor heirarchy rather than just passing in a block of code, it's a mid-level language, along the axis I'm describing.</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 10:34 AM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Benjamin Rosenbaum</a> at January  5, 2006 10:34 AM</span>
 </div>
 <div class="comments-body">
 <p>Oooh, "Let's Pretend" is momentous!  I LOVE that series!  I think my favorite story is "How the sea became salt."  Do you have that one? </p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Ethan</a> at January  5, 2006 01:04 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Ethan</a> at January  5, 2006 01:04 PM</span>
 </div>
 <div class="comments-body">
 <p>What? What?</p>
@@ -159,7 +159,7 @@
 <p>I find only <a href="http://www.sacred-texts.com/neu/hoe/hoe2-25.htm">this</a>...</p>
 
 <p>I always wondered about that...</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 01:11 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Benjamin Rosenbaum</a> at January  5, 2006 01:11 PM</span>
 </div>
 <div class="comments-body">
 <p><i>The closure knows about the variables' state <b>at the time that it was defined</b>.</i> </p>
@@ -169,11 +169,11 @@
 <p>Though the fact that it now doesn't seem nearly as magical makes me think there's probably still something I'm missing. :) </p>
 
 <p>Interesting point about patterns. I'll have to think about that. (But I've certainly spent enough time wrestling with out-of-control visitor architectures to find the idea appealing...)</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>David Moles</a> at January  5, 2006 01:38 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>David Moles</a> at January  5, 2006 01:38 PM</span>
 </div>
 <div class="comments-body">
 <p>Er, before <i>declare things final</i> insert <i>in Java</i>.</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>David Moles</a> at January  5, 2006 01:38 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>David Moles</a> at January  5, 2006 01:38 PM</span>
 </div>
 <div class="comments-body">
 <p>For a sense of why this is useful, look at their example of GVector.apply, and the section on currying.</p>
@@ -188,7 +188,7 @@
 
 <p>Currying gives you another axis to refactor on, and a very flexible one. You can take a very general purpose function with lots of parameters and then curry it by fixing some of its parameters (which might themselves be closures).<br />
 Instead of an inheritance tree, or (because everyone knows inheritance gets rigid) other workarounds like heirarchies of Decorators and Adapters, you can pass something into a function and alter its functionality on the fly. "Old code calling new code" at a finer granularity.</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 01:56 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Benjamin Rosenbaum</a> at January  5, 2006 01:56 PM</span>
 </div>
 <div class="comments-body">
 <p>That is in fact the story I particularly like...  Let's Pretend is an old radio show of fairy tales.   I was just bonking myself on the head for not thinking of getting it for Aviva & Noah before someone else did!  A set of 51 shows is on its way (tell them its a late b-day present): </p>
@@ -198,14 +198,14 @@ Instead of an inheritance tree, or (because everyone knows inheritance gets rigi
 <p>Let's Pretend was the major life work of Nila Mack, a Kansas woman who had been an actress on Broadway and in vaudeville. Mack felt the best way to tell a children's story was to let the children tell it: to develope a company of versitile juvenile talent who could play a variety of changing roles week after week. Child actors played parts of characters their own ages to 80 year old people. Mac "trained and directed two generations of child actors" before passing away in 1953. She was lauded as "the fairy god-mother of radio."</p>
 
 <p>SOURCE: The Encyclopedia of Old Time Radio, John Dunning</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Ethan</a> at January  5, 2006 01:57 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Ethan</a> at January  5, 2006 01:57 PM</span>
 </div>
 <div class="comments-body">
 <p>Crazy - I just went over to read about closures, and it hurt my brain, but in a good way. Seems like a closure lets you define a variable as a method, then treat that variable like a class method, yes? Is there anything else fundamental I should understand about closures?</p>
 
 <p>peace<br />
 Matt, dung-beetle of coders</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>matthulan</a> at January  5, 2006 04:00 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>matthulan</a> at January  5, 2006 04:00 PM</span>
 </div>
 <div class="comments-body">
 <p>Well, it lets you stick a method into a variable, and pass it around -- like function pointers in C++. That's one thing. But it also does two other things: it remembers the whole state of the local frame (local variables, etc) at the time of its definition, and it lets you bind its parameters at different times - that's called currying.</p>
@@ -213,24 +213,24 @@ Matt, dung-beetle of coders</p>
 <p>So say you have a closure that takes three arguments. You can just bind the first one, making a new closure, then pass that closure around somewhere else, and later set the other two arguments and call the function (as many times as you like, with different arguments for the latter two functions).</p>
 
 <p>Consider that you can pass closures into closures as arguments, and that saving the state of all the local variables (which may be objects) means closures, like objects, have state as well as behavior... and you can see that this is an insanely generic and powerful mechanism. The object-oriented paradigm the four of us are more used to is a way of selecting a particular, limited subset of this power, for sanity's sake.</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 04:07 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Benjamin Rosenbaum</a> at January  5, 2006 04:07 PM</span>
 </div>
 <div class="comments-body">
 <p>David, I think the closure has a copy of the stack, so if you write to the local variables that doesn't get propagated to the local variables in the context outside the closure (typically they are gone anyway).</p>
 
 <p><br />
 </p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January  5, 2006 04:10 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Benjamin Rosenbaum</a> at January  5, 2006 04:10 PM</span>
 </div>
 <div class="comments-body">
 <p>"Let's Pretend" was MY favorite radio program when I was a child!  In fact, the radio program I was ON, as a child actress, was the Cleveland version, a product of Station WERE, called "WERE Pretending"!  I want to hear what Ethan sent when I can, OK?</p>
 
 <p>Love, Grandma</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Karen Rosenbau;m</a> at January 11, 2006 08:40 PM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Karen Rosenbau;m</a> at January 11, 2006 08:40 PM</span>
 </div>
 <div class="comments-body">
 <p>*I* want to hear you as a child actress! Was the show recorded?</p>
-<span class="comments-post">Posted by: <a name='anchor-7378265'>Benjamin Rosenbaum</a> at January 12, 2006 09:23 AM</span>
+<span class="comments-post">Posted by: <a name='anchor-3261956'>Benjamin Rosenbaum</a> at January 12, 2006 09:23 AM</span>
 </div>
 
 
