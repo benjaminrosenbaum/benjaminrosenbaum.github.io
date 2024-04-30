@@ -135,7 +135,7 @@ File.open('index.html', 'w') do |f|
 		f.write(line) 
 		if (line.start_with? "<!-- NEXT-ENTRY -->")
 			f.write("<li>#{now.strftime "%Y-%m-%d"}: <a href=\"archives/#{$curr}.html\">#{title}</a>\n")
-	    end
+	  end
 	end
 end
 
@@ -143,9 +143,11 @@ File.open("archives/#{$prev}.html", 'w') do |f|
 	File.readlines('prev-tmp').each do |line|
 		if (line.include? "<!--NEXT-ENTRY-LINK-->")
 			f.write("		             <!--NEXT-ENTRY-LINK--><a href='#{$curr}.html'>Next Entry &gt;&gt;</a>\n")
-	    else
-	    	f.write(line)
-	    end
+	  elsif (line =~ /^\s*--\s*/)
+	  	f.write("<hr/>\n")
+	 	else
+	    f.write(line)
+	  end
 	end
 end
 
