@@ -7,9 +7,14 @@ now = DateTime.now
 
 # regexes
 
-if ARGV.length != 3
-	puts "Usage: new-blog.rb title description prev-id  < blog-contents > output.html"
+if ARGV.length < 3
+	puts "Usage: new-blog.rb [--edit] title description prev-id  < blog-contents > output.html"
 	exit 1
+end
+
+if ARGV[0] == "--edit"
+	$edit = true
+	ARGV.shift
 end
 
 title = coder.encode ARGV[0].capitalize, :named
@@ -128,24 +133,26 @@ def footer now
 	}
 end
 
-`cp index.html old-index.html; cp archives/#{$prev}.html prev-tmp`
+unless $edit
+	`cp index.html old-index.html; cp archives/#{$prev}.html prev-tmp`
 
-File.open('index.html', 'w') do |f| 
-	File.readlines('old-index.html').each do |line|
-		f.write(line) 
-		if (line.start_with? "<!-- NEXT-ENTRY -->")
-			f.write("<li>#{now.strftime "%Y-%m-%d"}: <a href=\"archives/#{$curr}.html\">#{title}</a>\n")
-	  end
+	File.open('index.html', 'w') do |f| 
+		File.readlines('old-index.html').each do |line|
+			f.write(line) 
+			if (line.start_with? "<!-- NEXT-ENTRY -->")
+				f.write("<li>#{now.strftime "%Y-%m-%d"}: <a href=\"archives/#{$curr}.html\">#{title}</a>\n")
+		  end
+		end
 	end
-end
 
-File.open("archives/#{$prev}.html", 'w') do |f| 
-	File.readlines('prev-tmp').each do |line|
-		if (line.include? "<!--NEXT-ENTRY-LINK-->")
-			f.write("		             <!--NEXT-ENTRY-LINK--><a href='#{$curr}.html'>Next Entry &gt;&gt;</a>\n")
-	 	else
-	    f.write(line)
-	  end
+	File.open("archives/#{$prev}.html", 'w') do |f| 
+		File.readlines('prev-tmp').each do |line|
+			if (line.include? "<!--NEXT-ENTRY-LINK-->")
+				f.write("		             <!--NEXT-ENTRY-LINK--><a href='#{$curr}.html'>Next Entry &gt;&gt;</a>\n")
+		 	else
+		    f.write(line)
+		  end
+		end
 	end
 end
 
