@@ -143,8 +143,6 @@ File.open("archives/#{$prev}.html", 'w') do |f|
 	File.readlines('prev-tmp').each do |line|
 		if (line.include? "<!--NEXT-ENTRY-LINK-->")
 			f.write("		             <!--NEXT-ENTRY-LINK--><a href='#{$curr}.html'>Next Entry &gt;&gt;</a>\n")
-	  elsif (line =~ /^\s*--\s*/)
-	  	f.write("<hr/>\n")
 	 	else
 	    f.write(line)
 	  end
@@ -154,7 +152,11 @@ end
 
 puts header title, description, now
 STDIN.each do |line|
-	puts "<p>#{line}</p>"
+	 if (line =~ /^\s*--\s*/)
+	  	puts("<hr/>")
+	 else
+		puts "<p>#{line.chomp}</p>"
+	 end
 end
 puts footer now
 
