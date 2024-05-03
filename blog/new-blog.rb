@@ -183,7 +183,7 @@ STDIN.each do |line|
 	 		links = { :Facebook => $fblink, :Bluesky => $mslink, :Mastodon => $mslink }.reject{|k, v| !v}
 	 		threads = "thread#{links.length > 1 ? "s" : ""}"
 	 		cp = "[You can comment on the #{links.map{|k,v| "<a href=#{v}>#{k}</a>"}.join(", ")} #{threads}.]" if links.any?{|k,v| v}
-	 		puts "   <!--CROSSPOST-->#{cp}"
+	 		puts "   <p><!--CROSSPOST-->#{cp}</p>"
 	 else
 		puts "<p>#{line.chomp}</p>"
 	 end
