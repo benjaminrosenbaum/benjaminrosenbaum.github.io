@@ -1,5 +1,6 @@
 #! /usr/bin/env ruby
 
+# this is probably not needed, if you save files in UTF8, but just in case...
 
 REPLS = {
 	   "À"  =>  "&Agrave;",
