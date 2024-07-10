@@ -7,10 +7,33 @@ now = DateTime.now
 
 # regexes
 
-if ARGV.length != 3
-	puts "Usage: new-blog.rb title description prev-id  < blog-contents > output.html"
+if ARGV.length < 3
+	puts "Usage: new-blog.rb [--edit] [--fblink URL] [--bslink URL] [--mslink URL] title description prev-id  < blog-contents > output.html"
+	puts "       supports <!--NEXT-ENTRY-LINK--> and <!--CROSSPOST--> placeholders in blog body"
 	exit 1
 end
+
+if ARGV[0] == "--edit"
+	$edit = true
+	ARGV.shift
+end
+
+if ARGV[0] == "--fblink"
+	ARGV.shift
+	$fblink = ARGV.shift
+end
+
+if ARGV[0] == "--bslink"
+	ARGV.shift
+	$bslink = ARGV.shift
+end
+
+if ARGV[0] == "--mslink"
+	ARGV.shift
+	$mslink = ARGV.shift
+end
+
+
 
 title = coder.encode ARGV[0].capitalize, :named
 description = coder.encode ARGV[1], :named
@@ -29,7 +52,7 @@ def header title, description, now
 			<head>
 		  		<title>Benjamin Rosenbaum: #{title}</title>
 		  		<link rel="stylesheet" href="../styles-site.css" type="text/css" />
-		<!--
+		      <!--
 		<rdf:RDF xmlns="https://web.resource.org/cc/"
          xmlns:dc="https://purl.org/dc/elements/1.1/"
          xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -49,7 +72,7 @@ def header title, description, now
     <permits rdf:resource="https://web.resource.org/cc/DerivativeWorks" />
     </License>
     </rdf:RDF>
-		-->
+		       -->
 			</head>
 	<body>
 				
@@ -105,7 +128,7 @@ def footer now
 	full_time = now.strftime "%A, %B %d, %Y at %H:%M:%S"
 
 	%Q{
-	                    <span class="posted">Posted by Benjamin Rosenbaum at #{full_time}
+	                    <span class="posted">#{ $edit ? "Last edited" : "Posted"} by Benjamin Rosenbaum at #{full_time}
 	                    
 	                    | <a href="../">Up to blog</a>
 	                    <br /></span>
@@ -128,31 +151,42 @@ def footer now
 	}
 end
 
-`cp index.html old-index.html; cp archives/#{$prev}.html prev-tmp`
+unless $edit
+	`cp index.html old-index.html; cp archives/#{$prev}.html prev-tmp`
 
-File.open('index.html', 'w') do |f| 
-	File.readlines('old-index.html').each do |line|
-		f.write(line) 
-		if (line.start_with? "<!-- NEXT-ENTRY -->")
-			f.write("<li>#{now.strftime "%Y-%m-%d"}: <a href=\"archives/#{$curr}.html\">#{title}</a>\n")
-	    end
+	File.open('index.html', 'w') do |f| 
+		File.readlines('old-index.html').each do |line|
+			f.write(line) 
+			if (line.start_with? "<!-- NEXT-ENTRY -->")
+				f.write("<li>#{now.strftime "%Y-%m-%d"}: <a href=\"archives/#{$curr}.html\">#{title}</a>\n")
+		  end
+		end
 	end
-end
 
-File.open("archives/#{$prev}.html", 'w') do |f| 
-	File.readlines('prev-tmp').each do |line|
-		if (line.include? "<!--NEXT-ENTRY-LINK-->")
-			f.write("		             <!--NEXT-ENTRY-LINK--><a href='#{$curr}.html'>Next Entry &gt;&gt;</a>\n")
-	    else
-	    	f.write(line)
-	    end
+	File.open("archives/#{$prev}.html", 'w') do |f| 
+		File.readlines('prev-tmp').each do |line|
+			if (line.include? "<!--NEXT-ENTRY-LINK-->")
+				f.write("		             <!--NEXT-ENTRY-LINK--><a href='#{$curr}.html'>Next Entry &gt;&gt;</a>\n")
+		 	else
+		    f.write(line)
+		  end
+		end
 	end
 end
 
 
 puts header title, description, now
 STDIN.each do |line|
-	puts "<p>#{line}</p>"
+	 if (line =~ /^\s*--\s*$/)
+	  	puts("<hr/>")
+	 elsif (line =~ /<!--CROSSPOST-->/) 
+	 		links = { :Facebook => $fblink, :Bluesky => $mslink, :Mastodon => $mslink }.reject{|k, v| !v}
+	 		threads = "thread#{links.length > 1 ? "s" : ""}"
+	 		cp = "[You can comment on the #{links.map{|k,v| "<a href=#{v}>#{k}</a>"}.join(", ")} #{threads}.]" if links.any?{|k,v| v}
+	 		puts "   <p><!--CROSSPOST-->#{cp}</p>"
+	 else
+		puts "<p>#{line.chomp}</p>"
+	 end
 end
 puts footer now
 
