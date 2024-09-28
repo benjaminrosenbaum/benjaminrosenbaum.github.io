@@ -71,6 +71,8 @@
   </font>
 </font></b>
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 <p>I've been learning and thinking a lot while following the <a href="../archives/2009_03.html#000718">Ra<span style="display:none">Google, don't index this as white people have authored the pages in the first goddamn seven hits of the relevant search</span>ceFai<span/>l '09</a>.... </p>
 
 <p>The other night, inspired by <a href="https://whatever.scalzi.com/2009/03/13/mary-anne-mohanraj-gets-you-up-to-speed-part-ii/">Mary Anne's latest post chez Scalzi</a>, and also, and in particular, by nojojo's analysis of her own work in her post <a href="https://nojojojo.livejournal.com/161692.html">"we worry about it too"</a> -- and being that I am <a href="../archives/2008_04.html#000608">a statistics-lovin' geek</a> like that -- I skimmed through my own short story collection, <a href="https://theantking.com">The Ant King and Other Stories</a>, trying to get a sense of how I handle race, ethnicity, and other kinds of difference.</p>
@@ -105,32 +107,43 @@
 
 <p><!--img src="http://chart.apis.google.com/chart?cht=p3&chd=t:18,13,20,4,66&chs=550x100&chl=POC|nonhuman(reading+nonwhite)|racially+ambiguous|nonhuman(reading+white)|white" width="550" height="100" /--></p>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-       <div id="Race_chart" style="width: 900px; height: 500px;"></div>
+<div id="Race_chart" style="width: 900px; height: 500px;"></div>
 <script>
     google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
 
-        var datasets = { "Race" :[
-          ['Race', '# characters'],
-          ['White',     66],
-          ['Nonhuman (reading white)', 4],
-          ['Racially ambiguous',  20],
-          ['Nonhuman (reading nonwhite)', 13],
-          ['POC',    13]
-        ]}
+        var datasets = { 
+          "Race" :[
+                    ['Race', '# characters'],
+                    ['White',     66],
+                    ['Nonhuman (reading white)', 4],
+                    ['Racially ambiguous',  20],
+                    ['Nonhuman (reading nonwhite)', 13],
+                    ['POC',    13]
+                  ],
+          "Religion" :[
+                    ['Religion', '# characters'],
+                    ['Buddhists',      1],
+                    ['Dagonites', 2],
+                    ['Hindus',  3],
+                    ['Jews and quasi-Jews',  9],
+                    ['village polytheists', 22],
+                    ['no religion stated',    94]
+                  ]}
 
-        var data = google.visualization.arrayToDataTable(datasets["Race"]);
+        for (set in datasets) {
+          var data = google.visualization.arrayToDataTable(datasets[set]);
 
-        var options = {
-          title: 'Race in The Ant King and other stories'
-        };
+          var options = {
+            title: set + " in The Ant King and other stories"
+          };
 
-        var chart = new google.visualization.PieChart(document.getElementById('Race_chart'));
-
-        chart.draw(data, options);
+          var chart = new google.visualization.PieChart(document.getElementById(set + '_chart'));
+  
+          chart.draw(data, options);
+        }
       }
 </script>
 
@@ -151,7 +164,9 @@
   </ul>
   No one is ever explicitly marked as Christian; but, of course, no one needs to be: otherwise unmarked contemporary characters read as either <b>Christian or secular post-Christian</b>, depending on region and class ("aging rural store managers" are Christian; their "estranged lesbian daughters on Wall Street" are post-, right?).
 
-<p><img src='https://chart.apis.google.com/chart?cht=p3&chd=t:1,2,3,9,12,94&chs=550x100&chl=Buddhists|Dagonites|Hindus|Jews+and+quasi-Jews|"village+polytheists"|no+religion+stated' width="550" height="100" /><br />
+<p><!--img src='https://chart.apis.google.com/chart?cht=p3&chd=t:1,2,3,9,12,94&chs=550x100&chl=Buddhists|Dagonites|Hindus|Jews+and+quasi-Jews|"village+polytheists"|no+religion+stated' width="550" height="100" /-->
+  <div id="Religion_chart" style="width: 900px; height: 500px;"></div>
+  <br />
   </ul></p>
 
 <p><h3><a name="sexuality"></a><i>Sexuality</i></h3></p>
