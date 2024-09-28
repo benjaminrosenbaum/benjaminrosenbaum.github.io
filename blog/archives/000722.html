@@ -106,27 +106,29 @@
 <p><!--img src="http://chart.apis.google.com/chart?cht=p3&chd=t:18,13,20,4,66&chs=550x100&chl=POC|nonhuman(reading+nonwhite)|racially+ambiguous|nonhuman(reading+white)|white" width="550" height="100" /--></p>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-       <div id="race_chart" style="width: 900px; height: 500px;"></div>
+       <div id="Race_chart" style="width: 900px; height: 500px;"></div>
 <script>
     google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
 
-        var data = google.visualization.arrayToDataTable([
+        var datasets = { "Race" :[
           ['Race', '# characters'],
           ['White',     66],
           ['Nonhuman (reading white)', 4],
           ['Racially ambiguous',  20],
           ['Nonhuman (reading nonwhite)', 13],
           ['POC',    13]
-        ]);
+        ]}
+
+        var data = google.visualization.arrayToDataTable(datasets["Race"]);
 
         var options = {
           title: 'Race in The Ant King and other stories'
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('race_chart'));
+        var chart = new google.visualization.PieChart(document.getElementById('Race_chart'));
 
         chart.draw(data, options);
       }
