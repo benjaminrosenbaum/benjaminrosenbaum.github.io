@@ -71,6 +71,8 @@
   </font>
 </font></b>
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 <p>I've been learning and thinking a lot while following the <a href="../archives/2009_03.html#000718">Ra<span style="display:none">Google, don't index this as white people have authored the pages in the first goddamn seven hits of the relevant search</span>ceFai<span/>l '09</a>.... </p>
 
 <p>The other night, inspired by <a href="https://whatever.scalzi.com/2009/03/13/mary-anne-mohanraj-gets-you-up-to-speed-part-ii/">Mary Anne's latest post chez Scalzi</a>, and also, and in particular, by nojojo's analysis of her own work in her post <a href="https://nojojojo.livejournal.com/161692.html">"we worry about it too"</a> -- and being that I am <a href="../archives/2008_04.html#000608">a statistics-lovin' geek</a> like that -- I skimmed through my own short story collection, <a href="https://theantking.com">The Ant King and Other Stories</a>, trying to get a sense of how I handle race, ethnicity, and other kinds of difference.</p>
@@ -103,7 +105,55 @@
            <li><b>2</b> register as <b>"robotically nonracial"</b> to me (the Wisdom Ant and Wisdom Servant from "Biographical Notes", though a case could be made for either being South Asian as they seem to be of Aryan Raj construction; they're as South Asian as R2D2 is white, I guess).<br />
 </ul></p>
 
-<p><img src="https://chart.apis.google.com/chart?cht=p3&chd=t:18,13,20,4,66&chs=550x100&chl=POC|nonhuman(reading+nonwhite)|racially+ambiguous|nonhuman(reading+white)|white" width="550" height="100" /></p>
+<p><!--img src="http://chart.apis.google.com/chart?cht=p3&chd=t:18,13,20,4,66&chs=550x100&chl=POC|nonhuman(reading+nonwhite)|racially+ambiguous|nonhuman(reading+white)|white" width="550" height="100" /--></p>
+
+<div id="Race_chart" style="width: 900px; height: 500px;"></div>
+<script>
+    google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var datasets = { 
+          "Race" :[
+                    ['Race', '# characters'],
+                    ['White',     66],
+                    ['Nonhuman (reading white)', 4],
+                    ['Racially ambiguous',  20],
+                    ['Nonhuman (reading nonwhite)', 13],
+                    ['POC',    13]
+                  ],
+          "Religion" :[
+                    ['Religion', '# characters'],
+                    ['Buddhists',      1],
+                    ['Dagonites', 2],
+                    ['Hindus',  3],
+                    ['Jews and quasi-Jews',  9],
+                    ['village polytheists', 22],
+                    ['no religion stated',    94]
+                  ],
+          "Sexuality" :[
+                    ['Sexuality', '# characters'],
+                    ['Explicitly queer', 5],
+                    ['Arguably queer',   5],
+                    ['Paraqueer', 9],
+                    ['Straight or unmarked',  102]
+                  ],
+        }
+
+        for (set in datasets) {
+          var data = google.visualization.arrayToDataTable(datasets[set]);
+
+          var options = {
+            title: set + " in The Ant King and other stories"
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById(set + '_chart'));
+  
+          chart.draw(data, options);
+        }
+      }
+</script>
 
 <p>(I ignored nonspeaking "henchmen" whose only actions are explicitly directed by speaking characters, such as the Ant King's henchmen, or the various non-speaking pirates in "Biographical Notes" or Max's gym buddies in "Start the Clock" -- in the latter two cases explicitly ethnically mixed groups).</p>
 
@@ -122,7 +172,9 @@
   </ul>
   No one is ever explicitly marked as Christian; but, of course, no one needs to be: otherwise unmarked contemporary characters read as either <b>Christian or secular post-Christian</b>, depending on region and class ("aging rural store managers" are Christian; their "estranged lesbian daughters on Wall Street" are post-, right?).
 
-<p><img src='https://chart.apis.google.com/chart?cht=p3&chd=t:1,2,3,9,12,94&chs=550x100&chl=Buddhists|Dagonites|Hindus|Jews+and+quasi-Jews|"village+polytheists"|no+religion+stated' width="550" height="100" /><br />
+<p><!--img src='https://chart.apis.google.com/chart?cht=p3&chd=t:1,2,3,9,12,94&chs=550x100&chl=Buddhists|Dagonites|Hindus|Jews+and+quasi-Jews|"village+polytheists"|no+religion+stated' width="550" height="100" /-->
+  <div id="Religion_chart" style="width: 900px; height: 500px;"></div>
+  <br />
   </ul></p>
 
 <p><h3><a name="sexuality"></a><i>Sexuality</i></h3></p>
@@ -131,7 +183,9 @@
 <li> <b>5</b> are <b>arguably queer</b> (in "Orphans", the old lady has a thing for elephants; in "Red Leather Tassels"  George's wife has a thing for cartoons -- although the woodpecker's reciprocal lust reads, to me, as heteronormative despite being equally transspecies!; and "<a href="https://www.strangehorizons.com/index.pl?Contents=/2003/20030317/jashar.shtml">The Book of Jashar</a>" adds further textual evidence to support inferences about the passionate relationship between David and Jonathan <a href="https://en.wikipedia.org/wiki/David_and_Jonathan">already implied by the canonical text</a>). 
 <li>In addition, the <b>9</b> characters in Start the Clock who are arrested at pre-pubescent ages are <i>something</i> -- being proudly or at least indifferently nonsexual (presexual? postsexual? or maybe just differently sexual -- maybe they play doctor?) is clearly a part of their identity. I think that, like the spacers in "Aye, and Gomorrah", they're sexually othered in the <i>reader's</i> experience -- but unlike those spacers, they are <i>normative</i> for their own world and generation -- though part of that is the result of years of work by activists like Suze. Anyway, for now let's call them "paraqueer".
 
-<p><img src='https://chart.apis.google.com/chart?cht=p3&chd=t:5,5,9,102&chs=550x100&chl=explicitly+queer|arguably+queer|"paraqueer"|straight+or+"unmarked"' width="550" height="100" /><br />
+<p><!--img src='https://chart.apis.google.com/chart?cht=p3&chd=t:5,5,9,102&chs=550x100&chl=explicitly+queer|arguably+queer|"paraqueer"|straight+or+"unmarked"' width="550" height="100" /-->
+  <div id="Sexuality_chart" style="width: 900px; height: 500px;"></div>
+  <br />
 </ul></p>
 
 <p><h3><i><a name="fail"></a>Instances of Fail</i></h3></p>

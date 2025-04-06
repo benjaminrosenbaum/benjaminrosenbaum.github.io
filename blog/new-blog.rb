@@ -9,7 +9,7 @@ now = DateTime.now
 
 if ARGV.length < 3
 	puts "Usage: new-blog.rb [--edit] [--fblink URL] [--bslink URL] [--mslink URL] title description prev-id  < blog-contents > output.html"
-	puts "       supports <!--NEXT-ENTRY-LINK--> and <!--CROSSPOST--> placeholders in blog body"
+	puts "       supports <!--NEXT-ENTRY-LINK--> and <!--CROSSPOST--> placeholders in blog body. CROSSPOST is where social media links go."
 	exit 1
 end
 
