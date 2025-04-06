@@ -1,3 +1,4 @@
+Statistics for The First Change
 primaries: [:physical, :social, :mental, :athletics, :brawl, :survival, :stealth, :animal_ken, :insight, :intimidation, :leadership, :persuasion, :subterfuge, :academics, :awareness, :investigation, :occult], opposed: [:spiritual, :practical, :agreeable, :confrontational, :hopeful, :wary, :dutiful, :adventurous]
  COV is the coefficient of variance, a unitless measure of how broad the curve is, stdev/mean
  COV2 is COV using max instead of mean, better for non-normal right-tailed distributions like magic
