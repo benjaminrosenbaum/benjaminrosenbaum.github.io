@@ -1,106 +1,752 @@
-<h2>Statistics for The First Change</h2><div style="font-family: Consolas,'courier new';"><pre>
-primaries: [:physical, :social, :mental, :athletics, :brawl, :survival, :stealth, :animal_ken, :insight, :intimidation, :leadership, :persuasion, :subterfuge, :academics, :awareness, :investigation, :occult], opposed: [:spiritual, :practical, :agreeable, :confrontational, :hopeful, :wary, :dutiful, :adventurous]
- COV is the coefficient of variance, a unitless measure of how broad the curve is, stdev/mean
- COV2 is COV using max instead of mean, better for non-normal right-tailed distributions like magic
- PMODE is what proportion are the mode, to identify untouched stats
-
+<h2>Statistics for The First Change</h2>
+ COV is the coefficient of variance, a unitless measure of how broad the curve is, stdev/mean<br/>
+ COV2 is COV using max instead of mean, better for non-normal right-tailed distributions like magic<br/>
+ PMODE is what proportion are the mode, to identify untouched stats<br/>
+<br/>
 Sorted by pmode:
-
-
-=========================================================================================
-= Primary, Reputational, and Opposed Stats                                              =
-=========================================================================================
-STAT                                 MEAN    STDDEV   COV     MAX    COV2    PMODE    MIN
-rep_con_pack                         22.01   3.4691   15.76%    28    12.39%   74.90%   20  
-animal_ken                           13.02   4.2490   32.64%    19    22.36%   66.48%   10  
-brawl                                13.73   4.6877   34.15%    29    16.16%   54.58%   10  
-athletics                            14.32   5.6001   39.10%    29    19.31%   53.64%   10  
-occult                               15.93   5.8722   36.86%    34    17.27%   44.60%   10  
-survival                             17.24   6.5253   37.84%    34    19.19%   43.88%   10  
-academics                            19.93   7.3448   36.86%    40    18.36%   42.16%   10  
-stealth                              18.68   7.2051   38.57%    46    15.66%   41.88%   10  
-leadership                           16.74   6.3189   37.75%    34    18.58%   39.52%   10  
-subterfuge                           18.99   7.2974   38.43%    46    15.86%   37.06%   10  
-intimidation                         18.14   6.6561   36.69%    38    17.52%   30.16%   10  
-persuasion                           18.99   6.9844   36.78%    45    15.52%   29.32%   10  
-investigation                        25.68   7.9086   30.79%    53    14.92%   26.08%   10  
-awareness                            21.09   7.3138   34.67%    46    15.90%   24.56%   10  
-insight                              29.33   9.1967   31.36%    59    15.59%   23.70%   10  
-physical                             33.64   7.6862   22.85%    55    13.97%   13.22%   19  
-dutiful                              47.91   7.9596   16.61%    72    11.05%   11.96%   26  
-adventurous                          52.09   7.9596   15.28%    75    10.61%   11.96%   28  
-hopeful                              44.82   7.8324   17.47%    69    11.35%   11.30%   24  
-wary                                 55.18   7.8324   14.19%    80    9.79%   11.30%   31  
-spiritual                            45.59   7.9445   17.43%    69    11.51%   10.56%   22  
-practical                            54.41   7.9445   14.60%    78    10.19%   10.56%   31  
-social                               37.81   8.5018   22.49%    67    12.69%   10.26%   19  
-mental                               36.70   8.4078   22.91%    59    14.25%   9.92%   19  
-confrontational                      52.59   9.1807   17.46%    82    11.20%   7.50%   27  
-agreeable                            47.41   9.1807   19.37%    74    12.41%   7.50%   24  
-
-
-=========================================================================================
-= Relational Stats                                                                      =
-=========================================================================================
-STAT                                 MEAN    STDDEV   COV     MAX    COV2    PMODE    MIN
-luna_like                            49.51   0.8595   1.74%    50    1.72%   75.56%   48  
-raven_like                           52.81   4.5113   8.54%    69    6.54%   54.80%   48  
-sarah_like                           54.94   6.9584   12.67%    72    9.66%   17.84%   37  
-dad_like                             59.85   5.3259   8.90%    74    7.20%   13.20%   42  
-
-
-=========================================================================================
-= Romance Stats                                                                         =
-=========================================================================================
-STAT                                 MEAN    STDDEV   COV     MAX    COV2    PMODE    MIN
-raven_flirts                          0.45   2.0732   460.72%    10    20.73%   95.50%   00  
-all_flirts                            0.45   2.0732   460.72%    10    20.73%   95.50%   00  
-
-
-=========================================================================================
-= Secondary and Goal Stats                                                              =
-=========================================================================================
-STAT                                 MEAN    STDDEV   COV     MAX    COV2    PMODE    MIN
-maxcrush                              0.45   2.0732   460.72%    10    20.73%   95.50%   00  
-stress                                2.04   3.7214   182.87%    14    26.58%   72.06%   00  
-ev_bedtime_choice                     3.73   2.0062   53.78%    08    25.08%   36.32%   02  
-attachment_to_raven                  55.39   5.5873   10.09%    76    7.35%   29.48%   48  
-attachment_to_dad                    55.82   5.2488   9.40%    70    7.50%   17.80%   39  
-attachment_to_sarah                  52.91   4.5186   8.54%    65    6.95%   15.82%   45  
-
-
-=========================================================================================
-= Unused Stats                                                                          =
-=========================================================================================
-STAT                                 MEAN    STDDEV   COV     MAX    COV2    PMODE    MIN
-current_chapter                      11.00   0.0000   0.00%    11    0.00%   100.00%   11  
-raven_romance                         0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-jade_like                            50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-jade_romance                          0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-jade_flirts                           0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-attachment_to_jade                   50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-isaiah_like                          50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-isaiah_romance                        0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-isaiah_flirts                         0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-attachment_to_isaiah                 50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-luna_romance                          0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-luna_flirts                           0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-attachment_to_luna                   50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-sparks_like                          50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-skye_like                            50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-charlene_like                        50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-wylie_like                           50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-rep_anticon_pack                     20.00   0.0000   0.00%    20    0.00%   100.00%   20  
-rep_humans                           50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-auspice                               1.00   0.0000   0.00%    01    0.00%   100.00%   01  
-embrace_the_wolf                      0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-touchstone_meter                     50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-mystical_meter                        0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-aunt_sarah_danger                    50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-friend_group_tension                 20.00   0.0000   0.00%    20    0.00%   100.00%   20  
-packs_tension                        50.00   0.0000   0.00%    50    0.00%   100.00%   50  
-anticon_pack_agitation               20.00   0.0000   0.00%    20    0.00%   100.00%   20  
-anticon_pack_intel                    0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-all_romance                           0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-rage                                  0.00   0.0000   0.00%    00    0.00%   100.00%   00  
-</pre></div>
+<br/>
+<h4>Primary, Reputational, and Opposed Stats</h4>
+<table>
+  <tr>
+    <th>STAT</th>
+    <th>MEAN</th>
+    <th>STDDEV</th>
+    <th>COV</th>
+    <th>MAX</th>
+    <th>COV2</th>
+    <th>PMODE</th>
+    <th>MIN</th>
+  </tr>
+  <tr>
+    <td>rep_con_pack</td>
+    <td>22.01</td>
+    <td>3.47</td>
+    <td>15.76%</td>
+    <td>28</td>
+    <td>12.39%</td>
+    <td>-74.90%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>animal_ken</td>
+    <td>13.02</td>
+    <td>4.25</td>
+    <td>32.64%</td>
+    <td>19</td>
+    <td>22.36%</td>
+    <td>-66.48%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>brawl</td>
+    <td>13.73</td>
+    <td>4.69</td>
+    <td>34.15%</td>
+    <td>29</td>
+    <td>16.16%</td>
+    <td>-54.58%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>athletics</td>
+    <td>14.32</td>
+    <td>5.60</td>
+    <td>39.10%</td>
+    <td>29</td>
+    <td>19.31%</td>
+    <td>-53.64%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>occult</td>
+    <td>15.93</td>
+    <td>5.87</td>
+    <td>36.86%</td>
+    <td>34</td>
+    <td>17.27%</td>
+    <td>-44.60%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>survival</td>
+    <td>17.24</td>
+    <td>6.53</td>
+    <td>37.84%</td>
+    <td>34</td>
+    <td>19.19%</td>
+    <td>-43.88%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>academics</td>
+    <td>19.93</td>
+    <td>7.34</td>
+    <td>36.86%</td>
+    <td>40</td>
+    <td>18.36%</td>
+    <td>-42.16%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>stealth</td>
+    <td>18.68</td>
+    <td>7.21</td>
+    <td>38.57%</td>
+    <td>46</td>
+    <td>15.66%</td>
+    <td>-41.88%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>leadership</td>
+    <td>16.74</td>
+    <td>6.32</td>
+    <td>37.75%</td>
+    <td>34</td>
+    <td>18.58%</td>
+    <td>-39.52%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>subterfuge</td>
+    <td>18.99</td>
+    <td>7.30</td>
+    <td>38.43%</td>
+    <td>46</td>
+    <td>15.86%</td>
+    <td>-37.06%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>intimidation</td>
+    <td>18.14</td>
+    <td>6.66</td>
+    <td>36.69%</td>
+    <td>38</td>
+    <td>17.52%</td>
+    <td>-30.16%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>persuasion</td>
+    <td>18.99</td>
+    <td>6.98</td>
+    <td>36.78%</td>
+    <td>45</td>
+    <td>15.52%</td>
+    <td>-29.32%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>investigation</td>
+    <td>25.68</td>
+    <td>7.91</td>
+    <td>30.79%</td>
+    <td>53</td>
+    <td>14.92%</td>
+    <td>-26.08%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>awareness</td>
+    <td>21.09</td>
+    <td>7.31</td>
+    <td>34.67%</td>
+    <td>46</td>
+    <td>15.90%</td>
+    <td>-24.56%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>insight</td>
+    <td>29.33</td>
+    <td>9.20</td>
+    <td>31.36%</td>
+    <td>59</td>
+    <td>15.59%</td>
+    <td>-23.70%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>physical</td>
+    <td>33.64</td>
+    <td>7.69</td>
+    <td>22.85%</td>
+    <td>55</td>
+    <td>13.97%</td>
+    <td>-13.22%</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>dutiful</td>
+    <td>47.91</td>
+    <td>7.96</td>
+    <td>16.61%</td>
+    <td>72</td>
+    <td>11.05%</td>
+    <td>-11.96%</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>adventurous</td>
+    <td>52.09</td>
+    <td>7.96</td>
+    <td>15.28%</td>
+    <td>75</td>
+    <td>10.61%</td>
+    <td>-11.96%</td>
+    <td>28</td>
+  </tr>
+  <tr>
+    <td>hopeful</td>
+    <td>44.82</td>
+    <td>7.83</td>
+    <td>17.47%</td>
+    <td>69</td>
+    <td>11.35%</td>
+    <td>-11.30%</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>wary</td>
+    <td>55.18</td>
+    <td>7.83</td>
+    <td>14.19%</td>
+    <td>80</td>
+    <td>9.79%</td>
+    <td>-11.30%</td>
+    <td>31</td>
+  </tr>
+  <tr>
+    <td>spiritual</td>
+    <td>45.59</td>
+    <td>7.94</td>
+    <td>17.43%</td>
+    <td>69</td>
+    <td>11.51%</td>
+    <td>-10.56%</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>practical</td>
+    <td>54.41</td>
+    <td>7.94</td>
+    <td>14.60%</td>
+    <td>78</td>
+    <td>10.19%</td>
+    <td>-10.56%</td>
+    <td>31</td>
+  </tr>
+  <tr>
+    <td>social</td>
+    <td>37.81</td>
+    <td>8.50</td>
+    <td>22.49%</td>
+    <td>67</td>
+    <td>12.69%</td>
+    <td>-10.26%</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>mental</td>
+    <td>36.70</td>
+    <td>8.41</td>
+    <td>22.91%</td>
+    <td>59</td>
+    <td>14.25%</td>
+    <td>-9.92%</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>confrontational</td>
+    <td>52.59</td>
+    <td>9.18</td>
+    <td>17.46%</td>
+    <td>82</td>
+    <td>11.20%</td>
+    <td>-7.50%</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>agreeable</td>
+    <td>47.41</td>
+    <td>9.18</td>
+    <td>19.37%</td>
+    <td>74</td>
+    <td>12.41%</td>
+    <td>-7.50%</td>
+    <td>24</td>
+  </tr>
+</table>
+<h4>Relational Stats</h4>
+<table>
+  <tr>
+    <th>STAT</th>
+    <th>MEAN</th>
+    <th>STDDEV</th>
+    <th>COV</th>
+    <th>MAX</th>
+    <th>COV2</th>
+    <th>PMODE</th>
+    <th>MIN</th>
+  </tr>
+  <tr>
+    <td>luna_like</td>
+    <td>49.51</td>
+    <td>0.86</td>
+    <td>1.74%</td>
+    <td>50</td>
+    <td>1.72%</td>
+    <td>-75.56%</td>
+    <td>48</td>
+  </tr>
+  <tr>
+    <td>raven_like</td>
+    <td>52.81</td>
+    <td>4.51</td>
+    <td>8.54%</td>
+    <td>69</td>
+    <td>6.54%</td>
+    <td>-54.80%</td>
+    <td>48</td>
+  </tr>
+  <tr>
+    <td>sarah_like</td>
+    <td>54.94</td>
+    <td>6.96</td>
+    <td>12.67%</td>
+    <td>72</td>
+    <td>9.66%</td>
+    <td>-17.84%</td>
+    <td>37</td>
+  </tr>
+  <tr>
+    <td>dad_like</td>
+    <td>59.85</td>
+    <td>5.33</td>
+    <td>8.90%</td>
+    <td>74</td>
+    <td>7.20%</td>
+    <td>-13.20%</td>
+    <td>42</td>
+  </tr>
+</table>
+<h4>Romance Stats</h4>
+<table>
+  <tr>
+    <th>STAT</th>
+    <th>MEAN</th>
+    <th>STDDEV</th>
+    <th>COV</th>
+    <th>MAX</th>
+    <th>COV2</th>
+    <th>PMODE</th>
+    <th>MIN</th>
+  </tr>
+  <tr>
+    <td>raven_flirts</td>
+    <td>0.45</td>
+    <td>2.07</td>
+    <td>460.72%</td>
+    <td>10</td>
+    <td>20.73%</td>
+    <td>-95.50%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>all_flirts</td>
+    <td>0.45</td>
+    <td>2.07</td>
+    <td>460.72%</td>
+    <td>10</td>
+    <td>20.73%</td>
+    <td>-95.50%</td>
+    <td>0</td>
+  </tr>
+</table>
+<h4>Secondary and Goal Stats</h4>
+<table>
+  <tr>
+    <th>STAT</th>
+    <th>MEAN</th>
+    <th>STDDEV</th>
+    <th>COV</th>
+    <th>MAX</th>
+    <th>COV2</th>
+    <th>PMODE</th>
+    <th>MIN</th>
+  </tr>
+  <tr>
+    <td>maxcrush</td>
+    <td>0.45</td>
+    <td>2.07</td>
+    <td>460.72%</td>
+    <td>10</td>
+    <td>20.73%</td>
+    <td>-95.50%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>stress</td>
+    <td>2.04</td>
+    <td>3.72</td>
+    <td>182.87%</td>
+    <td>14</td>
+    <td>26.58%</td>
+    <td>-72.06%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>ev_bedtime_choice</td>
+    <td>3.73</td>
+    <td>2.01</td>
+    <td>53.78%</td>
+    <td>8</td>
+    <td>25.08%</td>
+    <td>-36.32%</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>attachment_to_raven</td>
+    <td>55.39</td>
+    <td>5.59</td>
+    <td>10.09%</td>
+    <td>76</td>
+    <td>7.35%</td>
+    <td>-29.48%</td>
+    <td>48</td>
+  </tr>
+  <tr>
+    <td>attachment_to_dad</td>
+    <td>55.82</td>
+    <td>5.25</td>
+    <td>9.40%</td>
+    <td>70</td>
+    <td>7.50%</td>
+    <td>-17.80%</td>
+    <td>39</td>
+  </tr>
+  <tr>
+    <td>attachment_to_sarah</td>
+    <td>52.91</td>
+    <td>4.52</td>
+    <td>8.54%</td>
+    <td>65</td>
+    <td>6.95%</td>
+    <td>-15.82%</td>
+    <td>45</td>
+  </tr>
+</table>
+<h4>Unused Stats</h4>
+<table>
+  <tr>
+    <th>STAT</th>
+    <th>MEAN</th>
+    <th>STDDEV</th>
+    <th>COV</th>
+    <th>MAX</th>
+    <th>COV2</th>
+    <th>PMODE</th>
+    <th>MIN</th>
+  </tr>
+  <tr>
+    <td>current_chapter</td>
+    <td>11.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>11</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>raven_romance</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>jade_like</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>jade_romance</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>jade_flirts</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>attachment_to_jade</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>isaiah_like</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>isaiah_romance</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>isaiah_flirts</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>attachment_to_isaiah</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>luna_romance</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>luna_flirts</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>attachment_to_luna</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>sparks_like</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>skye_like</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>charlene_like</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>wylie_like</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>rep_anticon_pack</td>
+    <td>20.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>20</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>rep_humans</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>auspice</td>
+    <td>1.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>1</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>embrace_the_wolf</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>touchstone_meter</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>mystical_meter</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>aunt_sarah_danger</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>friend_group_tension</td>
+    <td>20.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>20</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>packs_tension</td>
+    <td>50.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>50</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>anticon_pack_agitation</td>
+    <td>20.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>20</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>anticon_pack_intel</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>all_romance</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>rage</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+</table>
