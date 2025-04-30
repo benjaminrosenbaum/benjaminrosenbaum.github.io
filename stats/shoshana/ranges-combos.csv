@@ -1,4 +1,4 @@
-STAT,bottom 10%,bottom 25%,bottom 33%,50/50,top 34%,top 25%,top 10%
+STAT,STAT,bottom 10%,bottom 25%,bottom 33%,50/50,top 34%,top 25%,top 10%
 mental,academics,45,52,54,60,64,67,74
 mental,animal_ken,36,43,44,49,56,58,65
 mental,athletics,45,47,51,53,57,59,66
@@ -41,4 +41,4 @@ social,persuasion,38,47,50,59,68,73,81
 social,stealth,46,55,57,62,65,68,75
 social,subterfuge,48,54,56,61,64,67,73
 social,survival,44,47,50,54,57,60,65
-generated on,Wed Apr 30 17:22:32 EDT 2025
+generated on,Wed Apr 30 17:31:21 EDT 2025
