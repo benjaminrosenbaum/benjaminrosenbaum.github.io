@@ -65,6 +65,7 @@ persuasion,10,10,10,19,23,27,30
 physical,26,27,30,34,43,49,54
 practical,37,48,53,58,60,63,66
 rage,0,0,0,0,0,0,0
+ranges-combos.csv
 ranges.combos.csv
 ranges.csv
 raven_flirts,0,0,0,0,10,10,10
@@ -86,4 +87,4 @@ touchstone_meter,48,48,50,50,50,50,50
 wary,41,46,49,54,58,61,68
 wylie_like,50,50,50,50,50,50,50
 x_id,1,1,1,2,2,3,3
-generated on,Wed Apr 30 17:25:34 EDT 2025
+generated on,Wed Apr 30 17:31:19 EDT 2025
