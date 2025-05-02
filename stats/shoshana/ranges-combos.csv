@@ -6,7 +6,7 @@ mental,awareness,42,47,50,58,64,70,77
 mental,brawl,45,48,48,51,55,56,61
 mental,insight,43,52,54,62,71,74,82
 mental,intimidation,45,51,53,56,60,61,66
-mental,investigation,51,58,60,65,70,73,79
+mental,investigation,51,58,60,66,70,73,79
 mental,leadership,43,45,49,53,59,62,68
 mental,occult,42,46,49,53,58,61,67
 mental,persuasion,41,45,50,56,63,69,75
@@ -19,7 +19,7 @@ physical,athletics,37,40,40,50,63,70,74
 physical,awareness,38,48,54,62,64,66,73
 physical,brawl,37,37,40,46,58,71,76
 physical,insight,49,56,59,64,67,70,75
-physical,intimidation,37,40,44,50,63,73,83
+physical,intimidation,37,40,44,50,63,73,84
 physical,investigation,44,50,55,63,73,81,91
 physical,leadership,40,46,46,53,59,64,73
 physical,occult,37,44,47,54,59,64,70
@@ -29,8 +29,8 @@ physical,subterfuge,37,46,49,54,64,72,79
 physical,survival,37,37,40,47,60,68,73
 social,academics,47,55,57,62,67,70,77
 social,animal_ken,38,45,47,53,59,62,68
-social,athletics,46,50,53,56,61,63,70
-social,awareness,40,48,53,61,68,73,80
+social,athletics,47,50,53,56,61,63,70
+social,awareness,41,48,53,61,68,73,80
 social,brawl,44,50,50,56,58,61,65
 social,insight,45,54,57,65,74,80,86
 social,intimidation,47,53,55,58,62,65,71
@@ -38,7 +38,7 @@ social,investigation,53,60,62,68,73,76,83
 social,leadership,41,47,51,56,63,65,73
 social,occult,41,48,53,56,61,64,70
 social,persuasion,38,47,50,59,68,73,81
-social,stealth,46,55,58,62,65,69,75
+social,stealth,46,55,57,62,65,69,75
 social,subterfuge,49,54,56,61,64,67,73
 social,survival,44,47,50,54,57,60,65
-generated on,Thu May  1 17:54:44 EDT 2025
+generated on,Fri May  2 11:23:09 EDT 2025
