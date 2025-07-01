@@ -8,7 +8,7 @@ mental,insight,20,29,43,54,63,71,79
 mental,intimidation,20,45,46,47,53,56,63
 mental,investigation,20,49,55,58,64,67,76
 mental,leadership,20,38,41,45,53,56,64
-mental,occult,20,38,38,47,54,55,62
+mental,occult,20,38,41,48,54,57,64
 mental,persuasion,20,42,42,48,56,65,73
 mental,stealth,20,33,42,52,57,61,68
 mental,subterfuge,20,42,45,51,54,59,67
@@ -22,7 +22,7 @@ physical,insight,20,48,53,53,60,64,71
 physical,intimidation,20,37,37,44,57,70,80
 physical,investigation,20,41,46,57,70,80,85
 physical,leadership,20,38,40,46,55,62,69
-physical,occult,20,37,39,47,57,62,64
+physical,occult,20,37,41,49,57,62,66
 physical,persuasion,20,41,47,54,61,64,67
 physical,stealth,20,38,46,53,56,60,71
 physical,subterfuge,20,37,42,49,57,66,73
@@ -36,9 +36,9 @@ social,insight,20,44,47,56,67,74,83
 social,intimidation,20,46,51,56,61,61,67
 social,investigation,20,53,58,65,71,73,81
 social,leadership,20,41,47,53,57,60,69
-social,occult,20,46,50,53,56,58,66
+social,occult,20,46,50,53,57,60,67
 social,persuasion,20,41,45,57,62,70,78
 social,stealth,20,44,47,53,60,64,71
 social,subterfuge,20,50,50,56,59,62,70
-social,survival,20,42,47,51,53,56,62
-generated on,Tue Jul  1 16:09:17 EDT 2025
+social,survival,20,43,47,51,53,56,62
+generated on,Tue Jul  1 18:36:59 EDT 2025
