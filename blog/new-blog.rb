@@ -13,9 +13,8 @@ if ARGV.length < 3
 	exit 1
 end
 
-if ARGV[0] == "--edit"
+if ARGV.delete "--edit"
 	$edit = true
-	ARGV.shift
 end
 
 if ARGV[0] == "--fblink"
@@ -180,7 +179,7 @@ STDIN.each do |line|
 	 if (line =~ /^\s*--\s*$/)
 	  	puts("<hr/>")
 	 elsif (line =~ /<!--CROSSPOST-->/) 
-	 		links = { :Facebook => $fblink, :Bluesky => $mslink, :Mastodon => $mslink }.reject{|k, v| !v}
+	 		links = { :Facebook => $fblink, :Bluesky => $bslink, :Mastodon => $mslink }.reject{|k, v| !v}
 	 		threads = "thread#{links.length > 1 ? "s" : ""}"
 	 		cp = "[You can comment on the #{links.map{|k,v| "<a href=#{v}>#{k}</a>"}.join(", ")} #{threads}.]" if links.any?{|k,v| v}
 	 		puts "   <p><!--CROSSPOST-->#{cp}</p>"
