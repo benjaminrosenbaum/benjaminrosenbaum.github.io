@@ -34,7 +34,7 @@ end
 
 
 
-title = coder.encode ARGV[0].capitalize, :named
+title = coder.encode ARGV[0].tap{|n| n[0].capitalize + n.slice(1) }, :named
 description = coder.encode ARGV[1], :named
 $prev = ARGV[2]
 if $prev.to_i == 0
@@ -43,6 +43,7 @@ if $prev.to_i == 0
 end
 
 $curr = ($prev.to_i + 1).to_s.rjust(6, "0")
+$prev = $prev.to_i.to_s.rjust(6, "0")
 
 def header title, description, now
 	full_date = now.strftime "%A, %B %d, %Y"
