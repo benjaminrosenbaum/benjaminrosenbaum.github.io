@@ -1,0 +1,37 @@
+div#bn { font-size:8pt;}
+ 
+ /* kontener na tekst */
+div#tekst {
+  width:98%; 
+  padding:1%;}
+
+/* kontener na prawą */
+div#prawa {
+         background-color:#FFFFFA;
+         float:left;
+         width:100%;}
+
+div#webmaster { 
+  width:98%;
+  padding:1%;} 
+
+/*
+     FILE ARCHIVED ON 07:44:10 Nov 27, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:24:07 Feb 11, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.589
+  exclusion.robots: 0.027
+  exclusion.robots.policy: 0.013
+  esindex: 0.013
+  cdx.remote: 13.164
+  LoadShardBlock: 526.139 (3)
+  PetaboxLoader3.datanode: 429.02 (4)
+  PetaboxLoader3.resolve: 151.75 (2)
+  load_resource: 108.455
+*/

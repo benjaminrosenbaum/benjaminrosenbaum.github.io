@@ -1,0 +1,309 @@
+body {height:100%;margin:auto;padding:0;background-color:#E0E0E0;
+             font-family:verdana, arial,sans-serif;color:black;}
+
+a {font-family: Verdana, Arial, sans-serif;
+     text-decoration:none;
+     outline-style: none;}
+a:link {color:blue;}
+a:visited {color:#996600;}
+a:hover {color:#CD1008;text-decoration:underline;}
+a:link:active {color:#B10B02;}
+a:visited:active {color:#B10B02;}
+a:focus {color:#B10B02;}
+
+/* główny kontener */
+div#rama {
+  position:relative;
+  top:0;
+  left:0;
+  max-width:1100px;
+  height:auto;
+  margin:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0; 
+  padding:0;
+  text-align:left; 
+  overflow:hidden;
+  font-size:10pt;   
+  background-color:#FFFFFA;
+/*                  border-width:1px;     border-style:solid;   border-color:green; */
+ }
+/* główny kontener koniec */
+
+
+/*banner*/
+div#bn {position:relative;top:0;left:0;
+               width:auto;
+	       height:auto;
+	       min-height:100px;
+               margin:0;
+               padding:0;
+               text-align:left;
+               background-color:#FFFFFA;
+               background-image:url('/web/20241127074410im_/http://sf.giang.pl/graf/k.png');
+               background-repeat:no-repeat;
+/*                 border-width:1px;     border-style:solid;   border-color:green; */
+               border-bottom-width:2px;     border-bottom-style:solid;   border-bottom-color:#021488; 
+	       font-size:12pt;
+	       overflow:hidden;
+ }
+ 
+div#main_title { 
+  position:absolute;
+  top:0;
+  left:0;
+  width:auto;
+  height:auto;
+  margin-left:20%;
+  padding:0.5em;
+  background-color:transparent;
+  font-family:serif;
+  color:#b37232;
+  font-weight:bold;
+  overflow:hidden;
+/*                 border-width:1px;     border-style:solid;   border-color:red;  */
+
+ }
+div#main_title p {text-indent:0;margin: 0.25em 0em;} 
+.bn1 {text-align:left;padding-top:0;padding-left:6em;}
+.bn2 {text-align:right;padding-left:12em;padding-right:8em;}
+.bn3 {text-align:center;padding-bottom:0;}
+ 
+div#home {
+  position:absolute;
+  top:0;
+  left:0;
+  width:auto;
+  height:20px;
+  margin:4px;
+  background-color:transparent;
+  font-family:serif;
+  color:red;
+  font-weight:bold;
+  font-style:italic;
+  font-size:10pt;
+  overflow:hidden;
+/*                 border-width:1px;     border-style:solid;   border-color:blue;  */
+
+ }
+
+/*banner koniec */
+
+
+
+
+/* kontener na tekst */
+
+div#tekst {
+    position:relative;
+    left:0;
+    top:0;
+    float:left;
+    height:auto;
+    padding:0;
+    margin:0;
+    overflow:visible; 
+ /*                     border-width:1px;     border-style:solid;   border-color:red; */
+    background-color:#FFFFFA;
+    font-size:12pt;
+    font-weight: normal;   
+    z-index:1;
+    color:#021488; 
+    text-align:left;
+    }
+
+
+
+.nav_link {text-align:left;
+                 vertical-align:baseline;
+                 color:#247D6B;
+                 font-size:10pt;
+                 padding:3em; }
+.nav_link a {font-size: 8pt;line-height:0em;}
+.nav_link a:link {color:#001C9C;}
+.nav_link a:visited {color:#001C9C}
+.nav_link a:hover {color:#CD1008;text-decoration:underline;}
+.nav_link a:link:active {color:#001C9C}
+.nav_link a:visited:active {color:#001C9C}
+.nav_link a:focus {color:#001C9C}
+
+div#tekst_body {
+  font-family:serif;
+  font-size: 10pt; 
+  background-color:transparent;
+  padding:0;
+  margin:0;
+  color:#000888;}
+
+  
+  
+div#tekst_body p  { text-indent: 2em; margin:0.25em 0; text-align:justify;}
+.ett {font-size: 10pt; font-style:italic;font-weight:normal;}
+h1 {text-align: center}
+h2 {text-align: center}
+h2.at {font-size: 12pt; font-style:italic;font-weight:normal;text-indent: 2em;text-align:left;}
+h2.atc {font-size: 12pt; font-style:italic;font-weight:normal;text-align:center;}
+h2.tt {font-size: 14pt; font-style:normal;font-weight:bold; text-align:center;}
+h3 {font-size: 14pt; font-style:normal;text-align: center; margin: 4em auto 2em;}
+h3.nt {font-size: 12pt; font-style:italic;font-weight:bold;text-align:center;}
+h3.u5{font-size: 12pt; font-style:normal;font-weight:bold;text-align:center;}
+h4 {font-size:19pt;text-align:center;}
+h5 {font-size:10pt;text-align:left;line-height:0em;font-weight:bold;font-style:italic;} 
+.przypis  {font-size: 10pt;}
+div#intro p {font-style:italic;text-indent:2em; padding:2em; }
+div#tekst_body p.pmotto {margin-left:60%;margin-right:2em;text-align:right; font-size: 8pt;font-weight:bold;}
+div#tekst_body p.motto {margin-left:50%;margin-right:2em;}
+div#tekst_body p.ini { margin-top:2em;}
+div#tekst_body p.gw {font-size: 10pt;text-align:center;line-height:4em;font-weight:bold}
+sup a {color:black;font-size: 5pt;}
+ .op {margin-left:1.5em;margin-right:2em;}
+ 
+div#tekst_body p.ini:first-letter {
+  font-size: 400%; 
+  float: left; 
+  padding:0; 
+  margin-left: 0.5em; 
+  margin-right: 0.05em; 
+  margin-top:-0.25em; 
+  margin-bottom: 0em;
+  text-indent:0em;}  
+
+
+div#nota {
+  font-size: 10pt; 
+  font-style:italic;
+  font-weight:normal;
+  text-indent: 2em; 
+  text-align:left; 
+  margin:2em; 
+  margin-bottom:3em;
+}
+div#nota h3 { font-style:italic;}
+
+td {
+    background-color:transparent;
+    z-index:1;
+    font-family:verdana, helvetica, arial, sans-serif;
+    font-size:12pt;
+    font-weight:bold;
+    color:#104C52;
+    text-align:center;
+    vertical-align:middle;
+  }
+
+  
+  
+   
+
+/*stopka */   
+   
+.stopka {
+  position:relative; 
+  left: 0; 
+  top:0;
+  clear:both;
+  overflow: visible;
+  background-color:transparent;
+  font-size:12pt;
+  font-weight:bold;
+  color:black;
+  text-align:center;
+  vertical-align:top;
+/*   border-color:#0004BD;border-width:1px;  border-style:solid;       */
+  }
+ 
+.licencja {
+  font-family:sans;
+  font-size: 10pt; 
+  font-weight:normal;
+  margin-left:10%;
+  margin-right:10%;}
+
+/*stopka koniec  */   
+  
+div#webmaster {background-color:#FFFFFA; }
+  
+/*  kontener na tekst koniec */
+
+/* kontener na prawą */
+
+div#prawa {
+         position:relative;  
+         left:0;
+         top:0;
+         height:auto;
+         min-width:220px; 
+         padding:0;
+         margin:0;
+         padding-top:40px;
+         overflow:visible;  
+         background-color:#EFEFEF;    
+         z-index:2;
+/*             border-width:1px;     border-style:solid;   border-color:blue;  */
+    }
+
+.lewa_txt {font-size: 8pt;padding-left:20px;}
+.b_link{ position:relative;
+             left:0;
+	     top:0;  
+	     width:auto; 
+	     height:auto;
+             overflow:auto;   
+	     padding-left:10px;  
+	     padding-top:10px;
+             padding-bottom:20px;
+             text-align:left; 
+	     vertical-align:top;
+             background-color:transparent;
+}
+.b_link td {text-align:left;
+                 vertical-align:baseline;
+                 color:#247D6B;
+                 font-size:10px;
+                 padding-top:3px; }
+.b_link a {font-size: 8pt;line-height:10pt;}
+.b_link a:link {color:#001C9C;}
+.b_link a:visited {color:#001C9C}
+.b_link a:hover {color:#CD1008;text-decoration:underline;}
+.b_link a:link:active {color:#001C9C}
+.b_link a:visited:active {color:#001C9C}
+.b_link a:focus {color:#001C9C}
+
+
+div#prawy_box {
+     margin:0;  
+     padding-top:20pt; 
+     padding-bottom:20pt; 
+     padding-left:1pt;  
+     text-align:center;
+/*      border-color:#0004BD;border-width:0; border-style:solid; */
+   }
+   
+/* kontener na prawą koniec */   
+   
+
+img {
+    padding:20px;
+    max-width:100%;
+} 
+/*
+     FILE ARCHIVED ON 07:44:10 Nov 27, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:24:05 Feb 11, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.688
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.013
+  esindex: 0.012
+  cdx.remote: 27.419
+  LoadShardBlock: 109.859 (3)
+  PetaboxLoader3.datanode: 99.297 (4)
+  PetaboxLoader3.resolve: 125.929 (2)
+  load_resource: 141.882
+*/
