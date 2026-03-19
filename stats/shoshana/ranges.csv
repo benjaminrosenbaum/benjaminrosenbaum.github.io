@@ -1,123 +1,123 @@
 STAT,bottom 10%,bottom 25%,bottom 33%,50/50,top 34%,top 25%,top 10%
-academics,14,19,19,23,27,29,33
-adventurous,38,45,50,59,64,65,74
-agreeable,30,34,37,40,45,52,65
-animal_ken,10,10,10,10,19,19,19
-anticon_pack_agitation,20,20,20,20,20,20,20
-anticon_pack_intel,0,0,0,0,0,0,0
-athletics,10,10,10,14,18,18,22
-attachment_to_dad,50,52,53,56,58,59,63
-attachment_to_isaiah,50,50,50,52,52,52,52
-attachment_to_jade,50,50,50,52,52,52,52
-attachment_to_luna,50,52,52,54,54,54,56
-attachment_to_raven,54,56,58,62,64,65,66
-attachment_to_sarah,50,54,55,57,59,60,63
-aunt_sarah_danger,20,50,50,50,50,50,50
-auspice,2,2,2,3,5,5,6
-awareness,10,10,10,18,30,39,42
-biggest_crush,0,0,0,0,0,0,0
-brandon_like,20,20,20,20,20,20,27
-brawl,10,10,10,19,22,25,31
-charlene_like,20,50,50,50,50,50,50
-coffee_preference,2,2,3,3,4,4,5
-confrontational,35,48,54,60,63,66,70
-current_chapter,11,11,11,11,11,11,11
-dad_like,52,52,54,58,59,59,60
-dad_relationship_strength,3,3,3,3,3,3,3
-damage,1,1,1,1,5,5,10
-dietary_needs,1,1,1,2,2,3,3
-dutiful,26,35,36,41,49,55,62
-embrace_the_wolf,0,1,5,5,9,10,14
-ev_accompanied_to_class_by,2,2,2,3,3,4,4
-ev_after_school,2,2,3,3,3,4,4
-ev_alone,1,2,2,2,2,2,3
-ev_bedtime_choice,2,3,3,5,6,6,7
-ev_bullies,1,2,2,3,4,4,5
-ev_caught,1,1,1,1,1,1,1
-ev_confided,1,1,1,2,2,3,4
-ev_confronted_frank,4,4,4,5,5,6,6
-ev_control_rage_dad,1,1,2,2,3,4,4
-ev_development_plot,2,2,2,3,3,4,4
-ev_dinner_mood,3,3,3,4,4,4,4
-ev_ER,1,1,1,1,1,1,2
-ev_fight_lisa_mads,1,1,1,1,1,1,1
-ev_forced_breeding_reaction,2,2,3,3,4,4,4
-ev_form,1,1,1,1,1,1,5
-ev_frank_help,1,1,1,2,2,2,2
-ev_franks_place,1,1,1,3,4,5,6
-ev_franks_plan_opinion,1,1,1,1,1,1,3
-ev_jade_beef,2,2,2,2,3,3,4
-ev_mads_fight,1,1,1,1,1,1,1
-ev_meat,1,1,1,1,1,1,1
-ev_mr_lewis,1,1,1,1,1,2,5
-ev_pack,2,2,2,2,3,3,3
-ev_pack_pref,1,1,1,2,2,3,3
-ev_pick_gift,1,1,1,1,1,1,1
-ev_pick_tribe,1,1,1,1,3,5,10
-ev_post_lisa_meeting,2,2,2,3,3,4,4
-ev_post_renata_meeting,2,2,2,3,3,4,4
-ev_raven_reunion_vibes,2,2,3,6,6,6,7
-ev_sleepwalk_discussion,3,4,5,7,7,7,7
-ev_stepmom_story_reaction,1,1,1,1,1,1,1
-ev_stepmoms_death,1,2,2,5,5,5,6
-ev_street_fight,1,1,1,1,1,2,4
-ev_talk_msvolk,1,1,1,2,3,3,4
-ev_tribe_gift,1,1,1,1,1,1,1
-ev_way_to_refuge,2,2,2,2,2,3,4
-ev_what_sarah_knows,1,1,1,1,1,1,3
-frank_like,20,20,20,20,20,24,27
-friend_group_tension,9,20,20,20,20,24,24
-gary_like,20,20,20,20,20,23,27
-highest_primary,1,1,1,2,2,2,3
-hopeful,33,37,38,43,47,49,53
-insight,10,18,25,37,40,43,46
-intimidation,10,10,14,19,27,27,33
-investigation,22,25,28,32,36,37,41
-isaiah_like,50,50,52,54,56,56,59
-isaiah_relationship_strength,3,3,3,3,3,3,3
-jade_like,50,50,50,52,54,56,59
-jade_relationship_strength,3,3,3,3,3,3,3
-josefa_like,20,20,20,20,20,24,24
-leadership,10,14,18,19,23,23,26
-lisa_like,20,20,20,20,20,24,27
-lowest_primary,1,1,1,2,2,3,3
-luna_like,48,50,52,52,54,54,56
-luna_relationship_strength,3,3,3,3,3,3,3
-mads_like,20,20,20,20,24,24,27
-manicure,1,2,2,3,3,4,4
-mental,22,27,30,35,38,41,46
-mystical_meter,0,0,0,0,0,5,10
-num_achievements
-occult,10,14,18,23,26,30,37
-packs_tension,50,50,50,50,50,50,52
-percentiles.txt
-persuasion,10,14,18,23,25,25,29
-physical,19,27,30,37,43,45,50
-practical,35,43,49,55,59,62,67
-rage,1,1,2,2,3,3,4
-ranges-combos.csv
-ranges.csv
-raven_like,52,54,55,59,61,63,67
-raven_relationship_strength,3,3,3,3,3,3,3
-renata_like,20,20,20,20,20,20,27
-rep_anticon_pack,20,20,23,24,27,29,33
-rep_con_pack,20,24,24,27,30,33,36
-rep_humans_kind,50,50,50,50,50,50,52
-rep_humans_tough,50,50,50,50,52,52,54
-rf_rage_test_result,1,1,2,4,4,4,4
-sarah_like,50,52,54,56,58,59,62
-sarah_relationship_strength,3,3,3,3,3,3,3
-skye_like,24,50,50,50,52,52,52
-social,31,33,34,37,42,48,51
-sparks_like,24,50,50,50,52,52,52
-spiritual,33,38,41,45,50,57,65
-stealth,10,10,19,27,27,27,34
-stress,5,23,26,35,38,40,47
-subterfuge,14,19,19,22,23,23,27
-survival,10,10,10,19,19,19,19
-touchstone_meter,1,5,5,9,10,13,18
-wary,47,51,53,57,61,63,67
-wylie_like,20,50,50,50,50,50,50
-x_id,1,1,1,2,2,3,3
-zoey_like,20,20,20,20,20,24,27
-generated on,Thu Mar 19 16:00:58 CET 2026
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,academics,14,19,19,23,27,29,33
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,adventurous,38,45,50,59,64,65,74
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,agreeable,30,34,37,40,45,52,65
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,animal_ken,10,10,10,10,19,19,19
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,anticon_pack_agitation,20,20,20,20,20,20,20
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,anticon_pack_intel,0,0,0,0,0,0,0
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,athletics,10,10,10,14,18,18,22
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,attachment_to_dad,50,52,53,56,58,59,63
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,attachment_to_isaiah,50,50,50,52,52,52,52
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,attachment_to_jade,50,50,50,52,52,52,52
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,attachment_to_luna,50,52,52,54,54,54,56
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,attachment_to_raven,54,56,58,62,64,65,66
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,attachment_to_sarah,50,54,55,57,59,60,63
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,aunt_sarah_danger,20,50,50,50,50,50,50
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,auspice,2,2,2,3,5,5,6
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,awareness,10,10,10,18,30,39,42
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,biggest_crush,0,0,0,0,0,0,0
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,brandon_like,20,20,20,20,20,20,27
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,brawl,10,10,10,19,22,25,31
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,charlene_like,20,50,50,50,50,50,50
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,coffee_preference,2,2,3,3,4,4,5
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,confrontational,35,48,54,60,63,66,70
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,current_chapter,11,11,11,11,11,11,11
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,dad_like,52,52,54,58,59,59,60
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,dad_relationship_strength,3,3,3,3,3,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,damage,1,1,1,1,5,5,10
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,dietary_needs,1,1,1,2,2,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,dutiful,26,35,36,41,49,55,62
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,embrace_the_wolf,0,1,5,5,9,10,14
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_accompanied_to_class_by,2,2,2,3,3,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_after_school,2,2,3,3,3,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_alone,1,2,2,2,2,2,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_bedtime_choice,2,3,3,5,6,6,7
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_bullies,1,2,2,3,4,4,5
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_caught,1,1,1,1,1,1,1
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_confided,1,1,1,2,2,3,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_confronted_frank,4,4,4,5,5,6,6
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_control_rage_dad,1,1,2,2,3,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_development_plot,2,2,2,3,3,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_dinner_mood,3,3,3,4,4,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_ER,1,1,1,1,1,1,2
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_fight_lisa_mads,1,1,1,1,1,1,1
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_forced_breeding_reaction,2,2,3,3,4,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_form,1,1,1,1,1,1,5
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_frank_help,1,1,1,2,2,2,2
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_franks_place,1,1,1,3,4,5,6
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_franks_plan_opinion,1,1,1,1,1,1,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_jade_beef,2,2,2,2,3,3,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_mads_fight,1,1,1,1,1,1,1
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_meat,1,1,1,1,1,1,1
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_mr_lewis,1,1,1,1,1,2,5
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_pack,2,2,2,2,3,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_pack_pref,1,1,1,2,2,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_pick_gift,1,1,1,1,1,1,1
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_pick_tribe,1,1,1,1,3,5,10
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_post_lisa_meeting,2,2,2,3,3,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_post_renata_meeting,2,2,2,3,3,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_raven_reunion_vibes,2,2,3,6,6,6,7
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_sleepwalk_discussion,3,4,5,7,7,7,7
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_stepmom_story_reaction,1,1,1,1,1,1,1
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_stepmoms_death,1,2,2,5,5,5,6
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_street_fight,1,1,1,1,1,2,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_talk_msvolk,1,1,1,2,3,3,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_tribe_gift,1,1,1,1,1,1,1
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_way_to_refuge,2,2,2,2,2,3,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ev_what_sarah_knows,1,1,1,1,1,1,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,frank_like,20,20,20,20,20,24,27
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,friend_group_tension,9,20,20,20,20,24,24
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,gary_like,20,20,20,20,20,23,27
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,highest_primary,1,1,1,2,2,2,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,hopeful,33,37,38,43,47,49,53
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,insight,10,18,25,37,40,43,46
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,intimidation,10,10,14,19,27,27,33
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,investigation,22,25,28,32,36,37,41
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,isaiah_like,50,50,52,54,56,56,59
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,isaiah_relationship_strength,3,3,3,3,3,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,jade_like,50,50,50,52,54,56,59
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,jade_relationship_strength,3,3,3,3,3,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,josefa_like,20,20,20,20,20,24,24
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,leadership,10,14,18,19,23,23,26
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,lisa_like,20,20,20,20,20,24,27
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,lowest_primary,1,1,1,2,2,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,luna_like,48,50,52,52,54,54,56
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,luna_relationship_strength,3,3,3,3,3,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,mads_like,20,20,20,20,24,24,27
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,manicure,1,2,2,3,3,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,mental,22,27,30,35,38,41,46
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,mystical_meter,0,0,0,0,0,5,10
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,num_achievements
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,occult,10,14,18,23,26,30,37
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,packs_tension,50,50,50,50,50,50,52
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,percentiles.txt
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,persuasion,10,14,18,23,25,25,29
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,physical,19,27,30,37,43,45,50
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,practical,35,43,49,55,59,62,67
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,rage,1,1,2,2,3,3,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ranges-combos.csv
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,ranges.csv
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,raven_like,52,54,55,59,61,63,67
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,raven_relationship_strength,3,3,3,3,3,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,renata_like,20,20,20,20,20,20,27
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,rep_anticon_pack,20,20,23,24,27,29,33
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,rep_con_pack,20,24,24,27,30,33,36
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,rep_humans_kind,50,50,50,50,50,50,52
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,rep_humans_tough,50,50,50,50,52,52,54
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,rf_rage_test_result,1,1,2,4,4,4,4
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,sarah_like,50,52,54,56,58,59,62
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,sarah_relationship_strength,3,3,3,3,3,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,skye_like,24,50,50,50,52,52,52
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,social,31,33,34,37,42,48,51
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,sparks_like,24,50,50,50,52,52,52
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,spiritual,33,38,41,45,50,57,65
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,stealth,10,10,19,27,27,27,34
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,stress,5,23,26,35,38,40,47
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,subterfuge,14,19,19,22,23,23,27
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,survival,10,10,10,19,19,19,19
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,touchstone_meter,1,5,5,9,10,13,18
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,wary,47,51,53,57,61,63,67
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,wylie_like,20,50,50,50,50,50,50
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,x_id,1,1,1,2,2,3,3
+found,   ,/Users/gumballs.com/Developer/bitbucket/cog,zoey_like,20,20,20,20,20,24,27
+generated on,Thu Mar 19 16:06:46 CET 2026
