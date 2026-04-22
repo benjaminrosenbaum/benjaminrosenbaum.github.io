@@ -1,15 +1,15 @@
 STAT,bottom 10%,bottom 25%,bottom 33%,50/50,top 34%,top 25%,top 10%
 academics,14,19,22,26,29,30,36
-adventurous,44,49,51,55,57,59,62
-agreeable,36,40,42,45,49,51,57
+adventurous,43,48,50,54,57,59,62
+agreeable,35,39,41,44,48,51,56
 animal_ken,10,10,10,10,19,19,19
 anticon_pack_agitation,20,20,20,20,20,20,20
 anticon_pack_intel,0,0,0,0,0,0,0
 athletics,10,10,14,14,18,19,23
 attachment_to_dad,50,54,55,58,60,61,64
-attachment_to_isaiah,50,50,50,50,52,52,54
+attachment_to_isaiah,50,50,50,52,52,52,54
 attachment_to_jade,50,50,50,52,52,52,54
-attachment_to_luna,52,52,52,54,56,56,59
+attachment_to_luna,52,52,54,54,56,56,60
 attachment_to_raven,54,57,58,60,62,63,65
 attachment_to_sarah,51,55,56,59,62,63,66
 aunt_sarah_danger,19,20,20,20,20,20,24
@@ -20,13 +20,13 @@ brandon_like,20,20,20,20,20,20,27
 brawl,10,14,14,19,22,23,29
 charlene_like,20,20,20,20,20,20,20
 coffee_preference,2,2,3,3,4,4,5
-confrontational,43,49,51,55,58,60,64
+confrontational,44,49,52,56,59,61,65
 current_chapter,11,11,11,11,11,11,11
 dad_like,52,54,54,56,58,59,62
 dad_relationship_strength,3,3,3,3,3,3,3
 damage,1,1,1,1,5,5,10
 dietary_needs,1,1,2,2,3,3,4
-dutiful,38,41,42,45,49,51,56
+dutiful,38,41,43,46,49,52,57
 embrace_the_wolf,0,1,5,5,9,10,14
 ev_accompanied_to_class_by,2,2,3,3,3,4,4
 ev_after_school,2,2,2,3,3,4,4
@@ -42,7 +42,7 @@ ev_dinner_mood,3,3,3,4,4,4,4
 ev_ER,1,1,1,1,1,1,1
 ev_fight_lisa_mads,1,1,1,1,1,1,1
 ev_forced_breeding_reaction,2,2,3,3,4,4,4
-ev_form,1,1,1,1,1,1,3
+ev_form,1,1,1,1,1,1,2
 ev_frank_help,2,2,2,2,2,2,2
 ev_franks_place,1,1,1,2,3,4,6
 ev_franks_plan_opinion,1,1,1,1,1,1,4
@@ -58,7 +58,7 @@ ev_pick_tribe,1,1,1,1,3,6,10
 ev_post_lisa_meeting,1,2,2,3,3,3,4
 ev_post_renata_meeting,2,2,2,3,4,4,5
 ev_raven_reunion_vibes,2,2,2,3,3,7,9
-ev_refuge_showdown,1,1,1,1,1,1,1
+ev_refuge_showdown,1,1,1,1,1,1,2
 ev_sleepwalk_discussion,3,4,4,7,7,7,7
 ev_stepmom_story_reaction,1,1,1,1,1,1,1
 ev_stepmoms_death,1,2,2,5,5,5,6
@@ -72,7 +72,7 @@ frank_like,20,20,20,20,24,24,27
 friend_group_tension,0,0,0,5,5,5,9
 gary_like,20,20,20,20,20,20,27
 highest_primary,1,2,2,2,3,3,3
-hopeful,33,37,38,40,43,45,50
+hopeful,33,36,38,40,43,45,50
 insight,22,27,29,33,37,40,45
 intimidation,14,19,19,23,27,30,34
 investigation,19,26,28,32,36,38,43
@@ -81,8 +81,8 @@ isaiah_relationship_strength,3,3,3,3,3,3,3
 jade_like,50,52,52,54,56,58,60
 jade_relationship_strength,3,3,3,3,3,3,3
 josefa_like,20,20,20,20,20,24,24
-leadership,14,14,18,18,22,23,29
-lean_into_the_wolf,5,9,10,14,19,22,27
+leadership,14,14,18,18,22,23,28
+lean_into_the_wolf,48,51,52,55,57,59,62
 lisa_like,20,20,20,20,23,24,27
 lowest_primary,1,1,1,2,2,2,3
 luna_like,50,52,52,52,54,54,56
@@ -97,15 +97,15 @@ packs_tension,50,50,50,50,50,50,52
 percentiles.txt
 persuasion,14,18,19,23,25,27,32
 physical,22,26,29,33,37,39,45
-practical,44,49,52,55,58,60,63
-rage,1,1,1,2,3,3,4
+practical,44,50,52,55,58,60,64
+rage,1,1,2,2,3,3,4
 ranges-combos.csv
 ranges.csv
 raven_like,50,54,54,56,59,60,63
 raven_relationship_strength,3,3,3,3,3,3,3
 renata_like,20,20,20,20,20,20,27
 rep_anticon_pack,20,24,24,27,29,30,34
-rep_con_pack,25,27,29,31,33,35,38
+rep_con_pack,25,27,29,30,33,35,38
 rep_humans_kind,50,50,50,50,50,50,52
 rep_humans_tough,50,50,52,52,54,54,56
 rf_rage_test_result,1,1,1,1,2,4,4
@@ -114,14 +114,14 @@ sarah_relationship_strength,3,3,3,3,3,3,3
 skye_like,20,20,20,20,24,24,24
 social,22,27,30,33,39,40,46
 sparks_like,19,19,20,20,24,24,24
-spiritual,37,40,42,45,48,51,56
+spiritual,36,40,41,44,48,50,56
 stealth,10,14,19,19,23,23,30
 stress,44,46,47,48,50,52,55
 subterfuge,10,14,14,19,22,23,27
 survival,10,10,10,19,19,19,23
 touchstone_meter,1,5,5,9,10,13,18
-wary,50,55,57,60,62,63,67
+wary,50,55,57,60,62,64,67
 wylie_like,20,20,20,20,20,20,20
 x_id,1,1,1,2,2,3,3
 zoey_like,20,20,20,20,20,24,27
-generated on,Fri Apr 10 09:39:16 CEST 2026
+generated on,Wed Apr 22 18:35:26 CEST 2026
