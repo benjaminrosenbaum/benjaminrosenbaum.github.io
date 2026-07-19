@@ -5,10 +5,10 @@ require 'htmlentities'
 coder = HTMLEntities.new
 now = DateTime.now
 
-# regexes
+$platforms = %i{facebook bluesky mastodon tumblr}
 
 if ARGV.length < 3
-	puts "Usage: new-blog.rb [--edit] [--fblink URL] [--bslink URL] [--mslink URL] [--pandoc] title description prev-id  < blog-contents > output.html"
+	puts "Usage: new-blog.rb [--edit] #{$platforms.map{|p| "[--#{p} URL]"}.join ' '} [--pandoc] title description prev-id  < blog-contents > output.html"
 	puts "       supports --, <!--NEXT-ENTRY-LINK-->, and <!--CROSSPOST--> placeholders in blog body. CROSSPOST is where social media links go."
 	exit 1
 end
@@ -22,22 +22,17 @@ if ARGV.delete "--pandoc"
 	$pandoc = true
 end
 
-if ARGV[0] == "--fblink"
-	ARGV.shift
-	$fblink = ARGV.shift
+#todo make these Strategy objects so they can come in any order
+
+$links = {}
+
+while ($platforms.any? {|p| ARGV[0] == "--#{p}"} ) 
+	puts "found: --#{p}"
+	p = $1 if ARGV.shift =~ /--(\w*)/
+	$links[p] = ARGV.shift
+	puts $links
+	puts "--------"
 end
-
-if ARGV[0] == "--bslink"
-	ARGV.shift
-	$bslink = ARGV.shift
-end
-
-if ARGV[0] == "--mslink"
-	ARGV.shift
-	$mslink = ARGV.shift
-end
-
-
 
 
 title = coder.encode ARGV[0].tap{|n| n[0].capitalize + n.slice(1) }, :named
@@ -184,15 +179,18 @@ def process_line line, add_para
 	 #p = -> (txt) { add_para ? "<p>#{txt}</p>" : "txt\n" }
 	if (line =~ /^\s*--\s*$/)
 	  	'<hr/>'
-	 elsif (line =~ /<!--CROSSPOST-->/) 
-	 		links = { :Facebook => $fblink, :Bluesky => $bslink, :Mastodon => $mslink }.reject{|k, v| !v}
-	 		threads = "thread#{links.length > 1 ? "s" : ""}"
-	 		cp = "[You can comment on the #{links.map{|k,v| "<a href=#{v}>#{k}</a>"}.join(", ")} #{threads}.]" if links.any?{|k,v| v}
-	 		"   <p><!--CROSSPOST-->#{cp}</p>"
+		"   <p><!--CROSSPOST-->#{cp}</p>"
 	 else
-	 		#p(line.chomp)
-	 		line.chomp
+	 		txt = line.chomp
+	 		add_para ? "<p>#{txt}</p>" : "#{txt}\n"
 	 end
+end
+
+def crosspost_line links
+	threads = "thread#{links.length > 1 ? "s" : ""}"
+	if links.any?
+		"<p><!--CROSSPOST-->[You can comment on the #{links.map{|k,v| "<a href=\"#{v}\">#{k.capitalize}</a>"}.join(", ")} #{threads}.]</p>" 
+	end
 end
 
 
@@ -205,6 +203,9 @@ if $pandoc
 else
 	STDIN.each {|line| puts process_line line, true}
 end
+
+puts crosspost_line $links
+
 puts footer now
 
 
