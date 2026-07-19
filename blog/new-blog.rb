@@ -8,13 +8,18 @@ now = DateTime.now
 # regexes
 
 if ARGV.length < 3
-	puts "Usage: new-blog.rb [--edit] [--fblink URL] [--bslink URL] [--mslink URL] title description prev-id  < blog-contents > output.html"
-	puts "       supports <!--NEXT-ENTRY-LINK--> and <!--CROSSPOST--> placeholders in blog body. CROSSPOST is where social media links go."
+	puts "Usage: new-blog.rb [--edit] [--fblink URL] [--bslink URL] [--mslink URL] [--pandoc] title description prev-id  < blog-contents > output.html"
+	puts "       supports --, <!--NEXT-ENTRY-LINK-->, and <!--CROSSPOST--> placeholders in blog body. CROSSPOST is where social media links go."
 	exit 1
 end
 
 if ARGV.delete "--edit"
 	$edit = true
+end
+
+
+if ARGV.delete "--pandoc"
+	$pandoc = true
 end
 
 if ARGV[0] == "--fblink"
@@ -31,6 +36,7 @@ if ARGV[0] == "--mslink"
 	ARGV.shift
 	$mslink = ARGV.shift
 end
+
 
 
 
@@ -174,19 +180,30 @@ unless $edit
 	end
 end
 
-
-puts header title, description, now
-STDIN.each do |line|
-	 if (line =~ /^\s*--\s*$/)
-	  	puts("<hr/>")
+def process_line line, add_para 
+	 #p = -> (txt) { add_para ? "<p>#{txt}</p>" : "txt\n" }
+	if (line =~ /^\s*--\s*$/)
+	  	'<hr/>'
 	 elsif (line =~ /<!--CROSSPOST-->/) 
 	 		links = { :Facebook => $fblink, :Bluesky => $bslink, :Mastodon => $mslink }.reject{|k, v| !v}
 	 		threads = "thread#{links.length > 1 ? "s" : ""}"
 	 		cp = "[You can comment on the #{links.map{|k,v| "<a href=#{v}>#{k}</a>"}.join(", ")} #{threads}.]" if links.any?{|k,v| v}
-	 		puts "   <p><!--CROSSPOST-->#{cp}</p>"
+	 		"   <p><!--CROSSPOST-->#{cp}</p>"
 	 else
-		puts "<p>#{line.chomp}</p>"
+	 		#p(line.chomp)
+	 		line.chomp
 	 end
+end
+
+
+puts header title, description, now
+if $pandoc
+	File.write('.pandocable.md', $stdin.read)
+	transformed = `pandoc --to HTML .pandocable.md | sed 's/\\<p\\>\\*\\*/\\<p\\>\\<b\\>/g' | sed 's/\\*\\*\\<\\/p>/<\\/b><\\/p>/g'`
+	File.write('.pandocked.html', transformed)
+	transformed.each_line { |line|  puts process_line line, false }
+else
+	STDIN.each {|line| puts process_line line, true}
 end
 puts footer now
 
