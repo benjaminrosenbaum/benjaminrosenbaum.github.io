@@ -17,6 +17,7 @@ confrontational,attachment_to_jade
 confrontational,attachment_to_luna
 confrontational,attachment_to_rave
 confrontational,attachment_to_sara
+dad_like,attachment_to_dad
 dutiful,attachment_to_dad
 dutiful,attachment_to_isaiah
 dutiful,attachment_to_jade
@@ -29,6 +30,9 @@ hopeful,attachment_to_jade
 hopeful,attachment_to_luna
 hopeful,attachment_to_raven
 hopeful,attachment_to_sarah
+isaiah_like,attachment_to_isaiah
+jade_like,attachment_to_jade
+luna_like,attachment_to_luna
 mental,academics
 mental,animal_ken
 mental,athletics
@@ -63,6 +67,8 @@ practical,attachment_to_jade
 practical,attachment_to_luna
 practical,attachment_to_raven
 practical,attachment_to_sarah
+raven_like,attachment_to_raven
+sarah_like,attachment_to_sarah
 social,academics
 social,animal_ken
 social,athletics
@@ -89,4 +95,4 @@ wary,attachment_to_jade
 wary,attachment_to_luna
 wary,attachment_to_raven
 wary,attachment_to_sarah
-generated on,Sat Jul 25 13:29:10 EDT 2026
+generated on,Sat Jul 25 14:07:18 EDT 2026
