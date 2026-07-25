@@ -24,7 +24,7 @@ coffee_preference,2,2,3,3,4,4,5
 confrontational,44,50,52,56,59,61,65
 current_chapter,11,11,11,11,11,11,11
 dad_like,52,54,54,56,58,59,62
-dad_relationship_strength,3,3,3,3,3,3,3
+dad_relationship_strength,2,3,3,4,4,4,5
 damage,1,1,1,5,5,9,15
 dietary_needs,1,1,2,2,3,3,4
 dutiful,38,41,43,46,50,52,57
@@ -78,16 +78,16 @@ insight,22,27,29,33,37,40,45
 intimidation,14,19,19,23,27,30,34
 investigation,19,26,28,32,36,38,43
 isaiah_like,50,52,52,54,56,57,60
-isaiah_relationship_strength,3,3,3,3,3,3,3
+isaiah_relationship_strength,1,2,2,3,3,3,4
 jade_like,50,52,52,54,56,58,60
-jade_relationship_strength,3,3,3,3,3,3,3
+jade_relationship_strength,1,2,2,3,3,3,4
 josefa_like,20,20,20,20,20,24,24
 leadership,14,14,18,18,22,23,28
 lean_into_the_wolf,48,50,52,55,57,59,63
 lisa_like,20,20,20,20,23,24,27
 lowest_primary,1,1,1,2,2,2,3
 luna_like,50,52,52,52,54,54,56
-luna_relationship_strength,3,3,3,3,3,3,3
+luna_relationship_strength,2,2,3,3,3,3,4
 mads_like,20,20,20,20,24,24,27
 manicure,1,1,2,2,3,3,4
 mental,25,30,33,38,42,45,49
@@ -103,7 +103,7 @@ rage,1,1,1,1,2,3,4
 ranges-combos.csv
 ranges.csv
 raven_like,50,54,54,57,59,61,64
-raven_relationship_strength,3,3,3,3,3,3,3
+raven_relationship_strength,3,4,4,4,5,5,5
 renata_like,20,20,20,20,20,20,27
 rep_anticon_pack,22,24,26,27,30,32,36
 rep_con_pack,26,29,30,33,36,37,43
@@ -111,7 +111,7 @@ rep_humans_kind,50,50,50,50,50,50,52
 rep_humans_tough,50,50,52,52,54,54,56
 rf_rage_test_result,1,1,1,2,3,4,4
 sarah_like,50,54,55,58,59,61,63
-sarah_relationship_strength,3,3,3,3,3,3,3
+sarah_relationship_strength,3,3,4,4,5,5,5
 skye_like,20,20,20,20,23,24,24
 social,22,27,30,33,39,40,46
 sparks_like,19,19,20,20,24,24,24
@@ -125,4 +125,4 @@ wary,50,55,57,60,63,64,68
 wylie_like,20,20,20,20,20,20,20
 x_id,1,1,1,2,2,3,3
 zoey_like,20,20,20,20,20,24,27
-generated on,Sat Jul 25 14:34:27 EDT 2026
+generated on,Sat Jul 25 15:04:15 EDT 2026
