@@ -1,11 +1,11 @@
 STAT,STAT,bottom 10%,bottom 25%,bottom 33%,50/50,top 34%,top 25%,top 10%
 charisma,academics,1,2,2,3,4,4,5
-charisma,animal_ken,1,1,2,2,3,3,4
+charisma,animal_ken,1,1,2,2,3,4,4
 charisma,athletics,1,2,2,3,4,4,5
 charisma,awareness,2,2,2,3,4,5,6
 charisma,brawl,1,2,2,3,4,4,5
 charisma,craft,1,1,2,2,3,3,4
-charisma,driving,2,2,2,3,3,4,4
+charisma,driving,2,2,2,3,3,3,4
 charisma,etiquette,1,2,2,2,3,3,5
 charisma,finance,1,2,2,3,3,4,5
 charisma,firearms,3,4,4,5,5,6,6
@@ -18,7 +18,7 @@ charisma,medicine,1,2,2,3,3,4,5
 charisma,melee,1,2,2,3,3,3,4
 charisma,occult,2,2,2,3,4,4,5
 charisma,performance,1,2,2,3,4,4,5
-charisma,persuasion,2,3,3,5,5,6,7
+charisma,persuasion,2,3,3,4,5,6,7
 charisma,politics,1,2,2,3,4,4,5
 charisma,science,1,2,2,3,4,4,6
 charisma,stealth,1,2,2,3,4,4,5
@@ -27,7 +27,7 @@ charisma,subterfuge,2,2,3,4,4,5,6
 charisma,survival,1,2,2,3,3,4,4
 charisma,technology,1,2,2,3,4,4,5
 composure,academics,2,2,3,3,4,4,6
-composure,animal_ken,2,2,2,3,3,3,3
+composure,animal_ken,2,2,2,3,3,3,5
 composure,athletics,2,3,3,3,4,4,5
 composure,awareness,3,3,3,4,4,5,5
 composure,brawl,2,3,3,3,3,4,6
@@ -36,7 +36,7 @@ composure,driving,2,3,3,3,4,4,4
 composure,etiquette,2,2,3,3,3,3,4
 composure,finance,2,3,3,3,4,4,5
 composure,firearms,4,5,5,5,5,5,6
-composure,insight,3,4,5,5,6,6,6
+composure,insight,3,4,4,5,6,6,6
 composure,intimidation,2,3,3,3,4,4,5
 composure,investigation,3,4,5,5,6,6,7
 composure,larceny,2,2,3,3,3,3,4
@@ -51,10 +51,10 @@ composure,science,2,3,3,3,4,5,6
 composure,stealth,2,3,3,3,4,4,5
 composure,streetwise,2,3,3,4,4,4,5
 composure,subterfuge,3,3,3,4,5,5,5
-composure,survival,2,2,3,3,3,3,4
+composure,survival,2,2,3,3,3,3,5
 composure,technology,2,3,3,3,4,4,5
 dexterity,academics,2,2,2,3,3,4,5
-dexterity,animal_ken,2,2,2,2,3,3,3
+dexterity,animal_ken,2,2,2,2,3,3,5
 dexterity,athletics,2,2,2,3,3,4,6
 dexterity,awareness,2,3,3,3,4,4,5
 dexterity,brawl,2,2,2,3,4,5,5
@@ -81,7 +81,7 @@ dexterity,subterfuge,2,3,3,4,4,4,5
 dexterity,survival,2,2,2,3,3,3,5
 dexterity,technology,2,2,3,3,3,4,5
 intelligence,academics,2,2,3,3,4,5,7
-intelligence,animal_ken,2,2,2,3,4,4,4
+intelligence,animal_ken,2,2,2,3,4,4,5
 intelligence,athletics,2,3,3,3,4,4,5
 intelligence,awareness,3,3,3,4,4,5,6
 intelligence,brawl,2,3,3,4,4,4,6
@@ -108,7 +108,7 @@ intelligence,subterfuge,3,3,4,4,5,5,6
 intelligence,survival,2,3,3,3,4,4,4
 intelligence,technology,2,2,2,4,4,5,6
 manipulation,academics,2,2,2,3,3,4,5
-manipulation,animal_ken,2,2,2,2,3,3,3
+manipulation,animal_ken,2,2,2,2,3,3,4
 manipulation,athletics,2,2,2,3,3,4,5
 manipulation,awareness,2,3,3,3,4,4,5
 manipulation,brawl,2,2,2,3,3,4,5
@@ -131,11 +131,11 @@ manipulation,politics,2,2,2,3,4,4,5
 manipulation,science,2,2,3,3,4,4,6
 manipulation,stealth,2,2,3,3,4,4,5
 manipulation,streetwise,2,2,2,3,4,4,5
-manipulation,subterfuge,2,3,3,4,4,5,5
+manipulation,subterfuge,2,3,3,4,4,4,5
 manipulation,survival,2,2,2,3,3,3,4
 manipulation,technology,2,2,2,3,4,4,5
 resolve,academics,2,2,3,4,4,5,6
-resolve,animal_ken,2,2,2,3,3,4,4
+resolve,animal_ken,2,2,2,3,3,4,6
 resolve,athletics,2,3,3,3,4,5,6
 resolve,awareness,3,3,3,4,5,5,6
 resolve,brawl,2,3,3,4,4,4,6
@@ -162,7 +162,7 @@ resolve,subterfuge,3,3,4,4,5,5,6
 resolve,survival,2,3,3,3,4,4,5
 resolve,technology,2,3,3,4,4,5,6
 stamina,academics,2,2,3,3,3,4,5
-stamina,animal_ken,2,2,2,2,3,3,3
+stamina,animal_ken,2,2,2,2,3,3,5
 stamina,athletics,2,2,2,3,4,4,5
 stamina,awareness,2,3,3,4,4,4,5
 stamina,brawl,2,2,2,2,4,5,5
@@ -189,7 +189,7 @@ stamina,subterfuge,2,3,3,4,4,4,5
 stamina,survival,2,2,2,2,3,4,5
 stamina,technology,2,2,3,3,3,4,5
 strength,academics,2,2,2,3,4,4,5
-strength,animal_ken,2,2,2,2,3,3,4
+strength,animal_ken,2,2,2,2,3,3,5
 strength,athletics,2,2,2,3,4,5,6
 strength,awareness,2,3,3,4,4,5,5
 strength,brawl,2,2,2,2,4,5,7
@@ -198,7 +198,7 @@ strength,driving,2,2,3,3,3,4,5
 strength,etiquette,2,2,2,3,3,4,4
 strength,finance,2,2,3,3,4,4,5
 strength,firearms,4,4,4,4,5,6,8
-strength,insight,3,4,4,5,5,6,7
+strength,insight,3,4,4,5,5,6,6
 strength,intimidation,2,2,3,3,4,4,5
 strength,investigation,4,4,5,5,6,6,7
 strength,larceny,2,2,2,2,3,3,4
@@ -207,7 +207,7 @@ strength,medicine,2,2,2,3,4,4,5
 strength,melee,2,2,2,2,3,4,5
 strength,occult,2,2,3,3,4,4,5
 strength,performance,2,2,3,3,4,4,4
-strength,persuasion,3,4,4,5,5,5,6
+strength,persuasion,3,4,4,5,5,6,6
 strength,politics,2,2,3,3,4,4,5
 strength,science,2,2,3,4,4,5,6
 strength,stealth,2,2,2,3,4,4,5
@@ -242,4 +242,4 @@ wits,streetwise,2,2,3,3,4,5,6
 wits,subterfuge,2,3,3,4,4,5,6
 wits,survival,2,2,2,3,3,4,5
 wits,technology,2,2,3,3,4,4,5
-generated on,Wed Sep 23 12:15:34 CEST 2026
+generated on,Thu Sep 24 18:33:08 CEST 2026

@@ -4,7 +4,7 @@ agora_exposure,0,0,0,0,0,0,0
 agreeable,47,48,49,50,51,52,54
 agreeableness,50,50,50,50,50,50,50
 anarch_cohesion,0,0,0,0,0,0,0
-animal_ken,0,0,0,0,0,0,1
+animal_ken,0,0,0,0,0,0,3
 annis_flirts,0,0,0,0,0,0,0
 annis_like,0,0,0,0,0,0,0
 annis_romance,0,0,0,0,0,0,0
@@ -88,7 +88,7 @@ mv_agreeableness_tested,0,0,0,0,0,0,0
 mv_anarch_cohesion_altered,0,0,0,0,0,0,0
 mv_anarch_cohesion_tested,0,0,0,0,0,0,0
 mv_animal_ken_altered,0,0,0,0,0,0,0
-mv_animal_ken_tested,0,0,0,0,0,0,0
+mv_animal_ken_tested,0,0,0,1,1,1,1
 mv_annis_flirts_altered,0,0,0,0,0,0,0
 mv_annis_flirts_tested,0,0,0,0,0,0,0
 mv_annis_like_altered,0,0,0,0,0,0,0
@@ -98,7 +98,7 @@ mv_annis_romance_tested,0,0,0,0,0,0,0
 mv_athletics_altered,0,0,0,0,0,0,0
 mv_athletics_tested,0,0,0,0,0,0,0
 mv_awareness_altered,0,0,0,0,0,0,0
-mv_awareness_tested,0,0,0,0,0,0,0
+mv_awareness_tested,0,0,0,1,1,1,1
 mv_brawl_altered,0,0,0,0,0,0,0
 mv_brawl_tested,0,0,0,0,0,0,0
 mv_camarilla_cohesion_altered,0,0,0,0,0,0,0
@@ -110,7 +110,7 @@ mv_charisma_tested,0,0,0,0,0,0,0
 mv_claudia_like_altered,0,0,0,0,0,0,0
 mv_claudia_like_tested,0,0,0,0,0,0,0
 mv_composure_altered,0,0,0,0,0,0,0
-mv_composure_tested,0,0,0,0,0,0,0
+mv_composure_tested,0,0,0,0,0,1,1
 mv_conscientious_altered,1,2,2,2,2,2,2
 mv_conscientious_tested,0,0,0,0,0,0,0
 mv_conscientiousness_altered,0,0,0,0,0,0,0
@@ -164,7 +164,7 @@ mv_insight_tested,0,0,0,0,0,0,0
 mv_intel_altered,0,0,0,0,0,0,0
 mv_intel_tested,0,0,0,0,0,0,0
 mv_intelligence_altered,0,0,0,0,0,0,0
-mv_intelligence_tested,0,0,0,0,0,0,0
+mv_intelligence_tested,1,1,1,1,2,2,2
 mv_intimidation_altered,0,0,0,0,0,0,0
 mv_intimidation_tested,0,0,0,0,0,0,0
 mv_investigation_altered,0,0,0,0,0,0,0
@@ -235,13 +235,13 @@ mv_rep_firstlight_tested,0,0,0,0,0,0,0
 mv_resolve_altered,0,0,0,0,0,0,0
 mv_resolve_tested,0,0,0,0,0,0,0
 mv_science_altered,0,0,0,0,0,0,0
-mv_science_tested,0,0,0,0,0,0,0
+mv_science_tested,0,0,0,0,1,1,1
 mv_stamina_altered,0,0,0,0,0,0,0
 mv_stamina_tested,0,0,0,0,0,0,0
 mv_stealth_altered,0,0,0,0,0,0,0
 mv_stealth_tested,0,0,0,0,0,0,0
 mv_streetwise_altered,0,0,0,0,0,0,0
-mv_streetwise_tested,0,0,0,0,0,0,0
+mv_streetwise_tested,0,0,0,0,0,0,1
 mv_strength_altered,0,0,0,0,0,0,0
 mv_strength_tested,0,0,0,0,0,0,0
 mv_subterfuge_altered,0,0,0,0,0,0,0
@@ -251,8 +251,8 @@ mv_survival_tested,0,0,0,0,0,0,0
 mv_tc_xid_altered,0,0,0,0,0,0,0
 mv_tc_xid_tested,0,0,0,0,0,0,0
 mv_technology_altered,0,0,0,0,0,0,0
-mv_technology_tested,0,0,0,0,0,0,0
-mv_test_result,0,0,0,0,0,0,0
+mv_technology_tested,0,1,1,1,1,1,1
+mv_test_result,2,3,3,3,4,4,4
 mv_the_ex_flirts_altered,0,0,0,0,0,1,1
 mv_the_ex_flirts_tested,0,0,0,0,0,0,0
 mv_the_ex_like_altered,1,1,1,1,1,1,1
@@ -280,7 +280,7 @@ mv_upper_hand_si_tested,0,0,0,0,0,0,0
 mv_willpower_altered,0,0,0,0,0,0,0
 mv_willpower_tested,0,0,0,0,0,0,0
 mv_wits_altered,0,0,0,0,0,0,0
-mv_wits_tested,0,0,0,0,0,0,0
+mv_wits_tested,0,0,0,1,2,2,2
 mv_xp_altered,0,0,0,0,0,0,0
 mv_xp_tested,0,0,0,0,0,0,0
 ngonnen_flirts,0,0,0,0,0,0,0
@@ -304,7 +304,7 @@ rep_bureau,50,50,50,50,50,50,50
 rep_camarilla,0,0,0,0,0,0,0
 rep_firstlight,20,20,20,20,20,20,20
 resolve,2,2,2,3,3,4,4
-science,0,0,0,0,1,2,3
+science,0,0,0,1,1,2,3
 skill_1s,3,3,3,7,7,7,7
 skill_2s,3,3,3,5,5,5,5
 skill_3s,3,3,3,3,3,3,3
@@ -322,6 +322,7 @@ t_maxcrush,0,0,0,0,0,0,0
 tc_x_id,1,1,2,2,2,3,3
 tc_xid,3,3,3,3,3,3,3
 technology,0,0,0,0,1,2,3
+test,1,1,3,3,6,6,6
 the_ex_flirts,0,0,0,0,0,2,2
 the_ex_like,48,48,51,51,55,55,55
 the_ex_romance,0,0,0,0,0,0,0
@@ -338,4 +339,4 @@ willpower,4,5,5,6,6,6,7
 wits,2,2,2,2,3,3,4
 x_id,1,1,2,2,2,3,3
 xp,1,1,1,2,2,2,2
-generated on,Wed Sep 23 12:15:18 CEST 2026
+generated on,Thu Sep 24 18:32:52 CEST 2026
