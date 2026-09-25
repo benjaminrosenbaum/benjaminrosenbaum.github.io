@@ -25,7 +25,7 @@ dc_xid,3,3,3,3,3,3,3
 debug_level,2,2,2,2,2,2,2
 dexterity,2,2,2,2,3,3,3
 driving,0,0,0,1,1,1,2
-dutiful_child_like,50,50,50,50,50,50,50
+dutiful_child_like,50,50,50,50,50,50,52
 dutiful_child_savvy,0,0,0,0,0,0,0
 emotional,46,50,50,52,53,54,56
 emotionality,50,50,50,50,50,50,50
@@ -98,7 +98,7 @@ mv_annis_romance_tested,0,0,0,0,0,0,0
 mv_athletics_altered,0,0,0,0,0,0,0
 mv_athletics_tested,0,0,0,0,0,0,0
 mv_awareness_altered,0,0,0,0,0,0,0
-mv_awareness_tested,0,0,0,1,1,1,1
+mv_awareness_tested,0,0,0,0,1,1,1
 mv_brawl_altered,0,0,0,0,0,0,0
 mv_brawl_tested,0,0,0,0,0,0,0
 mv_camarilla_cohesion_altered,0,0,0,0,0,0,0
@@ -110,7 +110,7 @@ mv_charisma_tested,0,0,0,0,0,0,0
 mv_claudia_like_altered,0,0,0,0,0,0,0
 mv_claudia_like_tested,0,0,0,0,0,0,0
 mv_composure_altered,0,0,0,0,0,0,0
-mv_composure_tested,0,0,0,0,0,1,1
+mv_composure_tested,0,0,0,0,0,0,1
 mv_conscientious_altered,1,2,2,2,2,2,2
 mv_conscientious_tested,0,0,0,0,0,0,0
 mv_conscientiousness_altered,0,0,0,0,0,0,0
@@ -125,7 +125,7 @@ mv_dexterity_altered,0,0,0,0,0,0,0
 mv_dexterity_tested,0,0,0,0,0,0,0
 mv_driving_altered,0,0,0,0,0,0,0
 mv_driving_tested,0,0,0,0,0,0,0
-mv_dutiful_child_like_altered,0,0,0,0,0,0,0
+mv_dutiful_child_like_altered,0,0,0,0,0,0,1
 mv_dutiful_child_like_tested,0,0,0,0,0,0,0
 mv_dutiful_child_savvy_altered,0,0,0,0,0,0,0
 mv_dutiful_child_savvy_tested,0,0,0,0,0,0,0
@@ -164,7 +164,7 @@ mv_insight_tested,0,0,0,0,0,0,0
 mv_intel_altered,0,0,0,0,0,0,0
 mv_intel_tested,0,0,0,0,0,0,0
 mv_intelligence_altered,0,0,0,0,0,0,0
-mv_intelligence_tested,1,1,1,1,2,2,2
+mv_intelligence_tested,1,1,1,1,1,2,2
 mv_intimidation_altered,0,0,0,0,0,0,0
 mv_intimidation_tested,0,0,0,0,0,0,0
 mv_investigation_altered,0,0,0,0,0,0,0
@@ -251,8 +251,8 @@ mv_survival_tested,0,0,0,0,0,0,0
 mv_tc_xid_altered,0,0,0,0,0,0,0
 mv_tc_xid_tested,0,0,0,0,0,0,0
 mv_technology_altered,0,0,0,0,0,0,0
-mv_technology_tested,0,1,1,1,1,1,1
-mv_test_result,2,3,3,3,4,4,4
+mv_technology_tested,0,0,1,1,1,1,1
+mv_test_result,2,2,2,2,3,4,4
 mv_the_ex_flirts_altered,0,0,0,0,0,1,1
 mv_the_ex_flirts_tested,0,0,0,0,0,0,0
 mv_the_ex_like_altered,1,1,1,1,1,1,1
@@ -265,7 +265,7 @@ mv_the_journo_like_altered,0,0,0,0,0,0,0
 mv_the_journo_like_tested,0,0,0,0,0,0,0
 mv_the_journo_romance_altered,0,0,0,0,0,0,0
 mv_the_journo_romance_tested,0,0,0,0,0,0,0
-mv_troubled_child_like_altered,0,0,0,0,0,0,0
+mv_troubled_child_like_altered,0,0,0,0,0,0,1
 mv_troubled_child_like_tested,0,0,0,0,0,0,0
 mv_troubled_child_mask_altered,0,0,0,0,0,0,0
 mv_troubled_child_mask_tested,0,0,0,0,0,0,0
@@ -312,7 +312,7 @@ skill_4s,0,0,0,0,1,1,1
 stamina,2,2,2,2,2,3,3
 stealth,0,0,0,1,1,2,2
 streetwise,0,0,0,1,1,2,2
-strength,2,2,2,2,2,3,4
+strength,2,2,2,2,2,3,3
 subterfuge,0,1,1,2,2,2,2
 survival,0,0,0,0,0,1,2
 t_all_flirts,0,0,0,0,0,0,0
@@ -329,7 +329,7 @@ the_ex_romance,0,0,0,0,0,0,0
 the_journo_flirts,0,0,0,0,0,0,0
 the_journo_like,50,50,50,50,50,50,50
 the_journo_romance,0,0,0,0,0,0,0
-troubled_child_like,50,50,50,50,50,50,50
+troubled_child_like,50,50,50,50,50,50,52
 troubled_child_mask,0,0,0,0,0,0,0
 troubled_child_status,0,0,0,0,0,0,0
 upper_hand_anarchs,0,0,0,0,0,0,0
@@ -339,4 +339,4 @@ willpower,4,5,5,6,6,6,7
 wits,2,2,2,2,3,3,4
 x_id,1,1,2,2,2,3,3
 xp,1,1,1,2,2,2,2
-generated on,Thu Sep 24 18:32:52 CEST 2026
+generated on,Fri Sep 25 08:55:11 CEST 2026
