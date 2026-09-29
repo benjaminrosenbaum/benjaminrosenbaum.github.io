@@ -121,7 +121,7 @@ mv_charisma_tested,0,0,0,0,0,0,0
 mv_claudia_like_altered,0,0,0,0,0,0,0
 mv_claudia_like_tested,0,0,0,0,0,0,0
 mv_composure_altered,0,0,0,0,0,0,0
-mv_composure_tested,0,0,0,1,1,1,2
+mv_composure_tested,0,0,0,1,1,2,2
 mv_conscientious_altered,1,2,2,2,2,3,4
 mv_conscientious_tested,0,0,0,0,0,0,0
 mv_conscientiousness_altered,0,0,0,0,0,0,0
@@ -201,7 +201,7 @@ mv_lior_like_tested,0,0,0,0,0,0,0
 mv_lior_romance_altered,0,0,0,0,0,0,0
 mv_lior_romance_tested,0,0,0,0,0,0,0
 mv_manipulation_altered,0,0,0,0,0,0,0
-mv_manipulation_tested,0,0,0,0,0,0,1
+mv_manipulation_tested,0,0,0,0,0,0,0
 mv_max_health_altered,0,0,0,0,0,0,0
 mv_max_health_tested,0,0,0,0,0,0,0
 mv_max_willpower_altered,0,0,0,0,0,0,0
@@ -258,7 +258,7 @@ mv_science_tested,0,0,0,0,1,1,1
 mv_snubs_altered,0,0,0,0,0,0,0
 mv_snubs_tested,0,0,0,0,0,0,0
 mv_spfc_dmg_dealt,0,0,1,1,1,1,1
-mv_spfc_dmg_taken,0,0,1,1,1,1,2
+mv_spfc_dmg_taken,0,0,1,1,1,1,1
 mv_stamina_altered,0,0,0,0,0,0,0
 mv_stamina_tested,0,0,0,0,0,0,1
 mv_stealth_altered,0,0,0,0,0,0,0
@@ -277,7 +277,7 @@ mv_technology_altered,0,0,0,0,0,0,0
 mv_technology_tested,0,0,1,1,1,1,1
 mv_tension_altered,0,0,1,1,1,1,2
 mv_tension_tested,0,0,0,0,0,0,0
-mv_test_result,2,2,4,4,4,4,4
+mv_test_result,1,2,3,3,3,3,3
 mv_the_ex_flirts_altered,0,0,0,0,1,1,1
 mv_the_ex_flirts_tested,0,0,0,0,0,0,0
 mv_the_ex_like_altered,1,1,1,1,1,1,1
@@ -305,7 +305,7 @@ mv_upper_hand_si_tested,0,0,0,0,0,0,0
 mv_willpower_altered,0,0,0,0,0,0,0
 mv_willpower_tested,0,0,0,0,0,0,0
 mv_wits_altered,0,0,0,0,0,0,0
-mv_wits_tested,0,0,0,1,2,3,3
+mv_wits_tested,0,0,0,2,2,3,3
 mv_wounds_altered,0,0,0,0,0,0,0
 mv_wounds_tested,0,0,0,0,0,0,0
 mv_xp_altered,0,0,0,0,0,0,0
@@ -328,7 +328,7 @@ pc_age,52,52,52,52,52,52,52
 pc_aggr_snubs,0,0,0,0,0,0,0
 pc_aggr_wounds,0,0,0,0,0,0,0
 pc_spfc_snubs,0,0,0,0,0,0,0
-pc_spfc_wounds,0,0,0,2,2,2,2
+pc_spfc_wounds,0,0,0,1,1,2,2
 percentiles.txt
 performance,0,0,0,0,1,1,2
 persuasion,1,1,2,2,3,3,4
@@ -380,4 +380,4 @@ willpower,4,5,5,6,6,6,7
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,1,1,1,2,2,2,2
-generated on,Mon Sep 28 12:09:16 CEST 2026
+generated on,Tue Sep 29 10:05:02 CEST 2026
