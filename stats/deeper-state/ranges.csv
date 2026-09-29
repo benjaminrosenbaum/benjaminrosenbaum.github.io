@@ -31,6 +31,7 @@ emotional,46,49,50,51,53,54,56
 emotionality,50,50,50,50,50,50,50
 etiquette,0,0,0,0,0,1,1
 ev_ch1_armed_with,1,1,1,1,7,7,9
+ev_ch1_owen_foyer_clash,1,5,8,11,11,11,11
 ev_ch1_warning,2,2,2,2,3,3,5
 ev_ch1_weapon,1,1,1,1,2,3,4
 ev_early_pre_bureau_career,1,1,1,1,1,1,1
@@ -111,7 +112,7 @@ mv_athletics_tested,0,0,0,0,0,0,0
 mv_awareness_altered,0,0,0,0,0,0,0
 mv_awareness_tested,0,1,1,1,2,2,2
 mv_brawl_altered,0,0,0,0,0,0,0
-mv_brawl_tested,0,1,1,1,1,1,1
+mv_brawl_tested,0,1,1,1,2,2,3
 mv_camarilla_cohesion_altered,0,0,0,0,0,0,0
 mv_camarilla_cohesion_tested,0,0,0,0,0,0,0
 mv_camarilla_leverage_altered,0,0,0,0,0,0,0
@@ -121,7 +122,7 @@ mv_charisma_tested,0,0,0,0,0,0,0
 mv_claudia_like_altered,0,0,0,0,0,0,0
 mv_claudia_like_tested,0,0,0,0,0,0,0
 mv_composure_altered,0,0,0,0,0,0,0
-mv_composure_tested,0,0,0,1,1,2,2
+mv_composure_tested,0,0,0,1,1,1,2
 mv_conscientious_altered,1,2,2,2,2,3,4
 mv_conscientious_tested,0,0,0,0,0,0,0
 mv_conscientiousness_altered,0,0,0,0,0,0,0
@@ -266,7 +267,7 @@ mv_stealth_tested,0,0,0,0,0,0,1
 mv_streetwise_altered,0,0,0,0,0,0,0
 mv_streetwise_tested,0,0,0,0,0,0,1
 mv_strength_altered,0,0,0,0,0,0,0
-mv_strength_tested,0,0,1,1,1,1,1
+mv_strength_tested,0,1,1,1,2,2,3
 mv_subterfuge_altered,0,0,0,0,0,0,0
 mv_subterfuge_tested,0,0,0,0,0,0,0
 mv_survival_altered,0,0,0,0,0,0,0
@@ -277,7 +278,7 @@ mv_technology_altered,0,0,0,0,0,0,0
 mv_technology_tested,0,0,1,1,1,1,1
 mv_tension_altered,0,0,1,1,1,1,2
 mv_tension_tested,0,0,0,0,0,0,0
-mv_test_result,1,2,3,3,3,3,3
+mv_test_result,1,2,2,3,3,3,3
 mv_the_ex_flirts_altered,0,0,0,0,1,1,1
 mv_the_ex_flirts_tested,0,0,0,0,0,0,0
 mv_the_ex_like_altered,1,1,1,1,1,1,1
@@ -305,7 +306,7 @@ mv_upper_hand_si_tested,0,0,0,0,0,0,0
 mv_willpower_altered,0,0,0,0,0,0,0
 mv_willpower_tested,0,0,0,0,0,0,0
 mv_wits_altered,0,0,0,0,0,0,0
-mv_wits_tested,0,0,0,2,2,3,3
+mv_wits_tested,0,0,0,1,2,3,3
 mv_wounds_altered,0,0,0,0,0,0,0
 mv_wounds_tested,0,0,0,0,0,0,0
 mv_xp_altered,0,0,0,0,0,0,0
@@ -321,14 +322,19 @@ num_achievements
 occult,0,0,1,1,1,2,2
 open_to_exp,48,50,50,51,52,53,55
 openness_to_exp,50,50,50,50,50,50,50
+owen_aggr_wounds,0,0,0,0,0,0,0
+owen_health,6,6,6,6,6,6,6
+owen_spfc_wounds,0,0,0,0,0,1,2
 parenting_demands,50,50,50,50,50,50,50
 parenting_order,50,50,50,50,50,50,50
 parenting_trust,50,50,50,50,50,50,50
 pc_age,52,52,52,52,52,52,52
 pc_aggr_snubs,0,0,0,0,0,0,0
 pc_aggr_wounds,0,0,0,0,0,0,0
+pc_aggr_wounds_end_ch1,0,0,0,0,0,0,0
 pc_spfc_snubs,0,0,0,0,0,0,0
 pc_spfc_wounds,0,0,0,1,1,2,2
+pc_spfc_wounds_end_ch1,0,0,0,0,0,0,0
 percentiles.txt
 performance,0,0,0,0,1,1,2
 persuasion,1,1,2,2,3,3,4
@@ -380,4 +386,4 @@ willpower,4,5,5,6,6,6,7
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,1,1,1,2,2,2,2
-generated on,Tue Sep 29 10:05:02 CEST 2026
+generated on,Tue Sep 29 12:29:10 CEST 2026
