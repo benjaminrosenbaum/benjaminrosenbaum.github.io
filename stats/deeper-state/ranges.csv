@@ -33,7 +33,7 @@ etiquette,0,0,0,0,0,1,1
 ev_ch1_armed_with,1,1,1,1,7,7,9
 ev_ch1_owen_foyer_clash,1,5,8,11,11,11,11
 ev_ch1_warning,2,2,2,2,3,3,5
-ev_ch1_weapon,1,1,1,1,2,3,4
+ev_ch1_weapon,1,1,1,1,3,3,4
 ev_early_pre_bureau_career,1,1,1,1,1,1,1
 ev_education_level,2,3,3,4,4,5,5
 ev_employment_status,2,2,2,2,2,2,2
@@ -108,11 +108,11 @@ mv_annis_like_tested,0,0,0,0,0,0,0
 mv_annis_romance_altered,0,0,0,0,0,0,0
 mv_annis_romance_tested,0,0,0,0,0,0,0
 mv_athletics_altered,0,0,0,0,0,0,0
-mv_athletics_tested,0,0,0,0,0,0,0
+mv_athletics_tested,0,0,0,0,0,0,1
 mv_awareness_altered,0,0,0,0,0,0,0
 mv_awareness_tested,0,1,1,1,2,2,2
 mv_brawl_altered,0,0,0,0,0,0,0
-mv_brawl_tested,0,1,1,1,2,2,3
+mv_brawl_tested,0,1,1,1,3,3,4
 mv_camarilla_cohesion_altered,0,0,0,0,0,0,0
 mv_camarilla_cohesion_tested,0,0,0,0,0,0,0
 mv_camarilla_leverage_altered,0,0,0,0,0,0,0
@@ -136,7 +136,7 @@ mv_damage_taken,0,0,0,0,0,0,0
 mv_dc_xid_altered,0,0,0,0,0,0,0
 mv_dc_xid_tested,0,0,0,0,0,0,0
 mv_dexterity_altered,0,0,0,0,0,0,0
-mv_dexterity_tested,0,0,0,0,0,0,0
+mv_dexterity_tested,0,0,0,0,1,1,1
 mv_driving_altered,0,0,0,0,0,0,0
 mv_driving_tested,0,0,0,0,0,0,0
 mv_dutiful_child_like_altered,0,0,0,0,0,0,1
@@ -220,7 +220,7 @@ mv_ngonnen_like_tested,0,0,0,0,0,0,0
 mv_ngonnen_romance_altered,0,0,0,0,0,0,0
 mv_ngonnen_romance_tested,0,0,0,0,0,0,0
 mv_occult_altered,0,0,0,0,0,0,0
-mv_occult_tested,0,0,0,0,0,1,1
+mv_occult_tested,0,0,0,0,0,0,1
 mv_op_xp_cost,0,0,0,0,0,0,0
 mv_open_to_exp_altered,1,1,2,2,2,3,4
 mv_open_to_exp_tested,0,0,0,0,0,0,0
@@ -258,8 +258,8 @@ mv_science_altered,0,0,0,0,0,0,0
 mv_science_tested,0,0,0,0,1,1,1
 mv_snubs_altered,0,0,0,0,0,0,0
 mv_snubs_tested,0,0,0,0,0,0,0
-mv_spfc_dmg_dealt,0,0,1,1,1,1,1
-mv_spfc_dmg_taken,0,0,1,1,1,1,1
+mv_spfc_dmg_dealt,0,0,0,0,0,0,0
+mv_spfc_dmg_taken,0,0,0,0,0,0,1
 mv_stamina_altered,0,0,0,0,0,0,0
 mv_stamina_tested,0,0,0,0,0,0,1
 mv_stealth_altered,0,0,0,0,0,0,0
@@ -267,7 +267,7 @@ mv_stealth_tested,0,0,0,0,0,0,1
 mv_streetwise_altered,0,0,0,0,0,0,0
 mv_streetwise_tested,0,0,0,0,0,0,1
 mv_strength_altered,0,0,0,0,0,0,0
-mv_strength_tested,0,1,1,1,2,2,3
+mv_strength_tested,0,0,1,1,2,3,3
 mv_subterfuge_altered,0,0,0,0,0,0,0
 mv_subterfuge_tested,0,0,0,0,0,0,0
 mv_survival_altered,0,0,0,0,0,0,0
@@ -324,7 +324,7 @@ open_to_exp,48,50,50,51,52,53,55
 openness_to_exp,50,50,50,50,50,50,50
 owen_aggr_wounds,0,0,0,0,0,0,0
 owen_health,6,6,6,6,6,6,6
-owen_spfc_wounds,0,0,0,0,0,1,2
+owen_spfc_wounds,0,0,0,1,1,1,2
 parenting_demands,50,50,50,50,50,50,50
 parenting_order,50,50,50,50,50,50,50
 parenting_trust,50,50,50,50,50,50,50
@@ -333,7 +333,7 @@ pc_aggr_snubs,0,0,0,0,0,0,0
 pc_aggr_wounds,0,0,0,0,0,0,0
 pc_aggr_wounds_end_ch1,0,0,0,0,0,0,0
 pc_spfc_snubs,0,0,0,0,0,0,0
-pc_spfc_wounds,0,0,0,1,1,2,2
+pc_spfc_wounds,0,0,1,1,2,2,3
 pc_spfc_wounds_end_ch1,0,0,0,0,0,0,0
 percentiles.txt
 performance,0,0,0,0,1,1,2
@@ -386,4 +386,4 @@ willpower,4,5,5,6,6,6,7
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,1,1,1,2,2,2,2
-generated on,Tue Sep 29 12:29:10 CEST 2026
+generated on,Tue Sep 29 17:55:04 CEST 2026
