@@ -30,7 +30,7 @@ dutiful_child_savvy,0,0,0,0,0,0,0
 emotional,46,49,50,51,53,54,56
 emotionality,50,50,50,50,50,50,50
 etiquette,0,0,0,0,0,1,1
-ev_ch1_armed_with,1,1,1,1,7,7,9
+ev_ch1_armed_with,1,1,1,1,2,7,9
 ev_ch1_owen_foyer_clash,1,5,8,11,11,11,11
 ev_ch1_warning,2,2,2,2,3,3,5
 ev_ch1_weapon,1,1,1,1,3,3,4
@@ -278,7 +278,7 @@ mv_technology_altered,0,0,0,0,0,0,0
 mv_technology_tested,0,0,1,1,1,1,1
 mv_tension_altered,0,0,1,1,1,1,2
 mv_tension_tested,0,0,0,0,0,0,0
-mv_test_result,1,2,2,3,3,3,3
+mv_test_result,1,1,2,3,3,3,3
 mv_the_ex_flirts_altered,0,0,0,0,1,1,1
 mv_the_ex_flirts_tested,0,0,0,0,0,0,0
 mv_the_ex_like_altered,1,1,1,1,1,1,1
@@ -386,4 +386,4 @@ willpower,4,5,5,6,6,6,7
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,1,1,1,2,2,2,2
-generated on,Tue Sep 29 17:55:04 CEST 2026
+generated on,Wed Sep 30 09:52:11 CEST 2026
