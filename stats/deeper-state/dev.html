@@ -1,6 +1,6 @@
 <h2>Statistics for Hunter: Deeper State</h2>
 <p>as of
-Wed Sep 30 11:10:11 CEST 2026
+Wed Sep 30 15:23:29 CEST 2026
 </p><p> <b>COV</b> is the coefficient of variance, a unitless measure of how broad the curve is, stdev/mean. A high <b>COV</b> means that the stat varies a lot between different playthroughs.</p>
 <p> <b>COV2</b> is COV using max instead of mean, better for non-normal right-tailed distributions. In other words, if a stat starts out at 0 instead of 50, <b>COV2</b> will be a better measure than COV of how much it varies.</p>
 <p><b>PMODE</b> is what proportion are the mode, to identify untouched stats. A <b>PMODE</b> of 100% means that the stat is always the same in every playthrough; <b>PMODE</b> is the percentage of time that the game never touches that stat.
@@ -509,16 +509,6 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>47</td>
   </tr>
   <tr>
-    <td>parenting_trust</td>
-    <td>50.17</td>
-    <td>1.10</td>
-    <td>2.19%</td>
-    <td>55</td>
-    <td>1.99%</td>
-    <td>-88.20%</td>
-    <td>47</td>
-  </tr>
-  <tr>
     <td>parenting_demands</td>
     <td>49.93</td>
     <td>1.02</td>
@@ -529,24 +519,24 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>47</td>
   </tr>
   <tr>
-    <td>ev_ch1_armed_with</td>
-    <td>3.30</td>
-    <td>3.27</td>
-    <td>99.10%</td>
-    <td>9</td>
-    <td>36.32%</td>
-    <td>-64.00%</td>
-    <td>1</td>
+    <td>parenting_trust</td>
+    <td>50.17</td>
+    <td>1.10</td>
+    <td>2.19%</td>
+    <td>55</td>
+    <td>1.99%</td>
+    <td>-88.20%</td>
+    <td>47</td>
   </tr>
   <tr>
-    <td>skill_1s</td>
-    <td>5.66</td>
-    <td>2.18</td>
-    <td>38.46%</td>
-    <td>10</td>
-    <td>21.78%</td>
-    <td>-56.80%</td>
-    <td>3</td>
+    <td>ev_ch1_armed_with</td>
+    <td>3.73</td>
+    <td>3.40</td>
+    <td>91.25%</td>
+    <td>9</td>
+    <td>37.82%</td>
+    <td>-57.80%</td>
+    <td>1</td>
   </tr>
   <tr>
     <td>skill_2s</td>
@@ -555,6 +545,16 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>29.27%</td>
     <td>8</td>
     <td>16.15%</td>
+    <td>-56.80%</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>skill_1s</td>
+    <td>5.66</td>
+    <td>2.18</td>
+    <td>38.46%</td>
+    <td>10</td>
+    <td>21.78%</td>
     <td>-56.80%</td>
     <td>3</td>
   </tr>
@@ -577,6 +577,26 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>1.94%</td>
     <td>-40.40%</td>
     <td>49</td>
+  </tr>
+  <tr>
+    <td>mv_brawl_tested</td>
+    <td>2.33</td>
+    <td>2.15</td>
+    <td>92.46%</td>
+    <td>9</td>
+    <td>23.90%</td>
+    <td>-34.40%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_strength_tested</td>
+    <td>1.77</td>
+    <td>1.74</td>
+    <td>98.69%</td>
+    <td>8</td>
+    <td>21.81%</td>
+    <td>-30.80%</td>
+    <td>0</td>
   </tr>
   <tr>
     <td>tension</td>
@@ -619,16 +639,6 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>45</td>
   </tr>
   <tr>
-    <td>agreeable</td>
-    <td>50.21</td>
-    <td>2.69</td>
-    <td>5.36%</td>
-    <td>56</td>
-    <td>4.81%</td>
-    <td>-18.40%</td>
-    <td>43</td>
-  </tr>
-  <tr>
     <td>honest_humble</td>
     <td>50.98</td>
     <td>2.16</td>
@@ -637,6 +647,16 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>3.79%</td>
     <td>-18.40%</td>
     <td>46</td>
+  </tr>
+  <tr>
+    <td>agreeable</td>
+    <td>50.21</td>
+    <td>2.69</td>
+    <td>5.36%</td>
+    <td>56</td>
+    <td>4.81%</td>
+    <td>-18.40%</td>
+    <td>43</td>
   </tr>
   <tr>
     <td>ev_pre_SAD_assignment</td>
@@ -682,14 +702,14 @@ Wed Sep 30 11:10:11 CEST 2026
     <th>MIN</th>
   </tr>
   <tr>
-    <td>mv_op_xp_cost</td>
-    <td>0.00</td>
+    <td>current_chapter</td>
+    <td>1.00</td>
     <td>0.00</td>
     <td>0.00%</td>
-    <td>0</td>
+    <td>1</td>
     <td>0.00%</td>
     <td>-100.00%</td>
-    <td>0</td>
+    <td>1</td>
   </tr>
   <tr>
     <td>pc_aggr_wounds</td>
@@ -702,24 +722,84 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>0</td>
   </tr>
   <tr>
-    <td>pc_spfc_snubs</td>
-    <td>0.00</td>
+    <td>d_curiosity</td>
+    <td>10.00</td>
     <td>0.00</td>
     <td>0.00%</td>
-    <td>0</td>
+    <td>10</td>
     <td>0.00%</td>
     <td>-100.00%</td>
-    <td>0</td>
+    <td>10</td>
   </tr>
   <tr>
-    <td>pc_aggr_snubs</td>
-    <td>0.00</td>
+    <td>d_vengeance</td>
+    <td>10.00</td>
     <td>0.00</td>
     <td>0.00%</td>
-    <td>0</td>
+    <td>10</td>
     <td>0.00%</td>
     <td>-100.00%</td>
-    <td>0</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>d_oath</td>
+    <td>10.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>10</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>d_greed</td>
+    <td>10.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>10</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>d_pride</td>
+    <td>10.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>10</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>d_envy</td>
+    <td>10.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>10</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>d_atonement</td>
+    <td>10.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>10</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>d_normalcy</td>
+    <td>30.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>30</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>30</td>
   </tr>
   <tr>
     <td>the_ex_romance</td>
@@ -1152,16 +1232,6 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>0</td>
   </tr>
   <tr>
-    <td>pc_spfc_wounds_end_ch1</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
     <td>pc_aggr_wounds_end_ch1</td>
     <td>0.00</td>
     <td>0.00</td>
@@ -1180,36 +1250,6 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>0.00%</td>
     <td>-100.00%</td>
     <td>0</td>
-  </tr>
-  <tr>
-    <td>storyteller_mode</td>
-    <td>1.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>1</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>debug_level</td>
-    <td>2.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>2</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>current_chapter</td>
-    <td>1.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>1</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>1</td>
   </tr>
   <tr>
     <td>pc_age</td>
@@ -1342,46 +1382,6 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>0</td>
   </tr>
   <tr>
-    <td>mv_wounds_altered</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>mv_wounds_tested</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>mv_aggravated_wounds_altered</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>mv_aggravated_wounds_tested</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
     <td>mv_max_willpower_altered</td>
     <td>0.00</td>
     <td>0.00</td>
@@ -1393,46 +1393,6 @@ Wed Sep 30 11:10:11 CEST 2026
   </tr>
   <tr>
     <td>mv_max_willpower_tested</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>mv_snubs_altered</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>mv_snubs_tested</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>mv_aggravated_snubs_altered</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00%</td>
-    <td>0</td>
-    <td>0.00%</td>
-    <td>-100.00%</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>mv_aggravated_snubs_tested</td>
     <td>0.00</td>
     <td>0.00</td>
     <td>0.00%</td>
@@ -2782,6 +2742,166 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>0</td>
   </tr>
   <tr>
+    <td>mv_d_curiosity_altered</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_vengeance_altered</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_oath_altered</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_greed_altered</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_pride_altered</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_envy_altered</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_atonement_altered</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_normalcy_altered</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_curiosity_tested</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_vengeance_tested</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_oath_tested</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_greed_tested</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_pride_tested</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_envy_tested</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_atonement_tested</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>mv_d_normalcy_tested</td>
+    <td>0.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>0</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>0</td>
+  </tr>
+  <tr>
     <td>MVT_STRONG_SUCCESS</td>
     <td>1.00</td>
     <td>0.00</td>
@@ -2832,7 +2952,7 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>0</td>
   </tr>
   <tr>
-    <td>mv_aggr_dmg_taken</td>
+    <td>mv_op_xp_cost</td>
     <td>0.00</td>
     <td>0.00</td>
     <td>0.00%</td>
@@ -2840,6 +2960,26 @@ Wed Sep 30 11:10:11 CEST 2026
     <td>0.00%</td>
     <td>-100.00%</td>
     <td>0</td>
+  </tr>
+  <tr>
+    <td>storyteller_mode</td>
+    <td>1.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>1</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>debug_level</td>
+    <td>2.00</td>
+    <td>0.00</td>
+    <td>0.00%</td>
+    <td>2</td>
+    <td>0.00%</td>
+    <td>-100.00%</td>
+    <td>2</td>
   </tr>
   <tr>
     <td>jrn_x_id</td>
