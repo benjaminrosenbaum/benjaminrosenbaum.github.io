@@ -7,8 +7,8 @@ now = DateTime.now
 
 $platforms = %i{facebook bluesky mastodon tumblr}
 
-if ARGV.length < 3
-	puts "Usage: new-blog.rb [--edit] #{$platforms.map{|p| "[--#{p} URL]"}.join ' '} [--pandoc] title description prev-id  < blog-contents > output.html"
+if ARGV.length < 2
+	puts "Usage: new-blog.rb [--edit] #{$platforms.map{|p| "[--#{p} URL]"}.join ' '} [--pandoc] title description [prev-id]  < blog-contents > output.html"
 	puts "       supports --, <!--NEXT-ENTRY-LINK-->, and <!--CROSSPOST--> placeholders in blog body. CROSSPOST is where social media links go."
 	exit 1
 end
@@ -37,9 +37,9 @@ end
 
 title = coder.encode ARGV[0].tap{|n| n[0].capitalize + n.slice(1) }, :named
 description = coder.encode ARGV[1], :named
-$prev = ARGV[2]
+$prev = ARGV[2] || `ls -1 archives | sort | tail -1 | cut -d '.' -f 1`.chomp
 if $prev.to_i == 0
-	puts "bad previous id"
+	puts "bad previous id: #{$prev}"
 	exit 1
 end
 
