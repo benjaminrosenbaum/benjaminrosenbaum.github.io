@@ -10,6 +10,7 @@ $platforms = %i{facebook bluesky mastodon tumblr}
 if ARGV.length < 2
 	puts "Usage: new-blog.rb [--edit] #{$platforms.map{|p| "[--#{p} URL]"}.join ' '} [--pandoc] title description [prev-id]  < blog-contents > output.html"
 	puts "       supports --, <!--NEXT-ENTRY-LINK-->, and <!--CROSSPOST--> placeholders in blog body. CROSSPOST is where social media links go."
+	puts "\nSee also github/benjaminrosenbaum.github.io/blog/publish-blog-entry.rb"
 	exit 1
 end
 
