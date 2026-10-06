@@ -329,6 +329,7 @@ performance,0,0,0,0,1,1,2
 persuasion,1,1,2,2,3,3,4
 pineda_like,50,50,50,50,50,50,50
 politics,0,0,0,1,1,2,2
+ranges-combos.csv
 ranges.csv
 rep_agora,0,0,0,0,0,0,0
 rep_anarchs,0,0,0,0,0,0,0
@@ -367,4 +368,4 @@ upper_hand_si,0,0,0,0,0,0,0
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,1,2,2,2,11,12,37
-generated on,Mon Oct  5 15:59:46 CEST 2026
+generated on,Tue Oct  6 07:18:21 CEST 2026
