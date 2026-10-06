@@ -38,7 +38,7 @@ end
 
 title = coder.encode ARGV[0].tap{|n| n[0].capitalize + n.slice(1) }, :named
 description = coder.encode ARGV[1], :named
-$prev = ARGV[2] || `ls -1 archives | sort | tail -1 | cut -d '.' -f 1`.chomp
+$prev = ARGV[2] || ((!$edit) && `ls -1 archives | sort | tail -1 | cut -d '.' -f 1`.chomp)
 if $prev.to_i == 0
 	puts "bad previous id: #{$prev}"
 	exit 1
