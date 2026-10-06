@@ -28,11 +28,11 @@ end
 $links = {}
 
 while ($platforms.any? {|p| ARGV[0] == "--#{p}"} ) 
-	puts "found: --#{p}"
+	#puts "found: --#{p}"
 	p = $1 if ARGV.shift =~ /--(\w*)/
 	$links[p] = ARGV.shift
-	puts $links
-	puts "--------"
+	#puts $links
+	#puts "--------"
 end
 
 
