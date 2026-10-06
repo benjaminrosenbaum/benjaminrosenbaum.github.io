@@ -43,6 +43,7 @@ ev_ch1_clue_gaze,0,0,0,0,0,0,0
 ev_ch1_clue_outfit,0,0,0,0,0,0,0
 ev_ch1_clue_slang,0,0,0,0,0,0,0
 ev_ch1_clue_worried,0,0,0,0,0,0,0
+ev_ch1_journo_vibe,1,1,1,1,1,1,1
 ev_ch1_location_paths,3,4,4,6,8,8,8
 ev_ch1_owen_foyer_clash,1,6,9,11,11,11,11
 ev_ch1_owen_foyer_fight_exit,1,2,2,2,4,9,10
@@ -370,4 +371,4 @@ upper_hand_si,0,0,0,0,0,0,0
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,1,2,2,2,11,12,37
-generated on,Tue Oct  6 16:24:32 CEST 2026
+generated on,Tue Oct  6 18:17:06 CEST 2026
