@@ -17,7 +17,7 @@ claudia_like,0,0,0,0,0,0,0
 composure,2,2,2,3,3,3,3
 conscientious,43,46,47,49,51,52,55
 craft,0,0,0,0,0,0,0
-cslib_ret,0,0,0,0,0,0,0
+cslib_ret,0,0,0,0,0,1,1
 current_chapter,1,1,1,1,1,1,1
 d_atonement,10,10,10,10,10,10,10
 d_curiosity,10,10,10,10,10,10,10
@@ -73,7 +73,7 @@ finance,0,0,0,0,1,1,2
 firearms,2,2,2,2,2,3,4
 gabriel_like,50,50,50,50,50,50,50
 heat,0,0,0,0,0,0,0
-honest_humble,47,49,50,51,52,53,54
+honest_humble,47,49,50,51,52,53,55
 hunter_cohesion,0,0,0,0,0,0,0
 hunter_philosophy,0,0,0,0,0,0,0
 insight,1,2,2,2,3,3,4
@@ -275,7 +275,7 @@ mv_technology_altered,0,0,0,0,0,0,0
 mv_technology_tested,0,0,1,1,1,1,1
 mv_tension_altered,0,0,1,1,1,1,2
 mv_tension_tested,0,0,0,0,0,0,0
-mv_test_result,1,1,1,1,3,3,4
+mv_test_result,1,1,1,1,3,4,4
 mv_the_ex_flirts_altered,0,0,0,0,1,1,1
 mv_the_ex_flirts_tested,0,0,0,0,0,0,0
 mv_the_ex_like_altered,1,1,1,1,1,1,2
@@ -322,11 +322,11 @@ parenting_order,49,50,50,50,50,50,50
 parenting_trust,48,50,50,50,50,50,52
 pc_age,52,52,52,52,52,52,52
 pc_aggr_snubs,0,0,0,0,0,0,0
-pc_aggr_wounds,0,0,0,0,2,2,4
-pc_aggr_wounds_end_ch1,0,0,0,0,2,2,4
+pc_aggr_wounds,0,0,0,0,0,2,3
+pc_aggr_wounds_end_ch1,0,0,0,0,0,2,3
 pc_spfc_snubs,0,0,0,0,0,0,0
-pc_spfc_wounds,0,0,1,2,3,3,3
-pc_spfc_wounds_end_ch1,0,0,1,2,3,3,3
+pc_spfc_wounds,0,1,1,2,2,2,4
+pc_spfc_wounds_end_ch1,0,1,1,2,2,2,4
 percentiles.txt
 performance,0,0,0,0,1,1,2
 persuasion,1,1,2,2,3,3,4
@@ -371,4 +371,4 @@ upper_hand_si,0,0,0,0,0,0,0
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,1,2,2,2,11,12,37
-generated on,Tue Oct  6 18:17:06 CEST 2026
+generated on,Wed Oct  7 09:11:57 CEST 2026
