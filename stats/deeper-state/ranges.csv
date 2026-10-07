@@ -35,7 +35,7 @@ dutiful_child_like,39,40,40,40,40,40,43
 dutiful_child_savvy,0,0,0,0,0,0,0
 emotional,46,49,50,51,53,54,57
 etiquette,0,0,0,0,0,1,1
-ev_ch1_armed_with,1,1,1,1,1,7,9
+ev_ch1_armed_with,1,1,1,1,3,7,9
 ev_ch1_bitten_by_owen,1,1,1,1,3,3,4
 ev_ch1_clue_capture,0,0,0,0,0,0,0
 ev_ch1_clue_family,0,0,0,0,0,0,0
@@ -119,7 +119,7 @@ mv_athletics_tested,0,0,0,0,0,0,1
 mv_awareness_altered,0,0,0,0,0,0,0
 mv_awareness_tested,0,1,1,1,2,2,2
 mv_brawl_altered,0,0,0,0,0,0,0
-mv_brawl_tested,0,1,1,2,2,3,4
+mv_brawl_tested,0,1,1,2,3,3,4
 mv_camarilla_cohesion_altered,0,0,0,0,0,0,0
 mv_camarilla_cohesion_tested,0,0,0,0,0,0,0
 mv_camarilla_leverage_altered,0,0,0,0,0,0,0
@@ -266,7 +266,7 @@ mv_stealth_tested,0,0,0,0,0,0,1
 mv_streetwise_altered,0,0,0,0,0,0,0
 mv_streetwise_tested,0,0,0,0,0,0,1
 mv_strength_altered,0,0,0,0,0,0,0
-mv_strength_tested,0,0,1,1,2,2,3
+mv_strength_tested,0,1,1,1,2,2,3
 mv_subterfuge_altered,0,0,0,0,0,0,0
 mv_subterfuge_tested,0,0,0,0,0,0,0
 mv_survival_altered,0,0,0,0,0,0,0
@@ -301,7 +301,7 @@ mv_upper_hand_camarilla_tested,0,0,0,0,0,0,0
 mv_upper_hand_si_altered,0,0,0,0,0,0,0
 mv_upper_hand_si_tested,0,0,0,0,0,0,0
 mv_wits_altered,0,0,0,0,0,0,0
-mv_wits_tested,0,0,1,1,2,3,3
+mv_wits_tested,0,0,1,2,2,3,3
 mv_xp_altered,0,0,0,0,0,0,0
 mv_xp_tested,0,0,0,0,0,0,0
 MVT_ABJECT_FAILURE,1,1,1,1,1,1,1
@@ -316,7 +316,7 @@ occult,1,1,1,1,2,2,3
 open_to_exp,48,50,51,52,53,54,57
 owen_aggr_wounds,0,0,0,0,0,0,0
 owen_health,6,6,6,6,6,6,6
-owen_spfc_wounds,0,0,1,1,1,1,3
+owen_spfc_wounds,0,0,1,1,1,2,3
 parenting_demands,48,50,50,50,50,50,50
 parenting_order,49,50,50,50,50,50,50
 parenting_trust,48,50,50,50,50,50,52
@@ -371,4 +371,4 @@ upper_hand_si,0,0,0,0,0,0,0
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,1,2,2,2,11,12,37
-generated on,Wed Oct  7 09:11:57 CEST 2026
+generated on,Wed Oct  7 22:44:54 CEST 2026
