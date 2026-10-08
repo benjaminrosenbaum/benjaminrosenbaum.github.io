@@ -5,11 +5,12 @@ require 'htmlentities'
 coder = HTMLEntities.new
 now = DateTime.now
 
-# regexes
+$platforms = %i{facebook bluesky mastodon tumblr}
 
-if ARGV.length < 3
-	puts "Usage: new-blog.rb [--edit] [--fblink URL] [--bslink URL] [--mslink URL] title description prev-id  < blog-contents > output.html"
-	puts "       supports <!--NEXT-ENTRY-LINK--> and <!--CROSSPOST--> placeholders in blog body. CROSSPOST is where social media links go."
+if ARGV.length < 2
+	puts "Usage: new-blog.rb [--edit] #{$platforms.map{|p| "[--#{p} URL]"}.join ' '} [--pandoc] title description [prev-id]  < blog-contents > output.html"
+	puts "       supports --, <!--NEXT-ENTRY-LINK-->, and <!--CROSSPOST--> placeholders in blog body. CROSSPOST is where social media links go."
+	puts "\nSee also github/benjaminrosenbaum.github.io/blog/publish-blog-entry.rb"
 	exit 1
 end
 
@@ -17,28 +18,29 @@ if ARGV.delete "--edit"
 	$edit = true
 end
 
-if ARGV[0] == "--fblink"
-	ARGV.shift
-	$fblink = ARGV.shift
+
+if ARGV.delete "--pandoc"
+	$pandoc = true
 end
 
-if ARGV[0] == "--bslink"
-	ARGV.shift
-	$bslink = ARGV.shift
-end
+#todo make these Strategy objects so they can come in any order
 
-if ARGV[0] == "--mslink"
-	ARGV.shift
-	$mslink = ARGV.shift
-end
+$links = {}
 
+while ($platforms.any? {|p| ARGV[0] == "--#{p}"} ) 
+	#puts "found: --#{p}"
+	p = $1 if ARGV.shift =~ /--(\w*)/
+	$links[p] = ARGV.shift
+	#puts $links
+	#puts "--------"
+end
 
 
 title = coder.encode ARGV[0].tap{|n| n[0].capitalize + n.slice(1) }, :named
 description = coder.encode ARGV[1], :named
-$prev = ARGV[2]
+$prev = ARGV[2] || ((!$edit) && `ls -1 archives | sort | tail -1 | cut -d '.' -f 1`.chomp)
 if $prev.to_i == 0
-	puts "bad previous id"
+	puts "bad previous id: #{$prev}"
 	exit 1
 end
 
@@ -174,20 +176,37 @@ unless $edit
 	end
 end
 
-
-puts header title, description, now
-STDIN.each do |line|
-	 if (line =~ /^\s*--\s*$/)
-	  	puts("<hr/>")
-	 elsif (line =~ /<!--CROSSPOST-->/) 
-	 		links = { :Facebook => $fblink, :Bluesky => $bslink, :Mastodon => $mslink }.reject{|k, v| !v}
-	 		threads = "thread#{links.length > 1 ? "s" : ""}"
-	 		cp = "[You can comment on the #{links.map{|k,v| "<a href=#{v}>#{k}</a>"}.join(", ")} #{threads}.]" if links.any?{|k,v| v}
-	 		puts "   <p><!--CROSSPOST-->#{cp}</p>"
+def process_line line, add_para 
+	 #p = -> (txt) { add_para ? "<p>#{txt}</p>" : "txt\n" }
+	if (line =~ /^\s*--\s*$/)
+	  	'<hr/>'
+		"   <p><!--CROSSPOST-->#{cp}</p>"
 	 else
-		puts "<p>#{line.chomp}</p>"
+	 		txt = line.chomp
+	 		add_para ? "<p>#{txt}</p>" : "#{txt}\n"
 	 end
 end
+
+def crosspost_line links
+	threads = "thread#{links.length > 1 ? "s" : ""}"
+	if links.any?
+		"<p><!--CROSSPOST-->[You can comment on the #{links.map{|k,v| "<a href=\"#{v}\">#{k.capitalize}</a>"}.join(", ")} #{threads}.]</p>" 
+	end
+end
+
+
+puts header title, description, now
+if $pandoc
+	File.write('.pandocable.md', $stdin.read)
+	transformed = `pandoc --to HTML .pandocable.md | sed 's/\\<p\\>\\*\\*/\\<p\\>\\<b\\>/g' | sed 's/\\*\\*\\<\\/p>/<\\/b><\\/p>/g'`
+	File.write('.pandocked.html', transformed)
+	transformed.each_line { |line|  puts process_line line, false }
+else
+	STDIN.each {|line| puts process_line line, true}
+end
+
+puts crosspost_line $links
+
 puts footer now
 
 
