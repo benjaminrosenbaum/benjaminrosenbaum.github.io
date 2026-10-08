@@ -99,18 +99,19 @@
       <br/>  5 -  shocked that you would ask: 59.0 (11.8%)
       <br/>  6 -  had the sword cane but lost it in the foyer: 1.0 (0.2%)
       <br/>  7 -  put the sword cane down in the bedroom because you also have a gun:  (0.0%)
+      <br/>  8 -  put the sword cane down in the kitchen because you also have oven cleaner spray and a lighter:  (0.0%)
 <br/>=100.0%
 </p>
 <p><b>ev_ch1_armed_with</b>
-      <br/>  1 -  not yet set or no weapon to hand: 305.0 (61.0%)
+      <br/>  1 -  not yet set or no weapon to hand: 352.0 (70.4%)
       <br/>  2 -  sword cane: 2.0 (0.4%)
       <br/>  3 -  9mm pistol: 28.0 (5.6%)
       <br/>  4 -  flamethrower:  (0.0%)
       <br/>  5 -  raufoss shotgun:  (0.0%)
       <br/>  6 -  wood axe:  (0.0%)
-      <br/>  7 -  butcher knife and trash can lid: 84.0 (16.8%)
+      <br/>  7 -  butcher knife and trash can lid: 85.0 (17.0%)
       <br/>  8 -  improvised club: 8.0 (1.6%)
-      <br/>  9 -  oven cleaner spray and lighter: 73.0 (14.6%)
+      <br/>  9 -  oven cleaner spray and lighter: 25.0 (5.0%)
 <br/>=100.0%
 </p>
 <p><b>ev_ch1_owen_foyer_clash</b>
@@ -145,12 +146,12 @@
 </p>
 <p><b>ev_ch1_location_paths</b>
       <br/>  1 -  not set:  (0.0%)
-      <br/>  2 -  entered via foyer: 6.0 (1.2%)
+      <br/>  2 -  entered via foyer: 2.0 (0.4%)
       <br/>  3 -  entered via kitchen: 47.0 (9.4%)
-      <br/>  4 -  foyer->kitchen: 132.0 (26.4%)
+      <br/>  4 -  foyer->kitchen: 134.0 (26.8%)
       <br/>  5 -  foyer->bedroom: 53.0 (10.6%)
       <br/>  6 -  kitchen->basement: 26.0 (5.2%)
-      <br/>  7 -  foyer->kitchen->basement: 49.0 (9.8%)
+      <br/>  7 -  foyer->kitchen->basement: 51.0 (10.2%)
       <br/>  8 -  foyer->downstairs bathroom: 177.0 (35.4%)
       <br/>  9 -  foyer->bedroom->upstairs bathroom:  (0.0%)
       <br/>  10 -  foyer->bedroom->basement: 10.0 (2.0%)
@@ -165,8 +166,8 @@
 <br/>=6.8%
 </p>
 <p><b>ev_ch1_clue_outfit</b>
-      <br/>  1 -  you noticed Owen's sartorial choices: 44.0 (8.8%)
-<br/>=8.8%
+      <br/>  1 -  you noticed Owen's sartorial choices: 45.0 (9.0%)
+<br/>=9.0%
 </p>
 <p><b>ev_ch1_clue_slang</b>
       <br/>  1 -  you noticed Owen's Edwardian slang: 2.0 (0.4%)
@@ -251,12 +252,13 @@
   </tr>
 </table>
 <!-- doing grep -E '\*comment\s+([a-z0-9_]+):\s+1\s+is' deeper-state/startup.txt -->
-<h3>Missing the following values?</h3>
-<pre>{
-    x_id: false,
-    ev_employment_status: false,
-    t_biggest_crush: false,
-    storyteller_mode: true,
-},
+<details><summary>Possibly missing values</summary>
+<pre>
 {
+  x_id: false,
+  ev_employment_status: false,
+  t_biggest_crush: false,
+  storyteller_mode: true
+}
+</pre></details>
 </html>
