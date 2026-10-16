@@ -91,9 +91,9 @@ emotional,extraverted,96,99,100,102,104,105,107
 emotional,open_to_exp,96,100,101,103,106,108,111
 extraverted,agreeable,96,98,99,100,102,103,104
 extraverted,conscientious,95,97,98,100,101,102,105
-extraverted,open_to_exp,97,100,101,102,104,105,107
-honest_humble,agreeable,94,97,99,101,103,105,107
-honest_humble,conscientious,94,97,98,100,102,104,108
+extraverted,open_to_exp,98,100,101,102,104,105,107
+honest_humble,agreeable,94,97,98,101,103,105,107
+honest_humble,conscientious,93,97,98,100,102,104,108
 honest_humble,emotional,96,99,101,103,105,106,108
 honest_humble,extraverted,97,99,100,102,103,104,106
 honest_humble,open_to_exp,97,100,101,104,105,106,109
@@ -260,4 +260,4 @@ wits,streetwise,2,2,3,3,4,4,5
 wits,subterfuge,2,3,3,4,4,5,5
 wits,survival,2,2,2,3,3,4,5
 wits,technology,2,2,3,3,4,4,6
-generated on,Fri Oct 16 21:34:37 CEST 2026
+generated on,Fri Oct 16 22:04:21 CEST 2026
