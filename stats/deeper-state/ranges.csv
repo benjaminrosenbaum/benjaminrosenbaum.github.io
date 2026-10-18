@@ -37,7 +37,7 @@ dutiful_child_savvy,0,0,0,0,0,0,0
 emotional,46,49,50,52,53,54,57
 etiquette,0,0,0,0,0,1,1
 ev_ch1_armed_with,6,6,6,6,6,6,6
-ev_ch1_badassery,0,0,0,0,0,0,1
+ev_ch1_badassery,0,0,0,0,0,0,2
 ev_ch1_bitten_by_owen,1,1,1,3,4,4,5
 ev_ch1_clue_capture,0,0,0,0,1,1,1
 ev_ch1_clue_family,0,0,0,0,0,0,0
@@ -47,10 +47,10 @@ ev_ch1_clue_slang,0,0,0,0,0,0,0
 ev_ch1_clue_worried,0,0,0,0,0,0,0
 ev_ch1_journo_vibe,1,1,1,1,1,1,3
 ev_ch1_location_paths,8,8,8,8,14,14,24
-ev_ch1_owen_bedroom_fight_exit,1,1,1,1,1,1,1
+ev_ch1_owen_bedroom_fight_exit,1,1,1,1,1,1,2
 ev_ch1_owen_foyer_clash,1,6,9,11,11,11,11
 ev_ch1_owen_foyer_fight_exit,1,2,2,3,9,9,10
-ev_ch1_owen_kitchen_fight_exit,1,1,1,1,1,1,8
+ev_ch1_owen_kitchen_fight_exit,1,1,1,1,2,3,8
 ev_ch1_owen_outcome,3,3,3,4,4,4,4
 ev_ch1_pc_location,7,8,8,8,8,8,8
 ev_ch1_property_dmg,0,0,0,0,15,15,15
@@ -381,4 +381,4 @@ upper_hand_si,0,0,0,0,0,0,0
 wits,1,2,2,2,3,3,4
 x_id,1,1,1,2,2,3,3
 xp,2,4,4,11,19,19,20
-generated on,Sun Oct 18 20:00:34 CEST 2026
+generated on,Sun Oct 18 21:11:43 CEST 2026
