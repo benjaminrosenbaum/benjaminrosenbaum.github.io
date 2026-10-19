@@ -1,5 +1,5 @@
 STAT,STAT,bottom 10%,bottom 25%,bottom 33%,50/50,top 34%,top 25%,top 10%
-agreeable,conscientious,92,95,97,100,102,104,107
+agreeable,conscientious,91,95,96,100,103,104,107
 agreeable,open_to_exp,96,99,100,102,104,105,107
 agreeable,open_to_exp-conscientiou,37,43,45,49,52,55,58
 charisma,academics,1,2,2,3,4,4,6
@@ -57,7 +57,7 @@ composure,streetwise,2,3,3,3,4,4,5
 composure,subterfuge,3,3,3,4,4,5,5
 composure,survival,2,2,3,3,3,3,4
 composure,technology,2,2,3,3,4,4,6
-conscientious,open_to_exp,98,100,100,101,103,103,106
+conscientious,open_to_exp,98,100,100,101,102,103,106
 dexterity,academics,2,2,3,3,4,4,5
 dexterity,animal_ken,2,2,2,2,3,3,5
 dexterity,athletics,2,2,2,3,3,4,6
@@ -86,17 +86,17 @@ dexterity,subterfuge,2,3,3,4,4,4,5
 dexterity,survival,2,2,2,3,3,3,5
 dexterity,technology,2,2,3,3,3,4,5
 emotional,agreeable,97,99,100,102,103,104,106
-emotional,conscientious,96,98,99,101,103,104,106
-emotional,extraverted,96,99,100,102,104,105,108
-emotional,open_to_exp,96,99,101,103,106,108,111
+emotional,conscientious,95,98,99,101,103,104,107
+emotional,extraverted,97,99,100,102,104,105,108
+emotional,open_to_exp,96,99,101,103,106,108,112
 extraverted,agreeable,96,98,99,101,102,103,104
 extraverted,conscientious,95,97,98,100,102,103,105
-extraverted,open_to_exp,97,100,101,102,104,105,107
-honest_humble,agreeable,93,98,99,101,103,105,107
-honest_humble,conscientious,94,97,98,101,103,104,108
-honest_humble,emotional,96,100,101,103,105,106,109
-honest_humble,extraverted,97,99,100,101,103,104,106
-honest_humble,open_to_exp,97,100,101,103,104,106,109
+extraverted,open_to_exp,97,100,101,102,104,105,108
+honest_humble,agreeable,94,98,99,102,104,105,107
+honest_humble,conscientious,93,97,98,101,103,104,108
+honest_humble,emotional,97,100,101,103,105,106,108
+honest_humble,extraverted,97,100,100,102,103,104,105
+honest_humble,open_to_exp,98,100,101,103,105,106,109
 intelligence,academics,2,2,3,3,4,5,7
 intelligence,animal_ken,2,2,3,3,4,4,5
 intelligence,athletics,2,3,3,3,4,4,5
@@ -260,4 +260,4 @@ wits,streetwise,2,2,3,3,4,4,5
 wits,subterfuge,2,3,3,4,4,5,6
 wits,survival,2,2,2,3,3,4,5
 wits,technology,2,2,2,3,4,4,6
-generated on,Mon Oct 19 08:47:17 CEST 2026
+generated on,Mon Oct 19 09:24:05 CEST 2026
