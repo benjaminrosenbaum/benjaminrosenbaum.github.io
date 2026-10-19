@@ -86,15 +86,15 @@ dexterity,subterfuge,2,3,3,4,4,4,5
 dexterity,survival,2,2,2,3,3,3,5
 dexterity,technology,2,2,3,3,3,4,5
 emotional,agreeable,97,99,100,102,103,104,106
-emotional,conscientious,96,98,99,101,103,104,107
+emotional,conscientious,96,98,99,101,103,104,106
 emotional,extraverted,96,99,100,102,104,105,108
 emotional,open_to_exp,96,99,101,103,106,108,111
 extraverted,agreeable,96,98,99,101,102,103,104
 extraverted,conscientious,95,97,98,100,102,103,105
 extraverted,open_to_exp,97,100,101,102,104,105,107
-honest_humble,agreeable,94,98,99,101,104,105,107
+honest_humble,agreeable,93,98,99,101,103,105,107
 honest_humble,conscientious,94,97,98,101,103,104,108
-honest_humble,emotional,96,99,101,103,105,106,109
+honest_humble,emotional,96,100,101,103,105,106,109
 honest_humble,extraverted,97,99,100,101,103,104,106
 honest_humble,open_to_exp,97,100,101,103,104,106,109
 intelligence,academics,2,2,3,3,4,5,7
@@ -260,4 +260,4 @@ wits,streetwise,2,2,3,3,4,4,5
 wits,subterfuge,2,3,3,4,4,5,6
 wits,survival,2,2,2,3,3,4,5
 wits,technology,2,2,2,3,4,4,6
-generated on,Sun Oct 18 21:22:05 CEST 2026
+generated on,Mon Oct 19 07:50:45 CEST 2026
